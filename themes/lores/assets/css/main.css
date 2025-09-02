@@ -2,21 +2,41 @@ body {
   color: #222;
   font-family: sans-serif;
   line-height: 1.5;
-  margin: 1rem;
-  max-width: 768px;
+  padding: 0;
+  margin: 0;
+  background-color: #183b4e;
 }
 
 header {
-  border-bottom: 1px solid #222;
-  margin-bottom: 1rem;
+  background-color: #8a2b13;
+  display: flex;
+  padding: 1rem;
+}
+
+header h1 {
+  color: white;
+}
+
+main {
+  background-color: #355c7d;
+  display: flex;
+  gap: 1rem;
+}
+
+main nav.docs-nav {
+  background-color: #dda853;
+  padding: 1rem;
 }
 
 footer {
-  border-top: 1px solid #222;
-  margin-top: 1rem;
+  display: flex;
+  padding: 1rem;
+  color: white;
 }
 
 a {
   color: #00e;
   text-decoration: none;
 }
+
+/* 99b898 FECEAB FF847C E84A5F #2a363b; */
