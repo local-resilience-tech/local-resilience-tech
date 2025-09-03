@@ -39,6 +39,10 @@ nav.side-nav ul {
   padding: 0;
 }
 
+nav.side-nav ul ul {
+  border-left: 10px solid black;
+}
+
 nav.side-nav a {
   color: #dda853;
 }

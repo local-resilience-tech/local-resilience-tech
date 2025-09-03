@@ -1,0 +1,33 @@
+baseURL: "https://example.org/"
+languageCode: "en-us"
+title: "LoRes Mesh"
+theme: "lores"
+
+menus:
+  main:
+    - name: "Home"
+      pageRef: "/"
+      weight: 10
+    - name: "Docs"
+      pageRef: "/docs"
+      weight: 20
+
+  docs:
+    - name: "Documents"
+      pageRef: "docs"
+      url: "/docs"
+      weight: 10
+    - name: "Creating a Lores App"
+      pageRef: "creating_a_lores_app"
+      url: "/docs/creating_a_lores_app"
+      weight: 20
+    - name: "What makes up a LoRes App?"
+      pageRef: "what_makes_up_a_lores_app"
+      url: "/docs/creating_a_lores_app/what_makes_up_a_lores_app"
+      parent: "Creating a Lores App"
+      weight: 30
+
+module:
+  hugoVersion:
+    extended: false
+    min: "0.146.0"
