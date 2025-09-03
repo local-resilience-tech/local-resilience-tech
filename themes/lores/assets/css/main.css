@@ -8,24 +8,34 @@ body {
 }
 
 header {
-  background-color: #8a2b13;
+  background-color: var(--orange1);
+  background: linear-gradient(to bottom, var(--orange3), var(--orange5));
   display: flex;
   padding: 1rem;
 }
 
 header h1 {
-  color: white;
+  color: black;
 }
 
 main {
   background-color: #355c7d;
+
   display: flex;
   gap: 1rem;
+  color: #eee;
 }
 
 main nav.docs-nav {
-  background-color: #dda853;
+  background-color: #8a2b13;
   padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  min-width: 150px;
+}
+
+main nav.docs-nav a {
+  color: #dda853;
 }
 
 footer {
@@ -35,8 +45,69 @@ footer {
 }
 
 a {
-  color: #00e;
   text-decoration: none;
 }
 
-/* 99b898 FECEAB FF847C E84A5F #2a363b; */
+/* TYPOGRAPHY */
+
+article p {
+  max-width: 800px;
+}
+
+article ul,
+article ol {
+  max-width: 700px;
+}
+
+article a {
+  text-decoration: underline;
+}
+
+article code {
+  font-size: 1rem;
+  display: inline-block;
+  padding: 0 0.3rem;
+  border-radius: 3px;
+}
+
+/* COLOUR SECTION SPECIFIC */
+
+article.blue1 {
+  color: #eee;
+}
+
+article.blue1 h1 {
+  color: var(--orange2);
+}
+
+article.blue1 h2 {
+  color: var(--orange3);
+}
+
+article.blue1 h3 {
+  color: var(--orange4);
+}
+
+article.blue1 h4 {
+  color: var(--orange5);
+}
+
+article.blue1 strong {
+  color: var(--orange6);
+}
+
+article.blue1 em {
+  color: #ccc;
+}
+
+article.blue1 a {
+  color: var(--orange4);
+}
+
+article.blue1 code {
+  background-color: #183b4e;
+}
+
+article ul {
+  color: #ccc;
+}

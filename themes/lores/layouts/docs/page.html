@@ -1,10 +1,10 @@
 {{ define "main" }}
 <nav class="docs-nav">
-  <a href="/docs">Documentation</a>
+  {{/* <a href="/docs">Documentation</a>
   <a href="/docs/getting-started">Getting Started</a>
-  <a href="/docs/advanced">Advanced Topics</a>
+  <a href="/docs/advanced">Advanced Topics</a> */}}
 </nav>
-<article class="docs-page">
+<article class="docs-page blue1">
   <h1>{{ .Title }}</h1>
 
   {{ .Content }} {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}

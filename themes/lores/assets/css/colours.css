@@ -1,5 +1,15 @@
 :root {
   --blue: #193549;
   --light: #d4dbdf;
-  --ses: #f58220;
+
+  --orange0: #fff4e1;
+  --orange1: #ffe8cc;
+  --orange2: #fed09b;
+  --orange3: #fdb766;
+  --orange4: #fca13a;
+  --orange5: #fc931d;
+  --orange6: #e17800;
+  --orange7: #e17800;
+  --orange8: #c86a00;
+  --orange9: #af5a00;
 }
