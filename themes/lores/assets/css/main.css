@@ -26,7 +26,7 @@ main {
   color: #eee;
 }
 
-main nav.docs-nav {
+nav.side-nav {
   background-color: #8a2b13;
   padding: 1rem;
   display: flex;
@@ -34,7 +34,12 @@ main nav.docs-nav {
   min-width: 150px;
 }
 
-main nav.docs-nav a {
+nav.side-nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav.side-nav a {
   color: #dda853;
 }
 
