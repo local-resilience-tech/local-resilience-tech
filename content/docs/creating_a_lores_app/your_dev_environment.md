@@ -10,7 +10,7 @@ type: docs
 If you're going to work on LoRes Apps, you're going to need a setup on your own computer that makes it easy to try them out.
 {{< /hero >}}
 
-That means temporarily running the **LoRes Node** software on your computer. You can of course test out an LoRes App on a server running a LoRes Node, but that's going to make it hard to tweak and test things as you go.
+That means temporarily running the **LoRes Node** software on your computer. You can of course test out a LoRes App on a server running a LoRes Node, but that's going to make it hard to tweak and test things as you go.
 
 ## Prerequisites
 

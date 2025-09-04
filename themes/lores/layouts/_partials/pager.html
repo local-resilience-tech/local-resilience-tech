@@ -12,7 +12,6 @@
   {{- end }}
 
   {{- if $pages.Next . }}
-    X
     {{- with $pages.Next . }}
       <a href="{{ .RelPermalink }}">Next <span aria-hidden="true">&gt;</span></a>
     {{- end }}
