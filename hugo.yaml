@@ -1,7 +1,9 @@
-baseURL: "https://example.org/"
-languageCode: "en-us"
+baseURL: "https://lores.tech/"
+languageCode: "en-au"
 title: "LoRes Mesh"
 theme: "lores"
+minify:
+  disableHTML: true
 
 menus:
   main:
