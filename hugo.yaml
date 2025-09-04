@@ -28,6 +28,11 @@ menus:
       url: "/docs/creating_a_lores_app/what_makes_up_a_lores_app"
       parent: "Creating a Lores App"
       weight: 30
+    - name: "Your dev environment"
+      pageRef: "your_dev_environment"
+      url: "/docs/creating_a_lores_app/your_dev_environment"
+      parent: "Creating a Lores App"
+      weight: 30
 
 module:
   hugoVersion:

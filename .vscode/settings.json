@@ -15,5 +15,9 @@
     "**/.factorypath": true,
     "public": true
   },
-  "explorerExclude.backup": {}
+  "explorerExclude.backup": {},
+  "html.format.enable": false,
+  "[html]": {
+    "editor.formatOnSave": false
+  }
 }

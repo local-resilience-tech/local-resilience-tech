@@ -2,6 +2,7 @@
 title = 'What makes up a LoRes App?'
 date = 2025-09-03T09:00:00+10:00
 draft = false
+weight = 1
 +++
 
 Before we build our own app, let's take a look inside a LoRes App and see what they're made up of.

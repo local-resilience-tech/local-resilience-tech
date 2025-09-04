@@ -1,7 +1,22 @@
-{{ define "main" }} {{ partial "side_nav.html" (dict "menuID" "docs" "page" .) }}
-<article class="docs-page blue1">
-  <h1>{{ .Title }}</h1>
+{{ define "main" }}
+  {{ partial "side_nav.html" (dict "menuID" "docs" "page" .) }}
+  <article class="docs-page blue1">
+    <h1>{{ .Title }}</h1>
 
-  {{ .Content }} {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
-</article>
+    {{ .Content }} {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
+
+    <nav class="between-pages">
+      {{ with .Prev }}
+      <a href="{{ .RelPermalink }}">
+        &lt;
+        Previous
+      </a>
+      {{ end }} {{ with .Next }}
+      <a href="{{ .RelPermalink }}">
+        Next
+        &gt;
+      </a>
+      {{ end }}
+    </nav>
+  </article>
 {{ end }}
