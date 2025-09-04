@@ -1,0 +1,61 @@
+# hugo.yml
+#
+# Takes a repository with Hugo source, generates the static site and
+# pushes the result to Codeberg pages
+#
+# Needs a codeberg access token (codeberg_token) as a secret in Woodpecker config
+# Make sure the codeberg_token has "Repository and Organization Access" -> "package" -> "Read and Write"
+# Also uses another secret (mail) with email address for git config
+#
+# .domains file in the repository is copied to the output branch so custom domains work
+#
+# The HUGO_OUTPUT variable must be set to the build output folder configured in Hugo
+#
+
+# Exclude page pipeline to be run on "pages" branch
+when:
+  branch:
+    exclude: pages
+  event: [push, pull_request]
+
+# Recursive cloning is used to fully clone the themes given as Git submodules
+clone:
+  git:
+    image: woodpeckerci/plugin-git
+    settings:
+      recursive: true
+
+steps:
+  # Build hugo static files
+  build:
+    image: hugomods/hugo:exts
+    commands:
+      - hugo --minify
+    when:
+      event: [pull_request, push]
+
+  publish:
+    image: bitnami/git
+    environment:
+      HUGO_OUTPUT: public
+      # secrets must be set in Woodpecker configuration
+      MAIL:
+        from_secret: mail
+      CODEBERG_TOKEN:
+        from_secret: codeberg_token
+    commands:
+      # Git configuration
+      - git config --global user.email $MAIL
+      - git config --global user.name "Woodpecker CI"
+      - git clone -b pages https://$CODEBERG_TOKEN@codeberg.org/$CI_REPO.git $CI_REPO_NAME
+      # Copy build step output to repository folder
+      - cp -ar $HUGO_OUTPUT/. $CI_REPO_NAME/
+      # Needed for custom domains
+      - cp .domains $CI_REPO_NAME || true # Ignore if it doesn't exist
+      # Commit and push all static files with pipeline started timestamp
+      - cd $CI_REPO_NAME
+      - git add .
+      - git commit -m "Woodpecker CI ${CI_COMMIT_SHA}"
+      - git push
+    when:
+      event: push
