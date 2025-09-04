@@ -4,7 +4,7 @@ body {
   line-height: 1.5;
   padding: 0;
   margin: 0;
-  background-color: #183b4e;
+  background-color: var(--blue9);
 }
 
 header {
@@ -19,11 +19,11 @@ header h1 {
 }
 
 main {
-  background-color: #355c7d;
+  background-color: var(--blue5);
 
   display: flex;
   gap: 1rem;
-  color: #eee;
+  color: var(--grey1);
 }
 
 nav.side-nav {
@@ -50,7 +50,7 @@ nav.side-nav a {
 footer {
   display: flex;
   padding: 1rem;
-  color: white;
+  color: var(--grey3);
 }
 
 a {
@@ -77,6 +77,20 @@ article code {
   display: inline-block;
   padding: 0 0.3rem;
   border-radius: 3px;
+}
+
+article aside {
+  border: 2px solid black;
+  padding: 1rem;
+  border-radius: 3px;
+}
+
+article aside > *:first-child {
+  margin-top: 0;
+}
+
+article aside > *:last-child {
+  margin-bottom: 0;
 }
 
 /* COLOUR SECTION SPECIFIC */
@@ -106,7 +120,7 @@ article.blue1 strong {
 }
 
 article.blue1 em {
-  color: #ccc;
+  color: var(--grey2);
 }
 
 article.blue1 a {
@@ -114,9 +128,15 @@ article.blue1 a {
 }
 
 article.blue1 code {
-  background-color: #183b4e;
+  background-color: var(--blue9);
 }
 
-article ul {
-  color: #ccc;
+article.blue1 ul {
+  color: var(--grey2);
+}
+
+article.blue1 aside {
+  background-color: var(--blue7);
+  border-color: var(--blue9);
+  color: var(--grey2);
 }

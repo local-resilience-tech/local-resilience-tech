@@ -78,3 +78,12 @@ There may be more coming here. We're not quite sure. As we build our first few r
 For example, an app may want to allow the node to specify some configuration options. Perhaps we want a config file format for that, or perhaps we want to allow the app to specify it's config needs in a way that lets us generate an admin user interface in the Lores Node web interface.
 
 As you're working through building your first app, have a think about what features you need to make it easy for **Node Stewards** to install, administer, maintain and monitor. We'd love to hear what ideas you come up with.
+
+{{< aside >}}
+
+### Other projects of note
+
+- [Helm](https://helm.sh/) - Packages up kubernetes applications and provides template variables. Could have been used here except that we think it's too complex.
+- [Sandstorm](https://sandstorm.org/) - A wonderful project to manage a bunch of self-hosted web applications with shared user integration and permission. In many ways similar to LoRes, but without the P2P mesh aspect.
+
+{{< /aside >}}
