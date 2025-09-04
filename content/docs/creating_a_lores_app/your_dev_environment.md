@@ -19,6 +19,8 @@ What sort of computer and software will you need to be able to do this?
 - **Linux**. You'll need to be running linux on your computer. It's probable that other unix-like systems would work. For the rest of these docs, we're going to assume you're running Ubuntu or Debian linux.
 - **Git**. You'll need git installed, and somewhere you can share your repository with others. We recommend [Codeberg](https://codeberg.org/).
 
+Other things that you'll need we'll cover how to install.
+
 {{< aside >}}
 
 ### Do I really need to be running linux?
@@ -31,3 +33,5 @@ Want help getting started with Linux? There's probably a Linux club or user grou
 
 More advanced users can probabaly translate these instructions for Mac OSX, or for one of the several ways of running linux inside Windows.
 {{< /aside >}}
+
+## Step 1. Docker & Docker Swarm

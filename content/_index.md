@@ -1,7 +1,12 @@
-+++
-title = 'Home'
-date = 2023-01-01T08:00:00-07:00
-draft = false
-+++
+---
+title: Home
+date: 2025-09-01T08:00:00+10:00
+draft: false
+type: docs
+---
 
-This website is under development
+# This website is under development.
+
+We're starting with documentation so that our volunteers can try setting up the first trial nodes, and building the first apps.
+
+[Go to the docs](/docs/creating_a_lores_app/)
