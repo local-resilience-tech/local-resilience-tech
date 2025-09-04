@@ -17,7 +17,7 @@ Perhaps this is software you built yourself, or perhaps it's just software that 
 
 ### Need help along the way?
 
-Jump into our [LoRes Apps Matrix room](https://matrix.to/#/#lores-apps:merri-bek.chat) to ask questions and share advice.
+Jump into our [LoRes Apps matrix chat room](https://matrix.to/#/#lores-apps:merri-bek.chat) to ask questions and share advice.
 
 New to matrix? It's a federated chat app, you can read more about it at [matrix.org](https://matrix.org/).
 {{< /aside >}}
