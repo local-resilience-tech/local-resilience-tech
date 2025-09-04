@@ -5,18 +5,6 @@
 
     {{ .Content }} {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
 
-    <nav class="between-pages">
-      {{ with .Prev }}
-      <a href="{{ .RelPermalink }}">
-        &lt;
-        Previous
-      </a>
-      {{ end }} {{ with .Next }}
-      <a href="{{ .RelPermalink }}">
-        Next
-        &gt;
-      </a>
-      {{ end }}
-    </nav>
+    {{ partial "pager.html" . }}
   </article>
 {{ end }}

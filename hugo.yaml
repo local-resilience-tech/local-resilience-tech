@@ -4,6 +4,9 @@ title: "LoRes Mesh"
 theme: "lores"
 minify:
   disableHTML: true
+docs:
+  nextPrevInSectionSortOrder: desc
+  nextPrevSortOrder: desc
 
 menus:
   main:
@@ -18,21 +21,21 @@ menus:
     - name: "Documents"
       pageRef: "docs"
       url: "/docs"
-      weight: 10
-    - name: "Creating a Lores App"
+      weight: 1
+    - name: "Creating a LoRes App"
       pageRef: "creating_a_lores_app"
       url: "/docs/creating_a_lores_app"
-      weight: 20
+      weight: 2
     - name: "What makes up a LoRes App?"
       pageRef: "what_makes_up_a_lores_app"
       url: "/docs/creating_a_lores_app/what_makes_up_a_lores_app"
-      parent: "Creating a Lores App"
-      weight: 30
+      parent: "Creating a LoRes App"
+      weight: 3
     - name: "Your dev environment"
       pageRef: "your_dev_environment"
       url: "/docs/creating_a_lores_app/your_dev_environment"
-      parent: "Creating a Lores App"
-      weight: 30
+      parent: "Creating a LoRes App"
+      weight: 4
 
 module:
   hugoVersion:

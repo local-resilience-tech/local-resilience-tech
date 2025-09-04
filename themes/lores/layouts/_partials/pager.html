@@ -1,0 +1,26 @@
+{{ $pages := .CurrentSection.Pages.ByWeight.Reverse }}
+
+<nav class="between-pages" aria-label="Browse">
+  {{- if $pages.Prev . }}
+    {{- with $pages.Prev . }}
+      <a href="{{ .RelPermalink }}"><span aria-hidden="true">&lt;</span> Previous</a>
+    {{- end }}
+  {{- else }}
+    {{- with .Parent }}
+      <a href="{{ .RelPermalink }}"><span aria-hidden="true">&lt;</span> Previous</a>
+    {{- end }}
+  {{- end }}
+
+  {{- if $pages.Next . }}
+    X
+    {{- with $pages.Next . }}
+      <a href="{{ .RelPermalink }}">Next <span aria-hidden="true">&gt;</span></a>
+    {{- end }}
+  {{- else }}
+    {{- if .IsSection}}
+      {{- range first 1 $pages.Reverse }}
+        <a href="{{ .RelPermalink }}">Next <span aria-hidden="true">&gt;</span></a>
+      {{- end }}
+    {{- end }}
+  {{- end }}
+</nav>
