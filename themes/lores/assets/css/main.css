@@ -61,6 +61,11 @@ nav.side-nav ul ul a {
 
 nav.side-nav a:hover {
   background-color: var(--burnt-orange4);
+  color: var(--orange3);
+}
+
+nav.side-nav a.active {
+  background-color: var(--burnt-orange8);
 }
 
 /* Footer */

@@ -9,7 +9,11 @@ $menuID := .menuID }} {{- with index site.Menus $menuID }}
 "active" "aria-current" "page") }} {{- else if $page.HasMenuCurrent .Menu .}} {{- $attrs = merge $attrs (dict "class" "ancestor" "aria-current" "true") }} {{- end }} {{- $name := .Name }} {{- with .Identifier }} {{- with
 T . }} {{- $name = . }} {{- end }} {{- end }}
 <li>
-  <a href="{{ .URL }}">{{ $name }}</a>
+  <a {{- range $k, $v := $attrs }}
+          {{- with $v }}
+            {{- printf " %s=%q" $k $v | safeHTMLAttr }}
+          {{- end }}
+        {{- end -}}>{{ $name }}</a>
   {{- with .Children }}
   <ul>
     {{- partial "inline/menu/walk.html" (dict "page" $page "menuEntries" .) }}
