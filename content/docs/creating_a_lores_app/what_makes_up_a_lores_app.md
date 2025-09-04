@@ -81,7 +81,7 @@ As you're working through building your first app, have a think about what featu
 
 {{< aside >}}
 
-### Other projects of note
+### Other projects for packaging apps
 
 - [Helm](https://helm.sh/) - Packages up kubernetes applications and provides template variables. Could have been used here except that we think it's too complex.
 - [Sandstorm](https://sandstorm.org/) - A wonderful project to manage a bunch of self-hosted web applications with shared user integration and permission. In many ways similar to LoRes, but without the P2P mesh aspect.
