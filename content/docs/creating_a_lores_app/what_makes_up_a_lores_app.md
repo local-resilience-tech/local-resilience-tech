@@ -9,23 +9,23 @@ type: docs
 
 Before we build our own app, let's take a look inside a LoRes App and see what they're made up of.
 
-We know that the goal of an app is to run open source software on a small server (or group of servers in one place) that we call a **Node**. This is really just a type of [self-hosting web apps](<https://en.wikipedia.org/wiki/Self-hosting_(web_services)>), with a few bells and whistles that allow the apps on a LoRes node to work well together, and in some cases to work with other nodes in the region that make up a **Mesh**.
+We know that the goal of an app is to run open source software on a small server (or group of servers in one place) that we call a **Node**. This is actually very similar to the popular practice of [self-hosting web apps](<https://en.wikipedia.org/wiki/Self-hosting_(web_services)>), with a few bells and whistles that allow the apps on a LoRes node to work well together, and in some cases to work with other nodes in the region that make up a **Mesh**.
 
 ## Application Services as Containers
 
-Given that, we want to stick with common ways of self-hosting that are already well supported and documented. The most common of these is to use **Containers**, which are lightweight, portable packages for an application and all it's dependencies. These were popularised by a product called **Docker**, and so are somtimes called **Docker Containers**, but there's actually an open standard for how they work as part of the **Open Container Initiative (OCI)**. Here's a [great article](https://medium.com/@fred.j/docker-in-depth-first-part-history-499682db0c12) that descibes what containers are in more detail, and how they relate to docker.
+Given that, we want to stick with common ways of self-hosting that are already well supported and documented. The most common of these is to use **Containers**, which are lightweight, portable packages for an application and all it's dependencies. These were popularised by a product called **Docker**, and so are sometimes called **Docker Containers**, but there's actually an open standard for how they work as part of the **Open Container Initiative (OCI)**. Here's a [great article](https://medium.com/@fred.j/docker-in-depth-first-part-history-499682db0c12) that descibes what containers are in more detail, and how they relate to docker.
 
 So, a container can run any software we need on our server, in isolation from other softare, and with all the system dependencies. Is that all we need? Are we done here?
 
-Each container is designed to run one **Service**. That could be the backend for a web app, or maybe a database or email server. If we think of an **App** as being _something that delivers useful functionality to users_, then that might need a few different services. Perhaps a web backend, a database AND an email server.
+Each container is designed to run one **Service**. That could be the backend for a web app, or maybe a database or email server. If we think of an **App** as being _something that delivers useful functionality to users_, then that might need a few different services. Perhaps a web backend, AND a database, AND an email server.
 
-So an app then is a collection of services that work together. We know we can run services as containers using a widely used technology like [docker](https://www.docker.com/), but how to we coordinate and run the collection of services that we need for an app?
+So an app is then a collection of services that work together. We know we can run services as containers using a widely used technology like [Docker](https://www.docker.com/), but how to we coordinate and run the collection of services that we need for an app?
 
 In industry, this problem is called "_Container Orchestration_".
 
 ## Container Orchestration
 
-So obviously we aren't the first people to have this problem. In fact, it isn't just hobbiests self-hosting their favourite open source web apps that use containers, but most big tech products use them too. Those large scale products have some pretty serious needs, they might have multiple containers spread across different data-centers, even different continents, and it all needs to work together in a secure and highly available way.
+So obviously we aren't the first people to have this problem. In fact, it isn't just hobbyists self-hosting their favourite open source web apps using containers, but most big tech products use this approach too. Those large scale products have some pretty serious needs, they might have multiple containers spread across different data-centers, even different continents, and it all needs to work together in a secure and highly available way.
 
 ### Option 1: Kubernetes
 
@@ -48,19 +48,19 @@ Overall, it's much closer to the complexity that we need, with the only real dow
 
 ### Bridging the Gap with Docker Swarm
 
-Since docker compose and it's config files is well understood by lots of people, we really want something close to that, which brings us to [[Docker Swarm]](https://docs.docker.com/engine/swarm/). Docker Swarm is another plugin feature for docker, that introduces the idea of multiple computers joining a swarm of compute that can run services either on specific computers, or with a certain level of redundancy.
+Since docker compose and it's config files is well understood by lots of people, we really want something close to that, which brings us to [Docker Swarm](https://docs.docker.com/engine/swarm/). Docker Swarm is another plugin feature for docker, that introduces the idea of multiple computers joining a 'swarm' which can run services either on specific computers, and (potentially) with a certain level of redundancy.
 
 Docker Swarm also handles the idea of a set of services, which it calls a **Stack**. A stack is defined using a docker compose file, and there are some built in commands for viewing current stacks, seeing what services they contain, and starting or stopping them.
 
-We should acknowledge here that while Docker Compose is well understood by many developers and hobbyests, Docker Swarm is not heavily used. It sits in an unusual space where most hobbiests don't need multiple-server support, and industry needs the more complex features of Kubernetes.
+We should acknowledge here that while Docker Compose is well understood by many developers and hobbyists, Docker Swarm is not wildly popular. It sits in an unusual space of being overpowered for hobbyists (who don't need its multi-server support) while being too simple for industry (who needs the more complex features of something like Kubernetes.)
 
-Having said that, LoRes Mesh if focussed on community/neighbourhood scale web hosting, and this is just perfect for us. So, our our apps are powered by **Stacks** using **Docker Swarm**. That means their main config file is a `compose.yml` file (_that's the format that docker compose uses, more on that later_) that is compatible with docker swarm.
+Having said that, with LoRes Mesh focussing on community/neighbourhood scale web hosting, Docker Swarm is just perfect for us. So our apps are powered by **Stacks** using **Docker Swarm** - that means their main config file is a `compose.yml` file (_that's the format that docker compose uses, more on that later_) that is compatible with docker swarm.
 
 ## Is an App just a compose file?
 
 Well no, not quite. There's a few other key things we need from an app that aren't supported by container orchestration systems.
 
-### App descovery, versioning and upgrades
+### App discovery, versioning and upgrades
 
 For each container there's an **Image** which defines how it's going to run. And, there are **Container Image Repositories** which are libraries of all the available images and all their versions. This means that to install an image, and start a container, you can usually just specify what you want and where to fetch it from. An example of this is [Docker Hub](https://hub.docker.com/).
 
@@ -78,7 +78,7 @@ A LoRes Node needs some bits of the compose file to be setup in specific ways, l
 
 There may be more coming here. We're not quite sure. As we build our first few real-world apps, we're going to hit missing things.
 
-For example, an app may want to allow the node to specify some configuration options. Perhaps we want a config file format for that, or perhaps we want to allow the app to specify it's config needs in a way that lets us generate an admin user interface in the Lores Node web interface.
+For example, an app may want to allow the node to specify some configuration options. Perhaps we want a config file format for that, or perhaps we want to allow the app to specify it's config needs in a way that lets us generate an admin user interface in the LoRes Node web interface.
 
 As you're working through building your first app, have a think about what features you need to make it easy for **Node Stewards** to install, administer, maintain and monitor. We'd love to hear what ideas you come up with.
 
