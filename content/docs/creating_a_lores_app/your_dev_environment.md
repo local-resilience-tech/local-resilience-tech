@@ -75,3 +75,27 @@ sudo docker swarm leave --force
 If you're also already using docker swarm for any other purpose on your computer, that should be find for developing LoRes Apps. We just need a swarm running, we don't really mind why it's running.
 
 If you'd like to test whether your swarm is running, you can run `sudo docker stack ls` to list the current stacks (there might be none), and if there's no current swarm you'll get a helpful error message.
+
+## Step 3. Run the LoRes Node Stack
+
+Now we get to the fun part. To build an app, you're going to want **LoRes Node** running. We aren't writing code on LoRes Node itself, so we don't have to worry about building it ourselves. Instead, we can just install and run it from a docker registry.
+
+If you're interested, LoRes Node is currently hosted in the github container repository, you can see details about it [here](https://github.com/local-resilience-tech/lores-node/pkgs/container/lores-node).
+
+As well as LoRes Node, we also need a tool called [Traefik](https://doc.traefik.io/traefik/), which is an application proxy that does routing of urls to different parts of the stack (including both the LoRes Node software, and the App that you're going to build).
+
+You don't need to install that yourself though, we've put together a docker compose file that will configure a stack that contains LoRes Node, Traefik and a bit of shared config. You need to grab that file and save it locally on your hard disk somewhere.
+
+There are two ways to do that. You can use [this direct link to the file](https://raw.githubusercontent.com/local-resilience-tech/lores-node/refs/heads/main/docker-swarm-app-dev.yml) and use your browser to save it locally. Or, if you're comfortable with git, you can clone [the lores-node git repository](https://github.com/local-resilience-tech/lores-node) and reference the file from there (noting that it doesn't depend on anything else in the repository). The only advantage of the git approach is that you can pull more recent versions if we change the file.
+
+Once you've got that file you can deploy the stack using this command.
+
+```
+sudo docker stack deploy -d -c ./docker-swarm-app-dev.yml lores-node
+```
+
+(Replace `./docker-swarm-app-dev.yml` with the path to the file if that isn't right)
+
+Try it out, you should have the LoRes node software running, and you can access it at:
+
+[http://localhost:8200](http://localhost:8200)
