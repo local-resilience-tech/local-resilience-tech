@@ -34,4 +34,44 @@ Want help getting started with Linux? There's probably a Linux club or user grou
 More advanced users can probabaly translate these instructions for Mac OSX, or for one of the several ways of running linux inside Windows.
 {{< /aside >}}
 
-## Step 1. Docker & Docker Swarm
+## Step 1. Install Docker
+
+First up you'll need to install Docker. Official docker install instructions are found [here](https://docs.docker.com/engine/install/). You can select the linux distribution you have and get a detailed guide.
+
+Note that official docker instructions recommend that you uninstall any docker packages that come with your linux distro, and add an official package repository provided by docker. This method works fine, but also not that the packages provided by linux distros like Ubuntu or Debian actually also work fine. So on Ubuntu, it's actually ok to just run `sudo apt install docker.io`.
+
+## Step 2. Start a Docker Swarm
+
+So we mentioned in ["what makes up a lores app"](../what_makes_up_a_lores_app) that Docker Swarm is how we orchestrate service containers. To get setup for that, you need to initialise a **Swarm**.
+
+A docker swarm collects multiple computers together to run run replicate **Services** and **Stacks** (groups of services) across them. Each computer in a swarm is referred to as "node" by docker swarm, but let's refer to that here as a **Swarm Node** to avoid confusion with a **LoRes Node** which is actually the entire swarm (but is a node, or point of connection, from the point of view of the LoRes Mesh spread out across our neighbourhood).
+
+For developing apps, we don't really need a proper swarm of multiple computers, we just need to start a swarm with our development computer as the one-and-only node in a swarm. To do that, run:
+
+```
+sudo docker swarm init
+```
+
+You should see some output like:
+
+```
+Swarm initialized: current node (XXXXXX) is now a manger.
+
+To add a worker to this swarm, run the following command:
+
+    docker swarm join --token SOMETOKENHERE
+
+To add a manager to this swarm, run 'docker swarm join-token manager' and follow the instructions.
+```
+
+If this was a real swarm, it'd be important to save the token that it provides (where I wrote `SOMETOKENHERE`) somewhere safe, because you'd need that to add more computers to the swarm. We're just using this for development and we can delete the swarm whenever we're done, so you can basically just ignore that.
+
+Note that when you've done that, your computer is now running docker swarm, and will continue to do so even if you reset it. No real harm in that, but you can remove that swarm at any point in the future by running:
+
+```
+sudo docker swarm leave --force
+```
+
+If you're also already using docker swarm for any other purpose on your computer, that should be find for developing LoRes Apps. We just need a swarm running, we don't really mind why it's running.
+
+If you'd like to test whether your swarm is running, you can run `sudo docker stack ls` to list the current stacks (there might be none), and if there's no current swarm you'll get a helpful error message.
