@@ -121,7 +121,7 @@ There are two ways to do that. You can use [this direct link to the file](https:
 Once you've got that file you can deploy the stack using the command (but replace a couple of bits, read on for the explanation).
 
 ```
-sudo LORES_APP_REPO_PATH=~/dev/lores/app_repos docker stack deploy -d -c ~/dev/docker-swarm-app-dev.yml lores-node
+sudo LORES_APP_REPOS_PATH=~/dev/lores/app_repos docker stack deploy -d -c ~/dev/docker-swarm-app-dev.yml lores-node
 ```
 
 - Where it says `~/dev/lores/app_repos`, replace that with whatever path you picked for you app_repos directory in Step 3.
