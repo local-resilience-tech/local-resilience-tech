@@ -2,7 +2,7 @@
 title: Your LoRes App development environment
 date: 2025-09-03T09:00:00+10:00
 draft: false
-weight: 3
+weight: 4
 type: docs
 ---
 
@@ -76,7 +76,37 @@ If you're also already using docker swarm for any other purpose on your computer
 
 If you'd like to test whether your swarm is running, you can run `sudo docker stack ls` to list the current stacks (there might be none), and if there's no current swarm you'll get a helpful error message.
 
-## Step 3. Run the LoRes Node Stack
+## Step 3. Setup your working folders
+
+When LoRes Node runs, it expects to mount a folder to store [App Repos](../what_makes_up_an_app_repo) (or Application Repositories if they're in trouble) and another folder to store installed **LoRes Apps**. For our development setup, we want to let LoRes Node manage installed apps, but we'll do our work directly in the the app repos directory.
+
+So, let's set up a directory structure for that. We basically just need a folder to contain the app repo we are working with, and nothing else except for other app repos (if any).
+
+I do my development in a directory called `~/dev`, so I'll use that in the example below, but you might use a different path. Whereever you like to do your work, create a folder there to contain app repos you're working with.
+
+```
+mkdir ~/dev/app_repos
+```
+
+Let's also add main app repo for the LoRes project, so that you can try out those apps or use it as an example for your own work.
+
+```
+cd ~/dev/app_repos
+git clone https://github.com/local-resilience-tech/lores-apps.git lores-apps
+```
+
+For your own work, go ahead and create an app repo folder of your own inside this `app_repos` folder.
+
+```
+cd ~/dev/app_repos
+mkdir my_app_repo
+cd my_app_rep
+git init
+```
+
+You can call your repo anything you like, it doesn't need to be `my_app_repo`. You also don't have to use git, but you will probably want to.
+
+## Step 4. Run the LoRes Node Stack
 
 Now we get to the fun part. To build an app, you're going to want **LoRes Node** running. We aren't writing code on LoRes Node itself, so we don't have to worry about building it ourselves. Instead, we can just install and run it from a docker registry.
 
@@ -88,14 +118,42 @@ You don't need to install that yourself though, we've put together a docker comp
 
 There are two ways to do that. You can use [this direct link to the file](https://raw.githubusercontent.com/local-resilience-tech/lores-node/refs/heads/main/docker-swarm-app-dev.yml) and use your browser to save it locally. Or, if you're comfortable with git, you can clone [the lores-node git repository](https://github.com/local-resilience-tech/lores-node) and reference the file from there (noting that it doesn't depend on anything else in the repository). The only advantage of the git approach is that you can pull more recent versions if we change the file.
 
-Once you've got that file you can deploy the stack using this command.
+Once you've got that file you can deploy the stack using the command (but replace a couple of bits, read on for the explanation).
 
 ```
-sudo docker stack deploy -d -c ./docker-swarm-app-dev.yml lores-node
+sudo LORES_APP_REPO_PATH=~/dev/lores/app_repos docker stack deploy -d -c ~/dev/docker-swarm-app-dev.yml lores-node
 ```
 
-(Replace `./docker-swarm-app-dev.yml` with the path to the file if that isn't right)
+- Where it says `~/dev/lores/app_repos`, replace that with whatever path you picked for you app_repos directory in Step 3.
+- Where it says `~/dev/docker-swarm-app-dev.yml` replace that with the path to that compose file we just downloaded or cloned above.
 
-Try it out, you should have the LoRes node software running, and you can access it at:
+Once you've done this, in about 20 seconds or so you should have LoRes Node running. You can check if it's started up by looking at whether it's one of the running docker services with:
+
+```
+sudo docker ps
+```
+
+Look for a service running the IMAGE `ghcr.io/local-resilience-tech/lores-node:latest`.
+
+Assuming that worked, you should have the LoRes node software running, and you can give it a try at:
 
 [http://localhost:8200](http://localhost:8200)
+
+## Troubleshooting your Dev Environment
+
+Something not working, let us know [on matrix](https://matrix.to/#/#lores-apps:merri-bek.chat) and we'll add common answers here.
+
+If LoRes Node isn't starting, the first port of call it's to look at it's logs. To do that,
+you can find the container id for it using:
+
+```
+sudo docker ps -a | grep lores-node_lores-node
+```
+
+Then, when you've got an id for it (something like `9056faa6f0c0`), you can follow it's logs using:
+
+```
+sudo docker logs -f -n 50 9056faa6f0c0
+```
+
+(Replace that id with your own container id)

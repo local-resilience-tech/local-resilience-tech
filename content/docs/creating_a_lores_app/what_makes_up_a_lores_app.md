@@ -2,7 +2,7 @@
 title: What makes up a LoRes App?
 date: 2025-09-03T09:00:00+10:00
 draft: false
-next: your_dev_environment
+next: what_makes_up_an_app_rep
 weight: 2
 type: docs
 ---

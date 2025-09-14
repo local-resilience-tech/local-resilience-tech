@@ -31,11 +31,16 @@ menus:
       url: "/docs/creating_a_lores_app/what_makes_up_a_lores_app"
       parent: "Creating a LoRes App"
       weight: 3
+    - name: "What makes up an App Repo?"
+      pageRef: "what_makes_up_an_app_repo"
+      url: "/docs/creating_a_lores_app/what_makes_up_an_app_repo"
+      parent: "Creating a LoRes App"
+      weight: 4
     - name: "Your dev environment"
       pageRef: "your_dev_environment"
       url: "/docs/creating_a_lores_app/your_dev_environment"
       parent: "Creating a LoRes App"
-      weight: 4
+      weight: 5
 
 module:
   hugoVersion:
