@@ -42,6 +42,6 @@ You can certainly join a real region if you need to test your app that way. Perh
 
 Once you've set your region, you'll the be asked for a _Node Name_. I like the use the hostname of my computer for this, since it's your reference to this particular node. If your computer doesn't have a cool name, just pick something that identifies it, like `octavias-laptop`.
 
-## You're ready to go
+## You're ready to go 🚀
 
 With all that, you should be ready. If everything has worked, your LoRes Node installation should show _Local apps_ and _App repositories_ in the navbar on the left. We'll be using those nav items a lot as we develop apps, starting in the next section.
