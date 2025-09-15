@@ -121,11 +121,12 @@ There are two ways to do that. You can use [this direct link to the file](https:
 Once you've got that file you can deploy the stack using the command (but replace a couple of bits, read on for the explanation).
 
 ```
-sudo LORES_APP_REPOS_PATH=~/dev/lores/app_repos docker stack deploy -d -c ~/dev/docker-swarm-app-dev.yml lores-node
+sudo LORES_APP_REPOS_PATH=~/dev/lores/app_repos docker stack deploy --resolve-image always -d -c ~/dev/docker-swarm-app-dev.yml lores-node
 ```
 
 - Where it says `~/dev/lores/app_repos`, replace that with whatever path you picked for you app_repos directory in Step 3.
 - Where it says `~/dev/docker-swarm-app-dev.yml` replace that with the path to that compose file we just downloaded or cloned above.
+- Note that `--resolve-image always` is necessary if you want to keep fetching updated releases of LoRes node each time you deploy. This is a good idea.
 
 Once you've done this, in about 20 seconds or so you should have LoRes Node running. You can check if it's started up by looking at whether it's one of the running docker services with:
 

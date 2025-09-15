@@ -41,6 +41,11 @@ menus:
       url: "/docs/creating_a_lores_app/your_dev_environment"
       parent: "Creating a LoRes App"
       weight: 5
+    - name: "Your dev node"
+      pageRef: "your_dev_node"
+      url: "/docs/creating_a_lores_app/your_dev_node"
+      parent: "Creating a LoRes App"
+      weight: 6
 
 module:
   hugoVersion:
