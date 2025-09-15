@@ -31,3 +31,17 @@ Go back to the [Lores Node home page](http://localhost:8200) and hit the log in 
 On that page, enter the _Node Steward ID_ and _Temporary Access Code_ that you just pasted into a text document. And, pick a new password (maybe generate one using your password manager). At this point you want to save the ID and new password in your password manager (you wont need the temporary access code again).
 
 With that done, you can go ahead and login as that Node Steward user.
+
+## Region Setup
+
+Now that you're logged in, you should see a welcome page that lets you join a region or create a new region. A **Region** is a **LoRes Mesh**, a set of **LoRes Nodes** that are linked together (presumably across a neighbourhood). We're just testing apps here, so you probably don't need a real region. I recommend that you select the _"New Region"_ tab, and enter a region name that's unique to you, like `octavia-test-region` or whatever.
+
+You can certainly join a real region if you need to test your app that way. Perhaps you want to setup a test region across more than one development computer. Or, perhaps your neighbourhood organisation has a testing region for this purpose. If you want to join a region, you'll also need the node id of one other LoRes Node in that region.
+
+## Node Name
+
+Once you've set your region, you'll the be asked for a _Node Name_. I like the use the hostname of my computer for this, since it's your reference to this particular node. If your computer doesn't have a cool name, just pick something that identifies it, like `octavias-laptop`.
+
+## You're ready to go
+
+With all that, you should be ready. If everything has worked, your LoRes Node installation should show _Local apps_ and _App repositories_ in the navbar on the left. We'll be using those nav items a lot as we develop apps, starting in the next section.
