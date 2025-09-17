@@ -2,7 +2,7 @@
 title: Home
 date: 2025-09-01T08:00:00+10:00
 draft: false
-type: docs
+type: home
 ---
 
 # This website is under development.

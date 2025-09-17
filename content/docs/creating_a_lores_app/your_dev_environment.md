@@ -140,6 +140,12 @@ Assuming that worked, you should have the LoRes node software running, and you c
 
 [http://localhost:8200](http://localhost:8200)
 
+Finally, if you're done with having this running, you can stop the stack at any time with:
+
+```
+sudo docker stack rm lores-node
+```
+
 ## Troubleshooting your Dev Environment
 
 Something not working, let us know [on matrix](https://matrix.to/#/#lores-apps:merri-bek.chat) and we'll add common answers here.
