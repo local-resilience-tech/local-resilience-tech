@@ -56,6 +56,12 @@ nav.side-nav a.active {
   background-color: var(--burnt-orange8);
 }
 
+@media screen and (max-width: 480px) {
+  nav.side-nav {
+    display: none;
+  }
+}
+
 /* Header */
 
 header {
