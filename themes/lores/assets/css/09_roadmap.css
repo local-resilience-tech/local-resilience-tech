@@ -37,6 +37,7 @@
   justify-content: space-between;
   gap: 50px;
   width: 100%;
+  position: relative;
 }
 
 .roadmap-items > .roadmap-item-row:nth-child(odd)::after {
@@ -47,6 +48,20 @@
 .roadmap-items > .roadmap-item-row:nth-child(even)::before {
   content: "";
   width: 50%;
+}
+
+.roadmap-items > .roadmap-item-row:nth-child(odd)::before,
+.roadmap-items > .roadmap-item-row:nth-child(even)::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  display: block;
+  height: 12px;
+  width: 12px;
+  margin-left: -5px;
+  background-color: var(--orange3);
+  border-radius: 999px;
 }
 
 .roadmap-items .roadmap-item-container {
