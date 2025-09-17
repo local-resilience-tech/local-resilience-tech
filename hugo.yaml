@@ -10,9 +10,6 @@ docs:
 
 menus:
   main:
-    - name: "Home"
-      pageRef: "/"
-      weight: 10
     - name: "Docs"
       pageRef: "/docs"
       weight: 20

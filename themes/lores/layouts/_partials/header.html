@@ -1,4 +1,11 @@
 <div class="brand">
   <h1><a href="/">{{ site.Title }}</a></h1>
 </div>
+
+<input class="menu-btn" type="checkbox" id="menu-btn" name="menu-btn" />
+<label class="menu-icon" for="menu-btn">
+  <!-- don't worry about this right now -->
+  <span class="navicon" aria-label="Hamburger menu 'icon'" />
+</label>
+
 {{ partial "menu.html" (dict "menuID" "main" "page" .) }}

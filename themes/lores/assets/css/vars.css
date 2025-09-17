@@ -1,4 +1,9 @@
 :root {
+  /* RESPONSIVE */
+
+  --breakpoint-sm: 480px;
+
+  /* COLOURS */
   --blue: #193549;
   --light: #d4dbdf;
 
@@ -49,4 +54,10 @@
   --main-content-width: 800px;
 
   --page-gutter: 1.5em;
+}
+
+@media screen and (max-width: 480px) {
+  :root {
+    --page-gutter: 1em;
+  }
 }
