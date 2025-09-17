@@ -1,0 +1,23 @@
+{{ define "main" }}
+  <div class="on-light-blue">
+    <div class="roadmap-page grid-paper">
+      <div class="section-header">
+        <h1>{{ .Title }}</h1>
+        <div class="content">{{ .Content }}</div>
+      </div>
+
+      <div class="roadmap-items">
+        {{ range .Pages }}
+          <div class="roadmap-item-row">
+            <div class="roadmap-item-container">
+              <div class="roadmap-item">
+                <h2>{{ .Title }}</h2>
+                {{ .Content }}
+              </div>
+            </div>
+          </div>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+{{ end }}

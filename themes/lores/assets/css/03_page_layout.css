@@ -1,0 +1,22 @@
+/* LAYOUT */
+
+body {
+  color: #222;
+  font-family: sans-serif;
+  line-height: 1.5;
+  padding: 0;
+  margin: 0;
+  background-color: var(--blue9);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+main .with-side-nav {
+  display: flex;
+  flex-direction: row;
+  color: var(--grey1);
+}

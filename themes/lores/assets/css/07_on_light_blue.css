@@ -1,0 +1,59 @@
+.on-light-blue {
+  color: #eee;
+  background: linear-gradient(to bottom, var(--blue6) 0%, var(--blue5) 100px, var(--blue5) 100%);
+}
+
+.on-light-blue > .grid-paper {
+  background-size: 40px 40px;
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.1) 1px, transparent 1px), linear-gradient(to bottom, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+}
+
+.on-light-blue h1 {
+  color: var(--orange2);
+}
+
+.on-light-blue h2 {
+  color: var(--orange3);
+}
+
+.on-light-blue h3 {
+  color: var(--orange4);
+}
+
+.on-light-blue h4 {
+  color: var(--orange5);
+}
+
+.on-light-blue strong {
+  color: var(--orange6);
+}
+
+.on-light-blue em {
+  color: var(--grey2);
+}
+
+.on-light-blue a {
+  color: var(--orange4);
+}
+
+.on-light-blue a:hover {
+  color: var(--orange3);
+}
+
+.on-light-blue code {
+  background-color: var(--blue9);
+}
+
+.on-light-blue ul {
+  color: var(--grey2);
+}
+
+.on-light-blue aside {
+  background-color: var(--blue7);
+  border-color: var(--blue9);
+  color: var(--grey2);
+}
+
+.on-light-blue nav.between-pages {
+  border-color: var(--burnt-orange4);
+}

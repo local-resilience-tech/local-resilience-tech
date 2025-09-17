@@ -1,10 +1,12 @@
 {{ define "main" }}
-  {{ partial "side_nav.html" (dict "menuID" "docs" "page" .) }}
-  <article class="docs-page blue1">
-    <h1>{{ .Title }}</h1>
+  <div class="with-side-nav">
+    {{ partial "side_nav.html" (dict "menuID" "docs" "page" .) }}
+    <article class="docs-page on-light-blue">
+      <h1>{{ .Title }}</h1>
 
-    {{ .Content }} {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
+      {{ .Content }} {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
 
-    {{ partial "pager.html" . }}
-  </article>
+      {{ partial "pager.html" . }}
+    </article>
+  </div>
 {{ end }}
