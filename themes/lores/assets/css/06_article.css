@@ -1,0 +1,141 @@
+/* Article */
+
+article.home {
+  padding: var(--page-gutter);
+}
+
+article.docs-page {
+  width: 100%;
+  padding: var(--page-gutter);
+  min-height: 80vh;
+}
+
+article nav.between-pages {
+  margin-top: 2em;
+  border-top: 3px dashed black;
+  padding-top: 1em;
+  max-width: var(--main-content-width);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+article nav.between-pages a {
+  font-size: 120%;
+  text-decoration: none;
+}
+
+article nav.between-pages a:hover {
+  text-decoration: underline;
+}
+
+/* ARTICLE TYPOGRAPHY */
+
+article > *:first-child {
+  margin-top: 0;
+}
+
+article > *:last-child {
+  margin-bottom: 0;
+}
+
+article h1 {
+  margin-bottom: 1.5rem;
+}
+
+article p {
+  max-width: var(--main-content-width);
+}
+
+article ul,
+article ol {
+  max-width: calc(var(--main-content-width) * 0.8);
+}
+
+article a {
+  text-decoration: underline;
+}
+
+article code {
+  font-size: 1rem;
+  display: inline-block;
+  padding: 0 0.3rem;
+  border-radius: 3px;
+}
+
+article aside {
+  border: 2px solid black;
+  padding: 1rem;
+  border-radius: 3px;
+  max-width: calc(var(--main-content-width) * 0.9);
+}
+
+article aside > *:first-child {
+  margin-top: 0;
+}
+
+article aside > *:last-child {
+  margin-bottom: 0;
+}
+
+article section.hero {
+  font-size: 150%;
+  max-width: var(--main-content-width);
+  font-style: italic;
+}
+
+/* COLOUR SECTION SPECIFIC */
+
+article.blue1 {
+  color: #eee;
+}
+
+article.blue1 h1 {
+  color: var(--orange2);
+}
+
+article.blue1 h2 {
+  color: var(--orange3);
+}
+
+article.blue1 h3 {
+  color: var(--orange4);
+}
+
+article.blue1 h4 {
+  color: var(--orange5);
+}
+
+article.blue1 strong {
+  color: var(--orange6);
+}
+
+article.blue1 em {
+  color: var(--grey2);
+}
+
+article.blue1 a {
+  color: var(--orange4);
+}
+
+article.blue1 a:hover {
+  color: var(--orange3);
+}
+
+article.blue1 code {
+  background-color: var(--blue9);
+}
+
+article.blue1 ul {
+  color: var(--grey2);
+}
+
+article.blue1 aside {
+  background-color: var(--blue7);
+  border-color: var(--blue9);
+  color: var(--grey2);
+}
+
+article nav.between-pages {
+  border-color: var(--burnt-orange4);
+}

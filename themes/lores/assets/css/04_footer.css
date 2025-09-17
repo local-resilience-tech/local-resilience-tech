@@ -1,0 +1,7 @@
+/* Footer */
+
+footer {
+  display: flex;
+  padding: 1rem;
+  color: var(--grey3);
+}

@@ -10,9 +10,12 @@ docs:
 
 menus:
   main:
+    - name: "Roadmap"
+      pageRef: "/roadmap"
+      weight: 1
     - name: "Docs"
       pageRef: "/docs"
-      weight: 20
+      weight: 2
 
   docs:
     - name: "Documents"
