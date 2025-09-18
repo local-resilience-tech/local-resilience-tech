@@ -27,7 +27,7 @@ Other things that you'll need we'll cover how to install.
 
 So you probably already know that Linux is an open source operating system, an alternative to Windows or Mac OSX. Running it on your computer, either as your only OS, or by dual-booting so you can use it occasionally, is a great idea because it's free, open, and really nice to use.
 
-The reason for mentioning it here though isn't to get your to change your computing life, but because Linux is the most common choice for web servers, and it's what we need to run on our LoRes Nodes. If you run it on your own machine, it just it easier to follow these instructions.
+The reason for mentioning it here though isn't to get your to change your computing life, but because Linux is the most common choice for web servers, and it's what we need to run on our LoRes Nodes. If you run it on your own machine, it's just easier to follow these instructions.
 
 Want help getting started with Linux? There's probably a Linux club or user group where you live that would live to help you out. For example, [here's a list](https://linux.org.au/lugs/) for Australia.
 
