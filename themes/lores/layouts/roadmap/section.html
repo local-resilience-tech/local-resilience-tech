@@ -8,12 +8,12 @@
 
       <div class="roadmap-items">
         {{ range .Pages }}
-          <div class="roadmap-item-row">
+          <div class="roadmap-item-row {{ if .IsSection }}is-section{{ else }}not-section{{ end }}">
             <div class="roadmap-item-container">
-              <div class="roadmap-item">
+              <a class="roadmap-item" href="{{ .RelPermalink }}">
                 <h2>{{ .Title }}</h2>
-                {{ .Content }}
-              </div>
+                <p>{{ .Summary }}</p>
+              </a>
             </div>
           </div>
         {{ end }}

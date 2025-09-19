@@ -1,3 +1,9 @@
 {{ define "main" }}
-  roadmap page template main
+  <div class="with-side-nav">
+    <article class="roadmap-item-page on-light-blue">
+      <h1>{{ .Title }}</h1>
+
+      {{ .Content }} {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
+    </article>
+  </div>
 {{ end }}
