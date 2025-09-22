@@ -98,13 +98,13 @@ a.roadmap-item:hover {
   letter-spacing: 2px;
 }
 
-.roadmap-item-row.status-in-progress {
+.has-status.status-in-progress {
   --status-color: var(--orange4);
   --status-color-highlight: var(--orange3);
   --status-color-text: black;
 }
 
-.roadmap-item-row.status-testing {
+.has-status.status-testing {
   --status-color: var(--green8);
   --status-color-highlight: var(--green7);
   --status-color-text: var(--grey0);
@@ -220,6 +220,28 @@ a.roadmap-item:hover {
     left: -6px;
     top: 50%;
   }
+}
+
+.roadmap-rows > .roadmap-item-row.is-section .sub-pages {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 10px;
+  padding-right: 12px;
+  margin-bottom: 10px;
+}
+
+/* Sub Pages */
+
+.roadmap-item-row .sub-pages .sub-page {
+  width: 12px;
+  height: 12px;
+  background-color: var(--grey5);
+  border-radius: 9999px;
+}
+
+.roadmap-item-row .sub-pages .sub-page.has-status {
+  background-color: var(--status-color, var(--grey5));
 }
 
 /* Roadmap item detail page */

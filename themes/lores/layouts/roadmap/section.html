@@ -9,7 +9,7 @@
       <div class="roadmap-items">
         <div class="roadmap-rows">
           {{ range .Pages }}
-            <div class="roadmap-item-row {{ if .IsSection }}is-section{{ else }}not-section{{ end }} status-{{ .Params.status }} {{ if .Params.status }}has-status{{ end }}">
+            <div class="roadmap-item-row {{ if .IsSection }}is-section{{ else }}not-section{{ end }} {{ if .Params.status }}has-status status-{{ .Params.status }}{{ end }}">
               <div class="roadmap-item-container">
                 <a class="roadmap-item" href="{{ .RelPermalink }}">
                   {{ with .Params.status }}
@@ -18,6 +18,13 @@
                   <div class="details">
                     <h2>{{ .Title }}</h2>
                     <p>{{ .Summary }}</p>
+                  </div>
+                  <div class="sub-pages">
+                    {{ with .Pages }}
+                      {{ range . }}
+                        <span class="sub-page status-{{ .Params.status }} {{ if .Params.status }}has-status{{ end }}" aria-hidden="true"></span>
+                      {{ end }}
+                    {{ end }}
                   </div>
                 </a>
               </div>
