@@ -30,7 +30,7 @@
 .roadmap-items:before {
   content: "";
   position: absolute;
-  left: calc(50% + 1px);
+  left: calc(50% - 1px);
   border-right: 2px dashed var(--orange3);
   height: 100%;
   z-index: 1;
@@ -142,7 +142,7 @@ a.roadmap-item:hover {
 
 @media screen and (min-width: 481px) {
   .roadmap-items > .roadmap-item-row.not-section::before {
-    left: calc(50% - 5px);
+    left: calc(50% - 7px);
     top: 50%;
     position: absolute;
   }

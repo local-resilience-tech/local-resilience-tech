@@ -1,5 +1,5 @@
 ---
-title: Static websites for users
+title: Static websites for individuals
 date: 2025-09-17T09:00:00+10:00
 draft: false
 weight: 3
