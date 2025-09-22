@@ -15,16 +15,11 @@
 /* Items List Layout */
 
 .roadmap-items {
-  display: flex;
-  align-items: stretch;
-  flex-direction: column;
-  gap: 2em;
   max-width: var(--main-content-width);
   position: relative;
   margin-left: auto;
   margin-right: auto;
   width: 100%;
-  padding: 0;
 }
 
 .roadmap-items:before {
@@ -34,6 +29,19 @@
   border-right: 2px dashed var(--orange3);
   height: 100%;
   z-index: 1;
+}
+
+.roadmap-rows {
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
+  gap: 2em;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  margin-top: 1em;
+  margin-bottom: 2em;
 }
 
 @media screen and (max-width: 480px) {
@@ -114,7 +122,7 @@ a.roadmap-item:hover {
 
 /* Timeline dot */
 
-.roadmap-items > .roadmap-item-row::before {
+.roadmap-rows > .roadmap-item-row::before {
   content: "";
   height: 12px;
   width: 12px;
@@ -127,7 +135,7 @@ a.roadmap-item:hover {
 
 /* Item Row Leaf Node */
 
-.roadmap-items > .roadmap-item-row {
+.roadmap-rows > .roadmap-item-row {
   display: flex;
   flex-direction: row;
   width: 100%;
@@ -135,39 +143,39 @@ a.roadmap-item:hover {
   z-index: 2;
 }
 
-.roadmap-items .roadmap-item-row.not-section .roadmap-item-container {
+.roadmap-rows .roadmap-item-row.not-section .roadmap-item-container {
   display: flex;
   flex-direction: row;
 }
 
 @media screen and (min-width: 481px) {
-  .roadmap-items > .roadmap-item-row.not-section::before {
+  .roadmap-rows > .roadmap-item-row.not-section::before {
     left: calc(50% - 7px);
     top: 50%;
     position: absolute;
   }
 
-  .roadmap-items > .roadmap-item-row.not-section {
+  .roadmap-rows > .roadmap-item-row.not-section {
     width: calc(50% - var(--page-gutter));
     justify-content: flex-start;
   }
 
-  .roadmap-items > .roadmap-item-row.not-section:nth-child(odd) {
+  .roadmap-rows > .roadmap-item-row.not-section:nth-child(odd) {
     padding-right: calc(50% + var(--page-gutter));
   }
 
-  .roadmap-items > .roadmap-item-row.not-section:nth-child(even) {
+  .roadmap-rows > .roadmap-item-row.not-section:nth-child(even) {
     padding-left: calc(50% + var(--page-gutter));
   }
 }
 
 @media screen and (max-width: 480px) {
-  .roadmap-items > .roadmap-item-row.not-section {
+  .roadmap-rows > .roadmap-item-row.not-section {
     padding-left: var(--page-gutter);
     width: calc(100% - var(--page-gutter));
   }
 
-  .roadmap-items > .roadmap-item-row.not-section::before {
+  .roadmap-rows > .roadmap-item-row.not-section::before {
     position: absolute;
     left: -6px;
     top: 50%;
@@ -176,12 +184,12 @@ a.roadmap-item:hover {
 
 /* Section Item Row */
 
-.roadmap-items > .roadmap-item-row.is-section {
+.roadmap-rows > .roadmap-item-row.is-section {
   flex-direction: column;
   align-items: center;
 }
 
-.roadmap-items > .roadmap-item-row.is-section .roadmap-item-container {
+.roadmap-rows > .roadmap-item-row.is-section .roadmap-item-container {
   min-width: 50%;
   display: flex;
   flex-direction: row;
@@ -189,18 +197,18 @@ a.roadmap-item:hover {
 }
 
 @media screen and (min-width: 481px) {
-  .roadmap-items > .roadmap-item-row.is-section::before {
+  .roadmap-rows > .roadmap-item-row.is-section::before {
     margin-bottom: -6px;
   }
 }
 
 @media screen and (max-width: 480px) {
-  .roadmap-items > .roadmap-item-row.is-section {
+  .roadmap-rows > .roadmap-item-row.is-section {
     padding-left: var(--page-gutter);
     width: calc(100% - var(--page-gutter));
   }
 
-  .roadmap-items > .roadmap-item-row.is-section::before {
+  .roadmap-rows > .roadmap-item-row.is-section::before {
     position: absolute;
     left: -6px;
     top: 50%;

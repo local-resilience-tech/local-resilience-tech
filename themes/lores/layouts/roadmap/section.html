@@ -7,21 +7,23 @@
       </div>
 
       <div class="roadmap-items">
-        {{ range .Pages }}
-          <div class="roadmap-item-row {{ if .IsSection }}is-section{{ else }}not-section{{ end }} status-{{ .Params.status }} {{ if .Params.status }}has-status{{ end }}">
-            <div class="roadmap-item-container">
-              <a class="roadmap-item" href="{{ .RelPermalink }}">
-                {{ with .Params.status }}
-                  <div class="status-indicator status-{{ . | lower }}">{{ . }}</div>
-                {{ end }}
-                <div class="details">
-                  <h2>{{ .Title }}</h2>
-                  <p>{{ .Summary }}</p>
-                </div>
-              </a>
+        <div class="roadmap-rows">
+          {{ range .Pages }}
+            <div class="roadmap-item-row {{ if .IsSection }}is-section{{ else }}not-section{{ end }} status-{{ .Params.status }} {{ if .Params.status }}has-status{{ end }}">
+              <div class="roadmap-item-container">
+                <a class="roadmap-item" href="{{ .RelPermalink }}">
+                  {{ with .Params.status }}
+                    <div class="status-indicator status-{{ . | lower }}">{{ . }}</div>
+                  {{ end }}
+                  <div class="details">
+                    <h2>{{ .Title }}</h2>
+                    <p>{{ .Summary }}</p>
+                  </div>
+                </a>
+              </div>
             </div>
-          </div>
-        {{ end }}
+          {{ end }}
+        </div>
       </div>
     </div>
   </div>
