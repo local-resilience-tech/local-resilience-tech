@@ -118,6 +118,7 @@ a.roadmap-item:hover {
   content: "";
   height: 12px;
   width: 12px;
+  border: 1px solid black;
 
   background-color: var(--status-color, var(--orange3));
   border-radius: 999px;
@@ -168,7 +169,7 @@ a.roadmap-item:hover {
 
   .roadmap-items > .roadmap-item-row.not-section::before {
     position: absolute;
-    left: -5px;
+    left: -6px;
     top: 50%;
   }
 }
@@ -189,7 +190,7 @@ a.roadmap-item:hover {
 
 @media screen and (min-width: 481px) {
   .roadmap-items > .roadmap-item-row.is-section::before {
-    margin-bottom: -5px;
+    margin-bottom: -6px;
   }
 }
 
@@ -201,7 +202,7 @@ a.roadmap-item:hover {
 
   .roadmap-items > .roadmap-item-row.is-section::before {
     position: absolute;
-    left: -5px;
+    left: -6px;
     top: 50%;
   }
 }
