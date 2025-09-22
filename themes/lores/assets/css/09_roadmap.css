@@ -12,6 +12,13 @@
   flex-direction: column;
 }
 
+.roadmap-page .content {
+  max-width: var(--main-content-width);
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
 /* Items List Layout */
 
 .roadmap-items {

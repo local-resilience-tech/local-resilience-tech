@@ -16,7 +16,9 @@ menus:
     - name: "Docs"
       pageRef: "/docs"
       weight: 2
-
+    - name: "Contact us"
+      pageRef: "/contact"
+      weight: 3
   docs:
     - name: "Documents"
       pageRef: "docs"

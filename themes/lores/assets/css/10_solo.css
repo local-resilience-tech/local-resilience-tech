@@ -1,0 +1,12 @@
+.solo {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+article.solo-page {
+  max-width: var(--main-content-width);
+  margin-left: auto;
+  margin-right: auto;
+  min-height: 50vh;
+  width: 100%;
+}

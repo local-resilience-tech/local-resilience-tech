@@ -5,3 +5,37 @@ footer {
   padding: 1rem;
   color: var(--grey3);
 }
+
+.footer-sections {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  max-width: var(--main-content-width);
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.footer-section {
+  font-size: 0.9rem;
+}
+
+footer a {
+  color: var(--grey1);
+  text-decoration: underline;
+}
+
+footer ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.footer-section > *:first-child,
+.footer-section > *:first-child > ul {
+  margin-top: 0;
+}
+
+.footer-section > *:last-child,
+.footer-section > *:last-child > ul {
+  margin-bottom: 0;
+}
