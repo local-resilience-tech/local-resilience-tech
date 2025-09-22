@@ -8,7 +8,7 @@
 
       <div class="roadmap-items">
         {{ range .Pages }}
-          <div class="roadmap-item-row {{ if .IsSection }}is-section{{ else }}not-section{{ end }} status-{{ .Params.status }}">
+          <div class="roadmap-item-row {{ if .IsSection }}is-section{{ else }}not-section{{ end }} status-{{ .Params.status }} {{ if .Params.status }}has-status{{ end }}">
             <div class="roadmap-item-container">
               <a class="roadmap-item" href="{{ .RelPermalink }}">
                 {{ with .Params.status }}

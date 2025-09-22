@@ -5,4 +5,6 @@ draft: false
 weight: 2
 type: roadmap
 summary: Nodes can join a region without relying on their being a centralised master node
+params:
+  status: testing
 ---

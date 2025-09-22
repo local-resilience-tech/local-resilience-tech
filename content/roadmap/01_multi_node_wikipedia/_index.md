@@ -6,5 +6,5 @@ weight: 1
 type: roadmap
 summary: A region can serve an offline mirror of wikipedia, provided with redundancy by multiple nodes
 params:
-  status: current
+  status: in-progress
 ---

@@ -5,4 +5,6 @@ draft: false
 weight: 3
 type: roadmap
 summary: Node stewards can install a wikipedia app that uses Kiwix to serve offline wikipedia.
+params:
+  status: in-progress
 ---

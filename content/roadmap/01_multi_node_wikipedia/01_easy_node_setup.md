@@ -5,4 +5,6 @@ draft: false
 weight: 1
 type: roadmap
 summary: Node stewards can setup a new node on a Raspberry Pi or similar
+params:
+  status: testing
 ---
