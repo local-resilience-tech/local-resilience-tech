@@ -168,6 +168,7 @@ header nav a:hover {
 
   header > nav.menu > ul > li > a {
     line-height: 100%;
+    min-height: 2em;
   }
 
   header > nav.menu > ul > li > a > span {
