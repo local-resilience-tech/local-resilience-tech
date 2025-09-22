@@ -30,7 +30,7 @@
 .roadmap-items:before {
   content: "";
   position: absolute;
-  left: 50%;
+  left: calc(50% + 1px);
   border-right: 2px dashed var(--orange3);
   height: 100%;
   z-index: 1;
@@ -38,7 +38,7 @@
 
 @media screen and (max-width: 480px) {
   .roadmap-items:before {
-    left: -1px;
+    left: 0;
   }
 }
 
