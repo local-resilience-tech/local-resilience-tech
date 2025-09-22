@@ -1,0 +1,12 @@
+.home {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+article.home-page {
+  max-width: var(--main-content-width);
+  margin-left: auto;
+  margin-right: auto;
+
+  width: 100%;
+}
