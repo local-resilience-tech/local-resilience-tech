@@ -1,0 +1,24 @@
+{{ $currentPage := . }}
+{{ with .Parent }}
+  {{ $parentPage := . }}
+
+  <nav class="roadmap-side-nav">
+    <!-- Link to parent page -->
+    <a href="{{ $parentPage.RelPermalink }}" class="parent-page section-step {{ if .Params.status }}has-status status-{{ .Params.status }}{{ end }}">
+      {{ $parentPage.Title }}
+    </a>
+
+    <!-- Links to child pages -->
+    {{ if $parentPage.Pages }}
+      <ul class="child-pages">
+        {{ range $parentPage.Pages }}
+        <li>
+          <a href="{{ .RelPermalink }}" class="{{ if eq . $currentPage }}active{{ end }} {{ if .Params.status }}has-status status-{{ .Params.status }}{{ end }}">
+            {{ .Title }}
+          </a>
+        </li>
+        {{ end }}
+      </ul>
+    {{ end }}
+  </nav>
+{{ end }}

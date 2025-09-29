@@ -1,9 +1,19 @@
 {{ define "main" }}
-  <div class="with-side-nav">
-    <article class="roadmap-item-page on-light-blue">
+<div class="with-side-nav">
+  {{ partial "roadmap_side_nav.html" . }}
+
+  <article class="roadmap-item-page on-light-blue">
+    <div class="article-header">
       <h1>{{ .Title }}</h1>
 
-      {{ .Content }} {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
-    </article>
-  </div>
+      <div class="parent-page-link">
+        {{ with .Parent }}
+          <a href="{{ .RelPermalink }}"><span class="back-arrow">←</span> back to {{ .Title }}</a>
+        {{ end }}
+      </div>
+    </div>
+
+    {{ .Content }} {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
+  </article>
+</div>
 {{ end }}
