@@ -83,3 +83,48 @@ article section.hero {
   max-width: var(--main-content-width);
   font-style: italic;
 }
+
+article aside.user-story {
+  border: 2px solid var(--orange3);
+  padding: 1rem;
+  border-radius: 8px;
+  max-width: calc(var(--main-content-width) * 0.9);
+  color: var(--grey4);
+  display: grid;
+  grid-template-columns: 10rem 2fr;
+  gap: 0.4em;
+}
+
+article aside.user-story > p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+article aside.user-story em {
+  color: var(--grey3);
+  text-align: right;
+  padding-right: 0.5rem;
+}
+
+article aside.user-story strong {
+  color: var(--grey1);
+  font-size: 120%;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 480px) {
+  article aside.user-story {
+    grid-template-columns: 1fr;
+    gap: 0.2em;
+  }
+
+  article aside.user-story em {
+    text-align: left;
+    padding-right: 0;
+    padding-top: 0.5rem;
+  }
+
+  article aside.user-story em:first-child {
+    padding-top: 0;
+  }
+}
