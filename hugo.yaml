@@ -14,16 +14,12 @@ menus:
       pageRef: "/roadmap"
       weight: 1
     - name: "Docs"
-      pageRef: "/docs"
+      pageRef: "/docs/creating_a_lores_app"
       weight: 2
     - name: "Contact us"
       pageRef: "/contact"
       weight: 3
   docs:
-    - name: "Documents"
-      pageRef: "docs"
-      url: "/docs"
-      weight: 1
     - name: "Creating a LoRes App"
       pageRef: "creating_a_lores_app"
       url: "/docs/creating_a_lores_app"
