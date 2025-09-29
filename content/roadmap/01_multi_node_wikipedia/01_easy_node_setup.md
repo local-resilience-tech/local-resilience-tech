@@ -7,7 +7,7 @@ slug: easy_node_setup
 type: roadmap
 summary: Node stewards can setup a new node on a Raspberry Pi or similar
 params:
-  status: testing
+  status: in-progress
 ---
 
 {{< user_story >}}
@@ -25,3 +25,7 @@ To achieve this, our documentation should be friendly, beginner focussed, and av
 - _LoRes Node_ is built and ready to install on new nodes
 - There is a section in the [docs](/docs) part of this website with clear install instructions
 - This has been used to setup 3 nodes by people who aren't active developers on LoRes Node.
+
+## Current status
+
+The setup pathway has been tested a fair bit in **Lores Node**, and it's working quite well. However, the documentation isn't done yet.
