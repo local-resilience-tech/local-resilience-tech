@@ -2,18 +2,22 @@
 <div class="with-side-nav">
   {{ partial "roadmap_side_nav.html" . }}
 
-  <article class="roadmap-item-page on-light-blue">
+  <article class="roadmap-item-page on-light-blue {{ if .Params.status }}has-status status-{{ .Params.status }}{{ end }}">
     <div class="article-header">
       <h1>{{ .Title }}</h1>
 
-      <div class="parent-page-link">
+      {{ with .Params.status }}
+        <div class="status-indicator status-{{ . | lower }}"><span>{{ . }}</span></div>
+      {{ end }}
+    </div>
+
+    {{ .Content }} {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
+
+    <div class="parent-page-link">
         {{ with .Parent }}
           <a href="{{ .RelPermalink }}"><span class="back-arrow">←</span> back to {{ .Title }}</a>
         {{ end }}
       </div>
-    </div>
-
-    {{ .Content }} {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
   </article>
 </div>
 {{ end }}

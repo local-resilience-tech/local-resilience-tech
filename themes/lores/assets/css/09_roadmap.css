@@ -92,10 +92,11 @@ a.roadmap-item:hover {
   padding-left: 1em;
   padding-right: 1em;
   padding-top: 3px;
-  padding-bottom: 5px;
+  padding-bottom: 4px;
   color: black;
   font-weight: bold;
   letter-spacing: 2px;
+  text-transform: uppercase;
 }
 
 .has-status.status-in-progress {
@@ -254,10 +255,59 @@ article.roadmap-item-page {
 
 article.roadmap-item-page .article-header {
   margin-bottom: 1.5em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
 }
 
 article.roadmap-item-page .article-header h1 {
   margin: 0;
+}
+
+article.roadmap-item-page .article-header .status-indicator {
+  --height: 32px;
+
+  background-color: var(--status-color, var(--grey3));
+  color: var(--status-color-text, black);
+  padding: 0 1em;
+  font-weight: bold;
+  letter-spacing: 2px;
+  position: relative;
+  border: 1px solid;
+  height: var(--height);
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2px;
+}
+
+article.roadmap-item-page .article-header .status-indicator > span {
+  line-height: 100%;
+  padding-bottom: 0.1em;
+  text-transform: uppercase;
+}
+
+article.roadmap-item-page .article-header .status-indicator:after {
+  content: "";
+  position: absolute;
+  left: calc(-1 * var(--height));
+  top: 0;
+  bottom: 0;
+  border: calc(var(--height) / 2) solid transparent;
+  border-right: calc(var(--height) / 2) solid var(--status-color, var(--grey3));
+}
+
+@media screen and (max-width: 480px) {
+  article.roadmap-item-page .article-header {
+    flex-direction: column;
+    gap: 0.5em;
+  }
+
+  article.roadmap-item-page .article-header .status-indicator:after {
+    display: none;
+  }
 }
 
 /* Roadmap Side Nav */
@@ -278,6 +328,7 @@ article.roadmap-item-page .article-header h1 {
   margin-left: 0;
   display: flex;
   flex-direction: column;
+  margin: 0;
 }
 
 .roadmap-side-nav a {
@@ -294,7 +345,7 @@ article.roadmap-item-page .article-header h1 {
   position: absolute;
   content: "";
   display: block;
-  background-color: var(--status-color, var(--grey4));
+  background-color: var(--status-color, var(--grey5));
   width: var(--size);
   height: var(--size);
   border-radius: 9999px;
@@ -313,6 +364,8 @@ article.roadmap-item-page .article-header h1 {
 
 .roadmap-side-nav a.section-step {
   font-weight: bold;
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
 
 .roadmap-side-nav ul li {
@@ -321,4 +374,10 @@ article.roadmap-item-page .article-header h1 {
 
 .roadmap-side-nav ul li:last-child {
   border-bottom: none;
+}
+
+@media screen and (max-width: 480px) {
+  .roadmap-side-nav {
+    display: none;
+  }
 }
