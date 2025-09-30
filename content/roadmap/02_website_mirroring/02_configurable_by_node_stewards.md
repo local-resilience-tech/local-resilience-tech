@@ -31,3 +31,10 @@ Since we need a way to validate the configuration values against the schema, a w
 ## Non-goals
 
 - Upgrading configuration. At this stage lets just assume that configuration is forward compatible.
+
+## Tasks Status
+
+- [ ] If an app has a configuration schema file, display configuration option
+- [ ] For configuration schema, display form
+- [ ] Save form values to a config file for the app
+- [ ] App can access the config file on a shared mount
