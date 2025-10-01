@@ -35,7 +35,7 @@ steps:
       event: [pull_request, push]
 
   publish:
-    image: bitnami/git
+    image: bitnamilegacy/git
     environment:
       HUGO_OUTPUT: public
       # secrets must be set in Woodpecker configuration
