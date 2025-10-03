@@ -24,6 +24,6 @@ An app repo is just a git repository, containing a folder for each app, and no o
 ## The LoRes Apps Repo
 
 Here's the "official" LoRes Apps Repo:
-https://github.com/local-resilience-tech/lores-apps
+https://codeberg.org/lores/lores-apps
 
 As you can see, it has an `example` folder that is the example app. You might want to use that as a reference.

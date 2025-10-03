@@ -92,7 +92,7 @@ Let's also add main app repo for the LoRes project, so that you can try out thos
 
 ```
 cd ~/dev/app_repos
-git clone https://github.com/local-resilience-tech/lores-apps.git lores-apps
+git clone https://codeberg.org/lores/lores-apps.git lores-apps
 ```
 
 For your own work, go ahead and create an app repo folder of your own inside this `app_repos` folder.
