@@ -23,26 +23,32 @@ menus:
     - name: "Creating a LoRes App"
       pageRef: "creating_a_lores_app"
       url: "/docs/creating_a_lores_app"
-      weight: 2
+      weight: 1
+    - name: "Getting Ready to Build Our App"
+      pageRef: "getting_ready"
+      url: "/docs/creating_a_lores_app/getting_ready"
+      weight: 1
+      parent: "Creating a LoRes App"
+
     - name: "What makes up a LoRes App?"
       pageRef: "what_makes_up_a_lores_app"
       url: "/docs/creating_a_lores_app/what_makes_up_a_lores_app"
-      parent: "Creating a LoRes App"
+      parent: "Getting Ready to Build Our App"
       weight: 3
     - name: "What makes up an App Repo?"
       pageRef: "what_makes_up_an_app_repo"
       url: "/docs/creating_a_lores_app/what_makes_up_an_app_repo"
-      parent: "Creating a LoRes App"
+      parent: "Getting Ready to Build Our App"
       weight: 4
     - name: "Your dev environment"
       pageRef: "your_dev_environment"
       url: "/docs/creating_a_lores_app/your_dev_environment"
-      parent: "Creating a LoRes App"
+      parent: "Getting Ready to Build Our App"
       weight: 5
     - name: "Your dev node"
       pageRef: "your_dev_node"
       url: "/docs/creating_a_lores_app/your_dev_node"
-      parent: "Creating a LoRes App"
+      parent: "Getting Ready to Build Our App"
       weight: 6
 
 module:
