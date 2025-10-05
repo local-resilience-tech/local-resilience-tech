@@ -48,3 +48,47 @@ It really is as simple as that. If you need help writing your schema there are l
 Once you've got that file, if you put the config_schema.json in app and install it in your local version of LoRes Node, then login as a Node Steward and go to the page for that app, you should see a **Configure** button. Hit that, and you should be on the page to edit your schema for the installed app.
 
 ## Mounting Config Volume
+
+So when a Node Steward changes the config for an installation of your app, we need a way for that configuration JSON to be available to the app. To do that, we need to mount a volume in docker that is used for configuration. It's pretty simple and we'll walk through what to do together, but the more detailed documentation is [this page on volumes in docker compose](https://docs.docker.com/reference/compose-file/volumes/).
+
+### Specify the volume mount on each service
+
+Your docker compose file includes a list of services (perhaps only one). Do the following for each of your services that need access to the config file (it might not be all of them).
+
+Inside the named service in the compose file, add a `volumes:` section (if it isn't already there), and add a volume mount that puts the volume named `lores_config` somewhere in the local filesystem. We recommend `/lores/config` but it can be anywhere you like. That means you should have a volumes section something like this:
+
+```yaml
+services:
+  my_service:
+    volumes:
+      - lores_config:/lores/config
+```
+
+### Add the volume to the requirements for your compose file
+
+At the top level of your docker compose file is a set of volume declarations for named volumes that can be re-used between services. You need to add `lores_config` there too, so that **Lores Node** knows to supply that volume to your app. That looks something like:
+
+```yaml
+volumes:
+  lores_config:
+```
+
+### Putting it all together
+
+If you've done all that, your app should have a compose file that looks a bit like:
+
+```yaml
+version: "3.8"
+services:
+  web:
+    image: some/image
+    networks:
+      - lores
+    volumes:
+      - lores_config:/lores/config
+volumes:
+  lores_config:
+networks:
+  lores:
+    external: true
+```

@@ -7,7 +7,9 @@ minify:
 docs:
   nextPrevInSectionSortOrder: desc
   nextPrevSortOrder: desc
-
+markup:
+  highlight:
+    style: solarized-dark
 menus:
   main:
     - name: "Roadmap"

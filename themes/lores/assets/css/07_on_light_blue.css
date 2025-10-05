@@ -40,8 +40,16 @@
   color: var(--orange3);
 }
 
+.on-light-blue pre {
+  background-color: none !important;
+}
+
 .on-light-blue code {
   background-color: var(--blue9);
+}
+
+.on-light-blue pre code {
+  background-color: transparent;
 }
 
 .on-light-blue ul {
