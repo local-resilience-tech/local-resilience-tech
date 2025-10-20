@@ -5,4 +5,6 @@ draft: false
 weight: 2
 type: roadmap
 summary: Adding more complex app configurations allows Node Stewards to choose what their node serves up.
+params:
+  status: in-progress
 ---

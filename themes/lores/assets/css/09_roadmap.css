@@ -106,9 +106,15 @@ a.roadmap-item:hover {
 }
 
 .has-status.status-testing {
-  --status-color: var(--green8);
-  --status-color-highlight: var(--green7);
-  --status-color-text: var(--grey0);
+  --status-color: var(--blue3);
+  --status-color-highlight: var(--blue2);
+  --status-color-text: black;
+}
+
+.has-status.status-done {
+  --status-color: var(--green6);
+  --status-color-highlight: var(--green5);
+  --status-color-text: black;
 }
 
 .roadmap-item-row.has-status a.roadmap-item {
