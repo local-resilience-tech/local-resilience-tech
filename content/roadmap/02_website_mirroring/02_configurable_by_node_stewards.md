@@ -36,7 +36,7 @@ Since we need a way to validate the configuration values against the schema, a w
 
 ## Tasks Status
 
-- [ ] If an app has a configuration schema file, display configuration option
-- [ ] For configuration schema, display form
-- [ ] Save form values to a config file for the app
-- [ ] App can access the config file on a shared mount
+- [x] If an app has a configuration schema file, display configuration option
+- [x] For configuration schema, display form
+- [x] Save form values to a config file for the app
+- [x] App can access the config file on a shared mount
