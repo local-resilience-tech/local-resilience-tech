@@ -111,6 +111,12 @@ a.roadmap-item:hover {
   --status-color-text: black;
 }
 
+.has-status.status-documenting {
+  --status-color: var(--teal1);
+  --status-color-highlight: var(--teal0);
+  --status-color-text: black;
+}
+
 .has-status.status-done {
   --status-color: var(--green6);
   --status-color-highlight: var(--green5);

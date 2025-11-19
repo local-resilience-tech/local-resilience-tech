@@ -7,7 +7,7 @@ slug: configurable_by_node_stewards
 type: roadmap
 summary: Apps defined configuration is presented to node stewards, for example a kiwix app might choose which libraries to serve.
 params:
-  status: testing
+  status: documenting
 ---
 
 {{< user_story >}}
