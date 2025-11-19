@@ -6,7 +6,7 @@ weight: 2
 type: roadmap
 summary: Node stewards can install and upgrade apps from any repository
 params:
-  status: in-progress
+  status: done
 ---
 
 {{< user_story >}}
@@ -27,4 +27,4 @@ So, while docker stacks can be managed using command line tools, or graphical to
 - [x] Node Stewards are made aware if there is a newer version of an app available
 - [x] Node Stewards can upgrade an app
 - [x] Node Stewards can start or stop the app in docker swarm
-- [ ] Node Stewards can delete an app
+- [x] Node Stewards can delete an app
