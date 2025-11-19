@@ -6,7 +6,7 @@ weight: 4
 type: roadmap
 summary: Apps are available on the public internet at a URL per app
 params:
-  status:
+  status: testing
 ---
 
 {{< user_story >}}

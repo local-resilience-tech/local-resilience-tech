@@ -6,7 +6,7 @@ weight: 3
 type: roadmap
 summary: Apps are available on the local network on a default URL that doesn't go via the internet
 params:
-  status:
+  status: testing
 ---
 
 {{< user_story >}}
