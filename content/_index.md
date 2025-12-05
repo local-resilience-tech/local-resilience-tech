@@ -5,12 +5,56 @@ draft: false
 type: home
 ---
 
-# Host web apps in a local, resilient mesh network
+{{< hero >}}
 
-LoRes Mesh is an open source project to allow you to run local servers, connected both over the internet and by other approaches that might work when the internet is down.
+# a **Resilient**, **Local** internet for the **Climate Crisis**
 
-It will help you build a local, sustainable and resilient network for your neighbourhood.
+**LoRes Mesh** is a project to provide digital services at local community facilities that meet genuine human needs.
 
-If you're a developer, try our [docs for creating an app](/docs/creating_a_lores_app/).
+It's designed to be powered by **renewables**, run by local **volunteers**, and to stay up **even when the grid goes down**.
 
-If you're a community organiser, volunteer or impact investor, you might want to get a sense of our [planned roadmap](/roadmap) and find out how to [contact us](/contact)
+{{< /hero >}}
+
+{{< image-section side="right" image="/raspberry-pi-in-hand.png" alt="foobar" >}}
+
+Our local resilience mesh is made up of **LoRes Nodes**. Each Node is a cluster of small low powered computers, like the [Raspberry Pi](https://www.raspberrypi.com/).
+
+{{< /image-section >}}
+
+{{< image-section side="left" image="/coopcloud_logo_grey.svg" alt="foobar" >}}
+
+Nodes run software for local people and community groups, like website hosting, email servers and more.
+
+To do this, we use and contribute to recipes that are part of [co-op cloud](https://coopcloud.tech/), a project to develop public interest infrastructure through the combined efforts of digital co-operatives.
+
+{{< /image-section >}}
+
+{{< image-section side="right" image="/p2panda.svg" alt="foobar" >}}
+
+In a local region, each **LoRes Node** can talk to each other, even when the internet is down.
+
+We're communicating over a peer-to-peer gossip network powered by [P2Panda](https://p2panda.org/) that supports low bandwidth communication over technologies like [LoRa](https://en.wikipedia.org/wiki/LoRa).
+
+{{< /image-section >}}
+
+{{< section class="on-orange" >}}
+
+## LoRes Mesh is not just code.
+
+It's a recipe for deploying a volunteer-run resilient network in your local community. We're learning about it by doing.
+
+LoRes Mesh is currently used by [Merri-bek Tech](https://merri-bek.tech), a local group in Naarm (Melbourne, Australia). We're solarpunks, community organisers, coders and activists and we're aiming to provide services to local community members and groups and iterate on feedback.
+
+We're open to collaboration with other groups on this project, but let's all be aware that technology is never apolitical. We're centering climate justice and solidarity.
+
+{{< /section >}}
+
+{{< section >}}
+
+## Project Status: pre-release
+
+We're in the early days here, working in the open. There are currently no LoRes Nodes that can be considered to be "in production" delivering value to local communities.
+
+You can follow along by checking our [roadmap](/roadmap), or [reach out](/contact) for a chat.
+
+{{< /section >}}

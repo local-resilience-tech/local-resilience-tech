@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "manrope";
+  src: url("/Manrope-VariableFont_wght.ttf");
+}
+
 a {
   text-decoration: none;
 }

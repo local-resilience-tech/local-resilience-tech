@@ -1,0 +1,8 @@
+<section class="image-section side-{{ .Get "side" }}">
+  <div class="section-content">{{ .Inner | markdownify }}</div>
+  {{ with .Get "image" }}
+    <div class="section-image">
+      <img src="{{ . }}" >
+    </div>
+  {{ end }}
+</section>
