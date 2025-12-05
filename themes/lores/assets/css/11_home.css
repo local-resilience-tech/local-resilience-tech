@@ -114,4 +114,12 @@ article.home-page strong {
     font-size: 2.4rem;
     line-height: 1.4;
   }
+
+  article.home-page section.image-section {
+    flex-direction: column;
+  }
+
+  article.home-page section.image-section.side-left {
+    flex-direction: column;
+  }
 }
