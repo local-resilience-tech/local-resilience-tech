@@ -16,60 +16,16 @@ menus:
       pageRef: "/roadmap"
       weight: 1
     - name: "Docs"
-      pageRef: "/docs/creating_a_lores_app"
+      pageRef: "/docs"
       weight: 2
     - name: "Contact us"
       pageRef: "/contact"
       weight: 3
   docs:
-    - name: "Creating a LoRes App"
-      pageRef: "creating_a_lores_app"
-      url: "/docs/creating_a_lores_app"
+    - name: "Node Stewards"
+      pageRef: "node_stewards"
+      url: "/docs/node_stewards"
       weight: 1
-
-    - name: "What's a LoRes App?"
-      pageRef: "what_makes_up_a_lores_app"
-      url: "/docs/creating_a_lores_app/what_makes_up_a_lores_app"
-      parent: "Creating a LoRes App"
-      weight: 1
-    - name: "What's an App Repo?"
-      pageRef: "what_makes_up_an_app_repo"
-      url: "/docs/creating_a_lores_app/what_makes_up_an_app_repo"
-      parent: "Creating a LoRes App"
-      weight: 2
-    - name: "Getting ready"
-      pageRef: "getting_ready"
-      url: "/docs/creating_a_lores_app/getting_ready"
-      weight: 3
-      parent: "Creating a LoRes App"
-
-    - name: "Your dev environment"
-      pageRef: "your_dev_environment"
-      url: "/docs/creating_a_lores_app/your_dev_environment"
-      parent: "Getting ready"
-      weight: 1
-    - name: "Your dev node"
-      pageRef: "your_dev_node"
-      url: "/docs/creating_a_lores_app/your_dev_node"
-      parent: "Getting ready"
-      weight: 2
-
-    - name: "Building our app"
-      pageRef: "building_our_app"
-      url: "/docs/creating_a_lores_app/building_our_app"
-      weight: 4
-      parent: "Creating a LoRes App"
-
-    - name: "Compose file"
-      pageRef: "compose_file"
-      url: "/docs/creating_a_lores_app/compose_file"
-      parent: "Building our app"
-      weight: 1
-    - name: "Allowing configuration"
-      pageRef: "allowing_configuration"
-      url: "/docs/creating_a_lores_app/allowing_configuration"
-      parent: "Building our app"
-      weight: 2
 
 module:
   hugoVersion:
