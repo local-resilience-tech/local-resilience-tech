@@ -26,7 +26,11 @@ menus:
       pageRef: "node_stewards"
       url: "/docs/node_stewards"
       weight: 1
-
+    - name: "Initial Setup"
+      pageRef: "initial_setup"
+      parent: "Node Stewards"
+      url: "/docs/node_stewards/initial_setup"
+      weight: 1
 module:
   hugoVersion:
     extended: false

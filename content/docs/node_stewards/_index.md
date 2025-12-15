@@ -7,7 +7,7 @@ type: docs
 ---
 
 {{< hero >}}
-A **Node Steward** is someone who runs a **LoRes Node** for their community, providing useful digital applications are a particular location, which could be their home, or an important community facility, and making up part of a regional **LoRes Mesh**.
+A **Node Steward** is someone who runs a **LoRes Node** for their community, providing useful digital applications at a particular location — which could be their home, or an important community facility — and making up part of a regional **LoRes Mesh**.
 {{< /hero >}}
 
 Does that sound like it could be you? If you think it could be, read and on and we'll learn the steps together.

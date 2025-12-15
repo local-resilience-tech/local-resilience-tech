@@ -19,5 +19,8 @@
   "html.format.enable": false,
   "[html]": {
     "editor.formatOnSave": false
-  }
+  },
+  "spellchecker.language": "en_GB-ise",
+  "spellchecker.documentTypes": ["markdown"],
+  "spellchecker.ignoreWordsList": ["LoRes", "wikipedia"]
 }
