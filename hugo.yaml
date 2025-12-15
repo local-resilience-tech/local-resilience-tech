@@ -22,17 +22,21 @@ menus:
       pageRef: "/contact"
       weight: 3
   docs:
-    - name: "Node Stewards"
+    - name: "Node stewards"
       url: "/docs/node_stewards"
       weight: 1
-    - name: "Initial Setup"
-      parent: "Node Stewards"
+    - name: "Initial setup"
+      parent: "Node stewards"
       url: "/docs/node_stewards/initial_setup"
       weight: 1
-    - name: "Raspberry Pi Setup"
-      parent: "Initial Setup"
+    - name: "Raspberry Pi setup"
+      parent: "Initial setup"
       url: "/docs/node_stewards/initial_setup/raspberry_pi_setup"
       weight: 1
+    - name: "SD card setup"
+      parent: "Initial setup"
+      url: "/docs/node_stewards/initial_setup/sd_card_setup"
+      weight: 2
 module:
   hugoVersion:
     extended: false

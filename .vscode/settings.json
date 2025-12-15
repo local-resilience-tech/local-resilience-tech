@@ -22,5 +22,5 @@
   },
   "spellchecker.language": "en_GB-ise",
   "spellchecker.documentTypes": ["markdown"],
-  "spellchecker.ignoreWordsList": ["LoRes", "wikipedia", "wifi", "todo"]
+  "spellchecker.ignoreWordsList": ["LoRes", "wikipedia", "wifi", "todo", "MicroSD"]
 }

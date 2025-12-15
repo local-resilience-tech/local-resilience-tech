@@ -31,8 +31,10 @@ To keep things quick for this initial setup, we are **not** going to:
 
 This is an opinionated tutorial, so while most of these requirements have alternatives, for this documentation we're going to assume you have the following.
 
-- A [Raspberry Pi 5](https://www.raspberrypi.com/products/raspberry-pi-5/)
 - A computer that you'll work from, which we'll call your **Dev Computer**
+- A [Raspberry Pi 5](https://www.raspberrypi.com/products/raspberry-pi-5/) with case and power supply.
+- A MicroSD card, at least 64GB. Empty is best, no need to buy one advertised as specifically for the Pi.
+- A MicroSD card reader, sometimes found built into laptops or cheaply available as a USB accessory
 - A local wifi network, presumably with password to access it
 - Internet access available on your wifi, at least during this setup phase
 
