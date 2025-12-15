@@ -23,13 +23,15 @@ menus:
       weight: 3
   docs:
     - name: "Node Stewards"
-      pageRef: "node_stewards"
       url: "/docs/node_stewards"
       weight: 1
     - name: "Initial Setup"
-      pageRef: "initial_setup"
       parent: "Node Stewards"
       url: "/docs/node_stewards/initial_setup"
+      weight: 1
+    - name: "Raspberry Pi Setup"
+      parent: "Initial Setup"
+      url: "/docs/node_stewards/initial_setup/raspberry_pi_setup"
       weight: 1
 module:
   hugoVersion:

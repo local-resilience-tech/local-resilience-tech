@@ -65,3 +65,18 @@
 .on-light-blue nav.between-pages {
   border-color: var(--burnt-orange4);
 }
+
+.on-light-blue .todo {
+  border: 3px dashed var(--grey4);
+  background-color: var(--blue6);
+  padding: 1rem;
+  margin: 1.5rem 0;
+  color: var(--grey4);
+  max-width: 600px;
+}
+
+.on-light-blue .todo h3 {
+  color: var(--orange4);
+
+  margin-bottom: 1em;
+}

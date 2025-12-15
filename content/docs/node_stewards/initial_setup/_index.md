@@ -26,3 +26,38 @@ To keep things quick for this initial setup, we are **not** going to:
 
 - Power your node with a battery, so initially it will only work if the internet is down, not if you've lost power.
 - Connect your node to other nodes in your local region, that comes next.
+
+## What you'll need
+
+This is an opinionated tutorial, so while most of these requirements have alternatives, for this documentation we're going to assume you have the following.
+
+- A [Raspberry Pi 5](https://www.raspberrypi.com/products/raspberry-pi-5/)
+- A computer that you'll work from, which we'll call your **Dev Computer**
+- A local wifi network, presumably with password to access it
+- Internet access available on your wifi, at least during this setup phase
+
+We're also going to assume for the moment that your dev computer is running Linux. In practice this probably isn't strictly necessary, but it makes our instructions a bit simpler.
+
+{{< aside >}}
+
+### Do I really need to be running Linux?
+
+So you probably already know that Linux is an open source operating system, an alternative to Windows or Mac OSX. Running it on your computer, either as your only OS, or by dual-booting so you can use it occasionally, is a great idea because it's free, open, and really nice to use.
+
+The reason for mentioning it here though isn't to get your to change your computing life, but because Linux is the most common choice for web servers, and it's what we need to run on our LoRes Nodes. If you run it on your own machine, it's just easier to follow these instructions.
+
+Want help getting started with Linux? There's probably a Linux club or user group where you live that would live to help you out. For example, [here's a list](https://linux.org.au/lugs/) for Australia.
+
+More advanced users can probably translate these instructions for Mac OSX, or for one of the several ways of running Linux inside Windows.
+{{< /aside >}}
+
+## What you're learn
+
+Setting up this node will touch on a range of skills, which are also useful outside of this project. You'll learn about:
+
+- [Git](https://git-scm.com/) - a distributed way of of sharing source code and recording each change to it
+- [Ubuntu Linux](https://ubuntu.com/server) - a common and beginner-friendly flavour of Linux
+- [Co-op Cloud](https://coopcloud.tech/) - a software stack for hosting web apps built by a federation of tech co-ops
+- [Kiwix](https://kiwix.org/en/) - an offline reading app that supports wikipedia and other sites
+
+Sound good? Let's get started.
