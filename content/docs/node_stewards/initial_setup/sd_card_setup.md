@@ -61,7 +61,17 @@ Put the SD Card into your card reader, and on this screen select the SD Card you
 
 ### Customisation
 
-This section has a bunch of setup options which can be pretty helpful for setting up a new Pi. Things that are chosen here are specific to a particular Pi though, such as hostname and Wi-Fi password. It's pretty simple to set these later, so we're recommending an approach of leaving these settings alone so that this SD Card remains generic (at least for a given Ubuntu version and Pi model). Press "Skip customisation".
+This section has a bunch of setup options which can be pretty helpful for setting up a new Pi. Things that are chosen here are specific to a particular Pi though, such as hostname and Wi-Fi password. We're going to leave a bunch of this to setup later, but we recommend filling out just the **Localisation** section for now.
+
+Localisation asks you to fill out your:
+
+- **Capital city** (and Country), eg: _Canberra (Australia)_
+- **Time zone**, eg: _Australia/Melbourne_
+- **Keyboard layout**, eg: _au_
+
+One particular reason why it's important to do this is that there are different standards for Wi-Fi in different countries. Presuming your group is all in the same country and timezone, setting this up still leaves your SD card able to be used amongst any of your collaborators.
+
+So, hit "Next" on all of the steps, leaving them blank, except for "Localisation" which you fill out with your local details. Then hit "Next" to move to the next section.
 
 ### Write image
 
@@ -76,6 +86,8 @@ The SD Card is now being prepared. You make way to make a coffee or something, t
 {{< /image-section >}}
 
 When it's done, remove the SD card and close Raspberry Pi Imager.
+
+## Preparing the OS for LoRes Mesh
 
 ## Customising operating system configuration
 

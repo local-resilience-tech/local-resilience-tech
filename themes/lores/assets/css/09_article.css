@@ -121,6 +121,10 @@ article section.image-section {
   margin-top: 1em;
 }
 
+article section.image-section p:first-child {
+  margin-top: 0;
+}
+
 @media screen and (max-width: 480px) {
   article aside.user-story {
     grid-template-columns: 1fr;

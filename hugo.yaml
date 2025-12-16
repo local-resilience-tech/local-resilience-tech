@@ -29,14 +29,18 @@ menus:
       parent: "Node stewards"
       url: "/docs/node_stewards/initial_setup"
       weight: 1
-    - name: "Raspberry Pi setup"
+    - name: "Raspberry Pi"
       parent: "Initial setup"
-      url: "/docs/node_stewards/initial_setup/raspberry_pi_setup"
+      url: "/docs/node_stewards/initial_setup/raspberry_pi"
       weight: 1
+    - name: "Login details"
+      parent: "Initial setup"
+      url: "/docs/node_stewards/initial_setup/login_details"
+      weight: 2
     - name: "SD card setup"
       parent: "Initial setup"
       url: "/docs/node_stewards/initial_setup/sd_card_setup"
-      weight: 2
+      weight: 3
 module:
   hugoVersion:
     extended: false

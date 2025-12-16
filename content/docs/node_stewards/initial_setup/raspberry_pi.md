@@ -1,5 +1,5 @@
 ---
-title: Raspberry Pi Setup
+title: Preparing your Raspberry Pi
 date: 2025-09-03T09:00:00+10:00
 draft: false
 type: docs
@@ -24,7 +24,3 @@ There's no point in powering it up yet, but when you're ready for that, your pow
 ## Next, operating system
 
 The Pi's operating system is stored on the MicroSD card and inserted into the card slot (at the opposite end of the Pi from all the USB ports). In the next section we'll prepare that MicroSD card for use.
-
-{{< todo >}}
-Describe the process of setting up a Raspberry Pi with Ubuntu
-{{< /todo >}}
