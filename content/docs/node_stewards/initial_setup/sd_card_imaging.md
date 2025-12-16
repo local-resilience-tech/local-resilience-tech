@@ -1,12 +1,12 @@
 ---
-title: Generic SD Card Setup
+title: Custom SD card imaging
 date: 2025-09-03T09:00:00+10:00
 draft: false
 type: docs
 ---
 
 {{< hero >}}
-Here we'll setup a **generic** SD card ready to run a Raspberry Pi the way we want. Nothing on this page is specific to your **LoRes Node**, so someone in your group could prepare multiples of these cards and hand them out. If you have been given one, skip to the next page.
+Here we'll setup an SD card ready to run your Raspberry Pi the way we want. It'll contain the specific details for your login, your wifi, timezone, and so on.
 {{< /hero >}}
 
 So the MicroSD card that you're going to insert into a Raspberry Pi needs to be loaded with the operating system that will run the Pi.
@@ -61,7 +61,15 @@ Put the SD Card into your card reader, and on this screen select the SD Card you
 
 ### Customisation
 
-This section has a bunch of setup options which can be pretty helpful for setting up a new Pi. Things that are chosen here are specific to a particular Pi though, such as hostname and Wi-Fi password. We're going to leave a bunch of this to setup later, but we recommend filling out just the **Localisation** section for now.
+This section has a bunch of setup options which can be pretty helpful for setting up a new Pi. These write to text files used to configure _cloud-init_, a tool that sets up servers. A more advanced technique would be to write to these files directly, but for now let's use the options provider by the imager.
+
+Fill out each of the sections below, and then hit "Next" to move on.
+
+#### Hostname
+
+You need to choose a hostname for this Pi. It should be short, and lower case, but also unique on your local network. Unless you're in a workshop or something where multiple people are setting up a **LoRes Node**, I'd recommend that you call it `lores`. If you've got multiple LoRes Nodes on the same location, you'll need to give them more unique hostnames, like `lores-testing` or something.
+
+#### Localisation
 
 Localisation asks you to fill out your:
 
@@ -69,9 +77,19 @@ Localisation asks you to fill out your:
 - **Time zone**, eg: _Australia/Melbourne_
 - **Keyboard layout**, eg: _au_
 
-One particular reason why it's important to do this is that there are different standards for Wi-Fi in different countries. Presuming your group is all in the same country and timezone, setting this up still leaves your SD card able to be used amongst any of your collaborators.
+#### User
 
-So, hit "Next" on all of the steps, leaving them blank, except for "Localisation" which you fill out with your local details. Then hit "Next" to move to the next section.
+So back on the [Login details](../login_details) page we discussed a username and password, here's where you pop them in.
+
+#### Wi-Fi
+
+Put in the SSID and password for your Wi-Fi network. On many platforms the Raspberry Pi Imager is able to detect this automatically and pop it in for you.
+
+In [Login details](../login_details) we also setup a SSH key-pair, and so we're going to use that. Select "Use public key authentication". For public key, browse to the public key file that you created. On Linux it is generally found at `/home/USERNAME/.ssh/id_ed22519.pub`. Remember that it's the **pub** file that you want here. Either select the file in the browse box, or copy the files content and paste it in.
+
+#### Remote access
+
+We're definitely going to log in using SSH, so toggle "Enable SSH" to on.
 
 ### Write image
 
@@ -86,25 +104,3 @@ The SD Card is now being prepared. You make way to make a coffee or something, t
 {{< /image-section >}}
 
 When it's done, remove the SD card and close Raspberry Pi Imager.
-
-## Preparing the OS for LoRes Mesh
-
-## Customising operating system configuration
-
-1. Insert the SD card you've just freshly flashed with Ubuntu Server into a
-   card reader connected to your computer.
-2. Your computer should detect the card and you should be able to find a new
-   drive in your file manager. On MacOS this will be called "system-boot"
-3. Copy all of the files from this repository's `cloud-init` directory into the
-   top directory of the SD card
-4. Eject the SD card from your computer
-
-## Checking it worked
-
-If you want to test that this SD Card worked, you can put it in a Raspberry Pi,
-plug in a monitor (you may need a micro-hdmi to hdmi adaptor), and a usb
-keyboard. You should then be able to login using the username `pi` and the default
-password `mbt`.
-
-This check is not necessary if you're going to customise the setup for your local
-WiFi first.

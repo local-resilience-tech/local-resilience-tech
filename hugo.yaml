@@ -37,10 +37,14 @@ menus:
       parent: "Initial setup"
       url: "/docs/node_stewards/initial_setup/login_details"
       weight: 2
-    - name: "SD card setup"
+    - name: "SD card imaging"
       parent: "Initial setup"
-      url: "/docs/node_stewards/initial_setup/sd_card_setup"
+      url: "/docs/node_stewards/initial_setup/sd_card_imaging"
       weight: 3
+    - name: "Logging in"
+      parent: "Initial setup"
+      url: "/docs/node_stewards/initial_setup/logging_in"
+      weight: 4
 module:
   hugoVersion:
     extended: false

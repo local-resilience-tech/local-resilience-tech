@@ -42,7 +42,7 @@ When you run this, you'll be asked where to save the file. You can press _Enter_
 Next you'll be asked to set a passphrase. You can press _enter_ for no passphrase, but that's not a good idea. As mentioned above, if someone was to get your private key file, they'd have access to all your stuff. Setting a passphrase is a good way to ensure that you need both the file, and this bit of information. Despite the name, the passphrase is essentially a password. You can use your password manager to generate this. Perhaps create a login item in your password manager called something like `ssh key aisha@wayfarer` allow it to generate a passphrase, and paste that in your terminal.
 
 {{<aside>}}
-💡 **Hint:** if you're using Ubuntu Linux, pasting in your default terminal requires you to press SHIFT-CTRL-V. If you leave off the SHIFT, you'll paste some other characters too. If you're not sure, right-click and use the mouse. More details [here](https://www.howtogeek.com/440558/how-to-copy-and-paste-text-at-linuxs-bash-shell/).
+💡 **Hint:** if you're using Ubuntu Linux, pasting in your default terminal requires you to press SHIFT-CONTROL-V. If you leave off the SHIFT, you'll paste some other characters too. If you're not sure, right-click and use the mouse. More details [here](https://www.howtogeek.com/440558/how-to-copy-and-paste-text-at-linuxs-bash-shell/).
 {{</aside>}}
 
 ## Adding your SSH key to the ssh-agent
