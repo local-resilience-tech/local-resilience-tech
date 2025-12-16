@@ -22,5 +22,5 @@
   },
   "spellchecker.language": "en_GB-ise",
   "spellchecker.documentTypes": ["markdown"],
-  "spellchecker.ignoreWordsList": ["LoRes", "wikipedia", "wifi", "todo", "MicroSD", "distro", "cloud-init", "init", "Imager", "imager", "hostname", "macOS", "Zelda"]
+  "spellchecker.ignoreWordsList": ["LoRes", "wikipedia", "wifi", "todo", "MicroSD", "distro", "cloud-init", "init", "Imager", "imager", "hostname", "macOS", "Zelda", "decrypt", "decrypts"]
 }
