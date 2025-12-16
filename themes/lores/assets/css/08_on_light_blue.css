@@ -80,3 +80,7 @@
 
   margin-bottom: 1em;
 }
+
+figure figcaption {
+  color: var(--blue1);
+}

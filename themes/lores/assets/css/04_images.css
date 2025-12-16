@@ -15,10 +15,12 @@ section.image-section .section-image {
   text-align: left;
   max-width: 500px;
   width: 100%;
+  overflow: hidden;
 }
 
 section.image-section .section-image img {
   height: auto;
+  width: 100%;
 }
 
 section.image-section.side-left {
@@ -41,4 +43,17 @@ section.image-section.side-left .section-image {
   section.image-section.side-left {
     flex-direction: column;
   }
+}
+
+figure {
+  max-width: var(--main-content-width);
+}
+
+figure img {
+  width: 100%;
+  height: auto;
+}
+
+figure figcaption p:first-child {
+  margin-top: 0;
 }
