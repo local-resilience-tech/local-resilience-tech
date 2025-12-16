@@ -116,6 +116,11 @@ article aside.user-story strong {
   font-weight: 500;
 }
 
+article section.image-section {
+  max-width: var(--main-content-width);
+  margin-top: 1em;
+}
+
 @media screen and (max-width: 480px) {
   article aside.user-story {
     grid-template-columns: 1fr;

@@ -5,37 +5,77 @@ draft: false
 type: docs
 ---
 
-# Preparing a Generic SD Card
+{{< hero >}}
+Here we'll setup a **generic** SD card ready to run a Raspberry Pi the way we want. Nothing on this page is specific to your **LoRes Node**, so someone in your group could prepare multiples of these cards and hand them out. If you have been given one, skip to the next page.
+{{< /hero >}}
 
-This document describes how to prepare an SD Card to boot a Raspberry Pi to be
-used in a site swarm, or for experimental purposes. Completing these steps
-produces an SD Card that has all the general configuration, but will have a
-default hostname, and won't have the login details for your local WiFi.
+So the MicroSD card that you're going to insert into a Raspberry Pi needs to be loaded with the operating system that will run the Pi.
 
-Since there's nothing site-specific about the SD Card prepared here, you could
-prepare a number of them and hand to other volunteers for site-specific setup.
+We're going to use Ubuntu Linux for this.
 
-## Initial SD card operating system installation
+{{< aside >}}
 
-1. Download [Raspberry Pi Imager](https://www.raspberrypi.com/software/)
-2. Start up Raspberry Pi Imager and use "CHOOSE DEVICE" to select your
-   Raspberry Pi model
-3. Select "CHOOSE OS" and navigate to
-   "Other general-purpose OS" -> Ubuntu -> "Ubuntu Server 24.04.1 LTS (64-bit)"
+### Why Ubuntu?
 
-   NOTE: If you are using a Raspberry Pi 2 or below, or a Raspberry Pi Zero,
-   you'll need to pick the 32-bit version instead, and some apps may take some
-   effort to get working
+Any Linux distribution will probably work for this step. However, for some Node Stewards, this might be their first experience using Linux. Ubuntu is a good beginner-friendly distribution. While there's not much on the Pi that is going to be distribution specific, new Node Stewards will probably also want to try out Linux on their computer (Ubuntu is a good fit for new desktop Linux users) and they will have an easier learning experience if both platforms are the same.
 
-4. Insert your SD Card into your computer
-5. Select "CHOOSE STORAGE" and select the SD Card you've just inserted. Ensure
-   you have the correct device, as it'll be completely wiped and you'll lose
-   anything on it
-6. Select "NEXT"
-7. When asked "Would you like to apply OS customisation settings?", Select "NO"
-8. You'll now receive your final prompt to confirm this is the correct storage
-   device to wipe. Check this, and then select "YES"
-9. When prompted, remove the SD card and close Raspberry Pi Imager
+If you're an advances user and would prefer your distribution of choice, be aware that these instructions rely on [cloud-init](https://cloud-init.io/) which comes with Ubuntu but is likely available for your distro of choice. Also keep in mind that whatever distro you choose, it _might_ make sense to standardise within your local group to allow Node Stewards to support each other.
+{{< /aside >}}
+
+## The Raspberry Pi Imager
+
+To install an operating system for the Pi onto a MicroSD card, you need some software called the Raspberry Pi Imager. You can download it [on this page](https://www.raspberrypi.com/software/) (for Linux, Windows or macOS) — and you install it on your **dev computer** (or in fact any computer with access to a MicroSD card reader).
+
+These instructions assume version 2.0.0 of the Imager. If you installed an older version (perhaps by installing it via a package manager), it's worth making sure you grab the latest version from the install page.
+
+## Using the Imager
+
+The imager has various setup steps, see the instructions below for each step.
+
+### Device
+
+Make sure you select the correct Raspberry Pi model, eg the "Raspberry Pi 5". Press next.
+
+### OS
+
+We're going to select an operating system here. The imager presents the Raspberry Pi OS as the first choice, which is **not** what we want. Instead, you'll need to scroll down and select "Other general-purpose OS".
+
+Inside this section, choose "Ubuntu".
+
+Inside this section, scroll down and select the first option that contains that words _"Ubuntu Server"_, _"LTS"_ and _"64-bit"_. For example, `Ubuntu Server 24.04.3 LTS (64-bit)`.
+
+With that done, press next.
+
+{{< aside >}}
+
+### An aside on Ubuntu releases
+
+Ubuntu makes regular releases of new versions of the operating system. For all our work on building a **LoRes Mesh**, we want to use releases that are reliable and still receiving bug-fixes and security updates. The best way to do this is to only use **LTS** (Long Term Support) releases, which occur every two years and come with five years of support.
+
+Interim releases of Ubuntu occur every six months, but only get nine months of support. These are fine (and fun) to use on your computer, but do not use them for any server infrastructure.
+{{< /aside >}}
+
+### Storage
+
+Put the SD Card into your card reader, and on this screen select the SD Card you’ve just inserted. Ensure you have the correct device, as it’ll be completely wiped and you’ll lose anything on it. The imager program will exclude your internal hard disks from the list of options, so it's not likely you'll make a mistake here.
+
+### Customisation
+
+This section has a bunch of setup options which can be pretty helpful for setting up a new Pi. Things that are chosen here are specific to a particular Pi though, such as hostname and Wi-Fi password. It's pretty simple to set these later, so we're recommending an approach of leaving these settings alone so that this SD Card remains generic (at least for a given Ubuntu version and Pi model). Press "Skip customisation".
+
+### Write image
+
+{{< image-section side="right" image="/raspberry-pi-imager-writing.png" width="400" alt="A picture of the Raspberry Pi Imager program, on the writing step, showing a summary of what is about to be written that matches the above steps." >}}
+
+This screen presents a summary of what you've chosen. It should look something like this. If you're happy, go ahead and press write.
+
+There may be an additional dialog warning you that data will be erased, and you need to press "I understand, erase and write".
+
+The SD Card is now being prepared. You make way to make a coffee or something, this takes a little time.
+
+{{< /image-section >}}
+
+When it's done, remove the SD card and close Raspberry Pi Imager.
 
 ## Customising operating system configuration
 

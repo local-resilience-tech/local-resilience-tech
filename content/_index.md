@@ -15,7 +15,7 @@ It's designed to be powered by **renewables**, run by local **volunteers**, and 
 
 {{< /hero >}}
 
-{{< image-section side="right" image="/raspberry-pi-in-hand.png" alt="foobar" >}}
+{{< image-section side="right" image="/raspberry-pi-in-hand.png" alt="A hand holding a Raspberry Pi" >}}
 
 Our local resilience mesh is made up of **LoRes Nodes**. Each Node is a cluster of small low powered computers, like the [Raspberry Pi](https://www.raspberrypi.com/).
 
@@ -29,7 +29,7 @@ To do this, we use and contribute to recipes that are part of [co-op cloud](http
 
 {{< /image-section >}}
 
-{{< image-section side="right" image="/p2panda.svg" alt="foobar" >}}
+{{< image-section side="right" image="/p2panda.svg" alt="The P2Panda logo, a panda riding on a dolphin" >}}
 
 In a local region, each **LoRes Node** can talk to each other, even when the internet is down.
 

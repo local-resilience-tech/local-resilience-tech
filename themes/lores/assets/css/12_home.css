@@ -35,46 +35,6 @@ article.home-page section.hero p {
   margin-right: auto;
 }
 
-article.home-page section.image-section {
-  display: flex;
-  flex-direction: row;
-  gap: 2rem;
-  justify-content: stretch;
-  align-items: center;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: var(--extended-content-width);
-}
-
-article.home-page section.image-section .section-content {
-  text-align: right;
-  margin-right: 0;
-  margin-left: 0;
-}
-
-article.home-page section.image-section .section-image {
-  text-align: left;
-  max-width: 500px;
-  width: 100%;
-}
-
-article.home-page section.image-section .section-image img {
-  width: 100%;
-  height: auto;
-}
-
-article.home-page section.image-section.side-left {
-  flex-direction: row-reverse;
-}
-
-article.home-page section.image-section.side-left .section-content {
-  text-align: left;
-}
-
-article.home-page section.image-section.side-left .section-image {
-  text-align: right;
-}
-
 article.home-page section.on-orange {
   background-color: var(--orange3);
   color: #111111;
@@ -101,6 +61,17 @@ article.home-page strong {
   color: var(--orange3);
 }
 
+article.home-page section.image-section {
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: var(--extended-content-width);
+}
+
+article.home-page section.image-section .section-content {
+  text-align: right;
+}
+
 @media screen and (max-width: 480px) {
   article.home-page section.hero p {
     font-size: 1.4rem;
@@ -110,13 +81,5 @@ article.home-page strong {
   article.home-page h1 {
     font-size: 2.4rem;
     line-height: 1.4;
-  }
-
-  article.home-page section.image-section {
-    flex-direction: column;
-  }
-
-  article.home-page section.image-section.side-left {
-    flex-direction: column;
   }
 }
