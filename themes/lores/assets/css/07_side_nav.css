@@ -48,10 +48,6 @@ nav.side-nav a.active {
 }
 
 @media screen and (max-width: 480px) {
-  /* nav.side-nav {
-    display: none;
-  } */
-
   main .with-side-nav {
     flex-direction: column;
   }

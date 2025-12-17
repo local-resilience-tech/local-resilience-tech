@@ -53,6 +53,9 @@
     "Naarm",
     "centering",
     "roadmap",
-    "SSID"
+    "SSID",
+    "Multicast",
+    "mDNS",
+    "sudo"
   ]
 }
