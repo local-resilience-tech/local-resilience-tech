@@ -260,7 +260,6 @@ a.roadmap-item:hover {
 /* Roadmap item detail page */
 
 article.roadmap-item-page {
-  width: 100%;
   padding: var(--page-gutter);
   min-height: 80vh;
 }

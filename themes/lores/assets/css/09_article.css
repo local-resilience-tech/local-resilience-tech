@@ -5,7 +5,6 @@ article.home {
 }
 
 article.docs-page {
-  width: 100%;
   padding: var(--page-gutter);
   min-height: 80vh;
 }
@@ -65,6 +64,12 @@ article code {
 
 article p code {
   padding: 0 0.4rem;
+}
+
+article pre code {
+  display: block;
+  padding: 1rem;
+  overflow-x: auto;
 }
 
 article pre {

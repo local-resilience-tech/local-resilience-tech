@@ -1,5 +1,11 @@
 /* Side nav */
 
+main .with-side-nav {
+  display: flex;
+  flex-direction: row;
+  color: var(--grey1);
+}
+
 nav.side-nav {
   background-color: var(--burnt-orange5);
   background: linear-gradient(to bottom, var(--burnt-orange6) 0%, var(--burnt-orange5) 100px, var(--burnt-orange5) 100%);
@@ -35,6 +41,10 @@ nav.side-nav a:hover {
 
 nav.side-nav a.active {
   background-color: var(--burnt-orange8);
+}
+
+.with-side-nav > .content {
+  width: 100%;
 }
 
 @media screen and (max-width: 480px) {

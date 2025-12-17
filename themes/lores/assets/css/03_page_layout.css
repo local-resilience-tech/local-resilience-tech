@@ -14,9 +14,3 @@ main {
   flex-direction: column;
   justify-content: flex-start;
 }
-
-main .with-side-nav {
-  display: flex;
-  flex-direction: row;
-  color: var(--grey1);
-}

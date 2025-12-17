@@ -2,6 +2,7 @@
 title = 'Documentation'
 date = 2025-09-02T10:00:00+10:00
 draft = false
+weight = 1
 +++
 
 {{< hero >}}
