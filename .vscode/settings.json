@@ -59,6 +59,17 @@
     "sudo",
     "Kubernetes",
     "config",
-    "viewable"
+    "viewable",
+    "ethernet",
+    "Cat5",
+    "Cat5e",
+    "Cat6",
+    "eth0",
+    "json",
+    "JSON",
+    "JavasScript",
+    "nano",
+    "YAML",
+    "yaml"
   ]
 }

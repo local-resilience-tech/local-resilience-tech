@@ -37,6 +37,7 @@ This is an opinionated tutorial, so while most of these requirements have altern
 - A MicroSD card reader, sometimes found built into laptops or cheaply available as a USB accessory
 - A local wifi network, presumably with password to access it
 - Internet access available on your wifi, at least during this setup phase
+- Optional: An ethernet cable, probably a short one
 
 We're also going to assume for the moment that your dev computer is running Linux. In practice this probably isn't strictly necessary, but it makes our instructions a bit simpler.
 
