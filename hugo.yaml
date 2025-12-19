@@ -45,6 +45,10 @@ menus:
       parent: "Initial setup"
       url: "/docs/node_stewards/initial_setup/logging_in"
       weight: 4
+    - name: "Docker swarm"
+      parent: "Initial setup"
+      url: "/docs/node_stewards/initial_setup/docker_swarm"
+      weight: 5
 module:
   hugoVersion:
     extended: false

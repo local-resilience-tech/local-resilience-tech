@@ -56,6 +56,9 @@
     "SSID",
     "Multicast",
     "mDNS",
-    "sudo"
+    "sudo",
+    "Kubernetes",
+    "config",
+    "viewable"
   ]
 }

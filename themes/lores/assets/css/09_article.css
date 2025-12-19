@@ -81,6 +81,7 @@ article aside {
   padding: 1rem;
   border-radius: 3px;
   max-width: calc(var(--main-content-width) * 0.9);
+  margin-top: 1rem;
 }
 
 article aside > *:first-child {
