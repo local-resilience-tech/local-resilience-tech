@@ -64,6 +64,10 @@ menus:
     - name: "Adding server config"
       parent: "Co-op Cloud"
       url: "/docs/node_stewards/initial_setup/coop_cloud/server"
+      weight: 1
+    - name: "Web proxy"
+      parent: "Co-op Cloud"
+      url: "/docs/node_stewards/initial_setup/coop_cloud/traefik"
       weight: 2
     - name: "LoRes Node"
       parent: "Initial setup"
