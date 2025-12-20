@@ -70,6 +70,14 @@
     "JavasScript",
     "nano",
     "YAML",
-    "yaml"
+    "yaml",
+    "traceroute",
+    "Traceroute",
+    "ISPs",
+    "HTTPS",
+    "DHCP",
+    "netplan",
+    "nameserver",
+    "nameservers"
   ]
 }
