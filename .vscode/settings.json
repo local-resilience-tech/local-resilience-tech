@@ -78,6 +78,10 @@
     "DHCP",
     "netplan",
     "nameserver",
-    "nameservers"
+    "nameservers",
+    "iplibre",
+    "makerspace",
+    "Kiwix",
+    "kiwix"
   ]
 }

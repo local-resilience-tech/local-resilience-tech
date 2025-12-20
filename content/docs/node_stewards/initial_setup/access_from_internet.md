@@ -112,3 +112,38 @@ You need to setup port forwards, directed at the local IP address of your Raspbe
 One port we can check straight away is port 22 for SSH. We've been connecting so far using `ssh lores.local` which goes over the local network.
 
 Instead, let's try using `ssh YOUR_PUBLIC_IP_ADDRESS_HERE`. You should see a message like _"This host key is known by the following other names/addresses"_ but if you choose yes, you should connect as normal. You are now logged in by routing your request via the internet. This would work even if your dev computer was somewhere else.
+
+## A domain name
+
+Accessing our Pi over the internet by specifying an IP address isn't ideal. We really need [domain name](https://en.wikipedia.org/wiki/Domain_name).
+
+Now you could run out and buy a cool domain name from a domain registrar, and use that. That would be totally fine. The recommendation though is that a **LoRes Node** should be part of a **LoRes Mesh** for your neighbourhood. Given that, we recommend that you share a domain for that mesh, and use sub-domains for each node.
+
+For example, at [Merri-bek Tech](https://www.merri-bek.tech/), a group implementing a LoRes Mesh in Naarm (Melbourne, Australia), we hand out node domains as sub-domains of `nodes.merri-bek.tech`. So if you are setting up a node at the makerspace, maybe it'd be called `makerspace.nodes.merri-bek.tech`.
+
+If you use a system like that, probably all you need to do here is give your public IP address to someone in your group who sets up those rules (called DNS records) which specify which sub-domains go to which IP address.
+
+{{<aside>}}
+
+### 📖 DNS records
+
+The [Domain Name System (DNS)](https://en.wikipedia.org/wiki/Domain_Name_System) specifies that the registered nameserver for a give domain can have records which specify the IP address to lookup for the domain or any sub-domain of it. We read domains from right-to-left, so `makerspace.nodes.merri-bek.tech` is a sub-domain of `nodes.merri-bek.tech`.
+
+If our **LoRes Node** is accessible at `makerspace.nodes.merri-bek.tech`, then Co-op Cloud wants to use a sub-domain of that for each app that's installed. So when we install the kiwix app to display wikipedia, that will be at `kiwix.makerspace.nodes.merri-bek.tech`. Given that, we need a wildcard domain record for that too. So the records that would be needed in this example are:
+
+```
+makerspace.nodes.merri-bek.tech   A YOUR_PUBLIC_IP_ADDRESS_HERE
+*.makerspace.nodes.merri-bek.tech A YOUR_PUBLIC_IP_ADDRESS_HERE
+```
+
+{{</aside>}}
+
+### Trying it out again...
+
+Once you've been assigned a domain name, then try that ssh test again using the new name, eg:
+
+```bash
+ssh makerspace.nodes.merri-bek.tech
+```
+
+Once again you should see the _"This host key is known by the following other names/addresses"_ message, but by selecting yes you should be able to log in.
