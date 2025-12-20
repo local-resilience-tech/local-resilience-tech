@@ -61,6 +61,10 @@ menus:
       parent: "Initial setup"
       url: "/docs/node_stewards/initial_setup/coop_cloud"
       weight: 2
+    - name: "Adding server config"
+      parent: "Co-op Cloud"
+      url: "/docs/node_stewards/initial_setup/coop_cloud/server"
+      weight: 2
     - name: "LoRes Node"
       parent: "Initial setup"
       url: "/docs/node_stewards/initial_setup/lores_node"
