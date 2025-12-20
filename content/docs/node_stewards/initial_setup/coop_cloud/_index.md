@@ -34,6 +34,12 @@ To add this to your path temporarily, you can run `export PATH=$PATH:$HOME/.loca
 
 With that path added, running `abra --help` should work now. If it doesn't, try reaching out in the [Node Stewards chat room](https://matrix.to/#/#lores-node-stewards:merri-bek.chat).
 
+## Set up autocomplete
+
+Most abra commands require typing the fully qualified domain name for your app, so we highly recommend configuring command-line auto-completion. Run `abra autocomplete -h` for more on how to do this. The instructions vary depending on which shell you use.
+
+With autocomplete enabled, you can run a command like `abra app deploy myapp.example.com` by just typing `abra app deploy myapp` then pressing `<tab>`.
+
 ## Lets install our apps
 
 In these sections we'll be using abra to install and configure our apps, and we'll also make sure that we've got that configuration stored safely where we can share it with other Node Stewards.
