@@ -3,7 +3,7 @@ title: Docker swarm setup
 date: 2025-09-03T09:00:00+10:00
 draft: false
 type: docs
-weight: 5
+weight: 4
 ---
 
 {{<hero>}}

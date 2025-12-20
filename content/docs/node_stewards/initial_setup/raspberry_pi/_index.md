@@ -1,10 +1,14 @@
 ---
-title: Preparing your Raspberry Pi
+title: "Part 1: A Raspberry Pi internet server"
 date: 2025-09-03T09:00:00+10:00
 draft: false
 type: docs
 weight: 1
 ---
+
+{{<hero>}}
+The goal of this section is to setup a Raspberry Pi so that it's ready to host Co-op Cloud apps, and become a **LoRes Node**. When we're done, our Pi will have all the necessary dependencies installed, and will be accessible over the internet.
+{{</hero>}}
 
 ## What is a Raspberry Pi 5
 
@@ -22,6 +26,6 @@ Assembling your Pi is just a matter of following the [instructions that come wit
 
 There's no point in powering it up yet, but when you're ready for that, your power supply simply plugs into the only [USB-C](https://en.wikipedia.org/wiki/USB-C) port on the Pi. Note that it is probably best to grab an official Raspberry Pi power supply for the Pi 5, because not all USB power supplies are capable of outputting 25W.
 
-## Next, operating system
+## Let's get it setup
 
-The Pi's operating system is stored on the MicroSD card and inserted into the card slot (at the opposite end of the Pi from all the USB ports). In the next section we'll prepare that MicroSD card for use.
+Over the next pages, you'll create login details for yourself, setup the Raspberry Pi's operating system, install necessary dependencies, and connect it up to the internet. Let's get started.

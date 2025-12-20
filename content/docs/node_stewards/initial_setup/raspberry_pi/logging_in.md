@@ -3,7 +3,7 @@ title: Logging in and initial setup
 date: 2025-09-03T09:00:00+10:00
 draft: false
 type: docs
-weight: 4
+weight: 3
 ---
 
 {{< hero >}}

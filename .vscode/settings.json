@@ -82,6 +82,8 @@
     "iplibre",
     "makerspace",
     "Kiwix",
-    "kiwix"
+    "kiwix",
+    "abra",
+    "traefik"
   ]
 }

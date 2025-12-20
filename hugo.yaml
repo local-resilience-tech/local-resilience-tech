@@ -34,29 +34,37 @@ menus:
       url: "/docs/node_stewards/initial_setup/raspberry_pi"
       weight: 1
     - name: "Login details"
-      parent: "Initial setup"
-      url: "/docs/node_stewards/initial_setup/login_details"
-      weight: 2
+      parent: "Raspberry Pi"
+      url: "/docs/node_stewards/initial_setup/raspberry_pi/login_details"
+      weight: 1
     - name: "SD card imaging"
-      parent: "Initial setup"
-      url: "/docs/node_stewards/initial_setup/sd_card_imaging"
-      weight: 3
+      parent: "Raspberry Pi"
+      url: "/docs/node_stewards/initial_setup/raspberry_pi/sd_card_imaging"
+      weight: 2
     - name: "Logging in"
-      parent: "Initial setup"
-      url: "/docs/node_stewards/initial_setup/logging_in"
-      weight: 4
+      parent: "Raspberry Pi"
+      url: "/docs/node_stewards/initial_setup/raspberry_pi/logging_in"
+      weight: 3
     - name: "Docker swarm"
-      parent: "Initial setup"
-      url: "/docs/node_stewards/initial_setup/docker_swarm"
-      weight: 5
+      parent: "Raspberry Pi"
+      url: "/docs/node_stewards/initial_setup/raspberry_pi/docker_swarm"
+      weight: 4
     - name: "Ethernet"
-      parent: "Initial setup"
-      url: "/docs/node_stewards/initial_setup/ethernet"
-      weight: 6
+      parent: "Raspberry Pi"
+      url: "/docs/node_stewards/initial_setup/raspberry_pi/ethernet"
+      weight: 5
     - name: "Access from internet"
+      parent: "Raspberry Pi"
+      url: "/docs/node_stewards/initial_setup/raspberry_pi/access_from_internet"
+      weight: 6
+    - name: "Co-op Cloud"
       parent: "Initial setup"
-      url: "/docs/node_stewards/initial_setup/access_from_internet"
-      weight: 7
+      url: "/docs/node_stewards/initial_setup/coop_cloud"
+      weight: 2
+    - name: "LoRes Node"
+      parent: "Initial setup"
+      url: "/docs/node_stewards/initial_setup/lores_node"
+      weight: 3
 module:
   hugoVersion:
     extended: false
