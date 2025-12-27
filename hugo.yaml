@@ -69,14 +69,18 @@ menus:
       parent: "Co-op Cloud"
       url: "/docs/node_stewards/initial_setup/coop_cloud/traefik"
       weight: 2
-    - name: "Flash drive"
+    - name: "Preparing flash drive"
       parent: "Co-op Cloud"
-      url: "/docs/node_stewards/initial_setup/coop_cloud/flash_drive"
+      url: "/docs/node_stewards/initial_setup/coop_cloud/preparing_flash_drive"
       weight: 3
+    - name: "Mounting flash drive"
+      parent: "Co-op Cloud"
+      url: "/docs/node_stewards/initial_setup/coop_cloud/mounting_flash_drive"
+      weight: 4
     - name: "Wikipedia"
       parent: "Co-op Cloud"
       url: "/docs/node_stewards/initial_setup/coop_cloud/kiwix"
-      weight: 4
+      weight: 5
     - name: "LoRes Node"
       parent: "Initial setup"
       url: "/docs/node_stewards/initial_setup/lores_node"

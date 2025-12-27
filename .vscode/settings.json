@@ -99,6 +99,10 @@
     "Filesystems",
     "FAT32",
     "ext4",
-    "zims"
+    "zims",
+    "fstab",
+    "UUID",
+    "That'll",
+    "systemd"
   ]
 }
