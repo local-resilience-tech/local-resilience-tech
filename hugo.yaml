@@ -69,6 +69,14 @@ menus:
       parent: "Co-op Cloud"
       url: "/docs/node_stewards/initial_setup/coop_cloud/traefik"
       weight: 2
+    - name: "Flash drive"
+      parent: "Co-op Cloud"
+      url: "/docs/node_stewards/initial_setup/coop_cloud/flash_drive"
+      weight: 3
+    - name: "Wikipedia"
+      parent: "Co-op Cloud"
+      url: "/docs/node_stewards/initial_setup/coop_cloud/kiwix"
+      weight: 4
     - name: "LoRes Node"
       parent: "Initial setup"
       url: "/docs/node_stewards/initial_setup/lores_node"

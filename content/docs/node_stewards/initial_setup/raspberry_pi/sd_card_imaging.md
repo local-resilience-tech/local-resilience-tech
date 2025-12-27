@@ -94,7 +94,7 @@ We're definitely going to log in using SSH, so toggle "Enable SSH" to on.
 
 ### Write image
 
-{{< image-section side="right" image="/raspberry-pi-imager-writing.png" width="400" alt="A picture of the Raspberry Pi Imager program, on the writing step, showing a summary of what is about to be written that matches the above steps." >}}
+{{< image-section side="right" image="/images/node_stewards/raspberry-pi-imager-writing.png" width="400" alt="A picture of the Raspberry Pi Imager program, on the writing step, showing a summary of what is about to be written that matches the above steps." >}}
 
 This screen presents a summary of what you've chosen. It should look something like this. If you're happy, go ahead and press write.
 

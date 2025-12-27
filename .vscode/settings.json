@@ -92,6 +92,13 @@
     "forgejo",
     "nasties",
     "README",
-    "repo"
+    "repo",
+    "filesystem",
+    "Filesystem",
+    "filesystems",
+    "Filesystems",
+    "FAT32",
+    "ext4",
+    "zims"
   ]
 }

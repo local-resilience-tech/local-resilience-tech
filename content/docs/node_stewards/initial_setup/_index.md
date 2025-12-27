@@ -35,6 +35,7 @@ This is an opinionated tutorial, so while most of these requirements have altern
 - A [Raspberry Pi 5](https://www.raspberrypi.com/products/raspberry-pi-5/) with case and power supply.
 - A MicroSD card, at least 64GB. Empty is best, no need to buy one advertised as specifically for the Pi.
 - A MicroSD card reader, sometimes found built into laptops or cheaply available as a USB accessory
+- A 256GB USB flash drive ([details](./coop_cloud/flash_drive))
 - A local wifi network, presumably with password to access it
 - Internet access available on your wifi, at least during this setup phase
 - Optional: An ethernet cable, probably a short one

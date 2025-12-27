@@ -10,7 +10,7 @@ weight: 1
 You're a **Node Steward**, perhaps not the only one who will help administer this **LoRes Node**. You're going to need some login credentials that you keep secure.
 {{< /hero >}}
 
-{{< figure src="/its-dangerous-to-go-alone-take-this.jpg" alt="An image of an old man in robes holding a sword, with the text - It's dangerous to go alone! Take this." caption="Nerd humour based on the 1986 game, The Legend of Zelda. Art by Nadeer.">}}
+{{< figure src="/images/node_stewards/its-dangerous-to-go-alone-take-this.jpg" alt="An image of an old man in robes holding a sword, with the text - It's dangerous to go alone! Take this." caption="Nerd humour based on the 1986 game, The Legend of Zelda. Art by Nadeer.">}}
 
 ## A username and password
 
