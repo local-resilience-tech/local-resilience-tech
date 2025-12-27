@@ -29,31 +29,9 @@ All the commands for this page are run on the command line while logged into the
 
 We don't just want to mount our flash drive once, we want it to automatically mount even if the Raspberry Pi resets. We'll do that by adding an entry for the flash drive to the [fstab](https://en.wikipedia.org/wiki/Fstab) file, which controls automatic mounting.
 
-### Getting the drive UUID
-
-There's a unique identifier, or [UUID](https://en.wikipedia.org/wiki/Universally_unique_identifier), for each each drive we plug in. To find the one for the flash drive you just plugged into the pi, run:
-
-```bash
-blkid
-```
-
-That'll return a bunch of text, like this:
-
-```bash
-/dev/mmcblk0p1: LABEL_FATBOOT="system-boot" LABEL="system-boot" UUID="8AA8-96C7" BLOCK_SIZE="512" TYPE="vfat" PARTUUID="841506be-01"
-/dev/mmcblk0p2: LABEL="writable" UUID="9276ecfd-6dd5-4e22-9a91-2afafd0a53a3" BLOCK_SIZE="4096" TYPE="ext4" PARTUUID="841506be-02"
-/dev/loop1: BLOCK_SIZE="131072" TYPE="squashfs"
-/dev/loop0: BLOCK_SIZE="131072" TYPE="squashfs"
-/dev/sda1: LABEL="zims" UUID="c5272036-0e87-423b-b2fc-9c99e03c303b" BLOCK_SIZE="4096" TYPE="ext4"
-```
-
-Each line of this is a different device. There are a bunch of clues that might help us figure out which one is the thumb drive we just plugged in. Perhaps the best clue is the `LABEL="zims"`, which is the name we gave our flash drive when [preparing it](../preparing_flash_drive). Also `/dev/sda1` is the most common name for the first plugged in disk.
-
-So given that, the UUID we want is the one for that line, in this example it's `c5272036-0e87-423b-b2fc-9c99e03c303b`.
-
 ### Creating the mount point
 
-You need to create a folder for the flash drive to be mounted at, lets do that with:
+You need to create a folder for the flash drive to be mounted at, let's do that with:
 
 ```bash
 sudo mkdir /mnt/zims
@@ -67,10 +45,10 @@ We're going to use the `nano` text editor to edit this file, and also we need su
 sudo nano /etc/fstab
 ```
 
-Add the following line to the end of the file, replacing the UUID with the one for your device:
+Add the following line to the end of the file, noting that the `LABEL=zims` matches the volume label we chose when we [prepared](../preparing_flash_drive) the drive.
 
 ```bash
-UUID=c5272036-0e87-423b-b2fc-9c99e03c303b /mnt/zims ext4    defaults        0 0
+LABEL=zims /mnt/zims ext4    defaults        0 0
 ```
 
 ### Trying the mount
