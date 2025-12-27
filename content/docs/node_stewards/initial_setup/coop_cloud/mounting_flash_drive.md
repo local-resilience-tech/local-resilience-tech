@@ -56,7 +56,7 @@ LABEL=zims /mnt/zims ext4    defaults        0 0
 This should work automatically when the Pi is reset, but an easier way to try it out now is to run:
 
 ```bash
-mount -a
+sudo mount -a
 ```
 
 Don't worry if you get _"(hint) your fstab has been modified, but systemd still uses the old version)"_. Providing there are no other errors, you should be good to go. You can check if your files are there using:
@@ -66,5 +66,11 @@ sudo ls /mnt/zims
 ```
 
 You should see a list of all those zim files you put on the flash drive. If you want to be extra sure it's going to stay working, you could try rebooting the Pi (`sudo reboot`) and then login and run that `sudo ls /mnt/zims` command again and it will still work.
+
+We also don't really want to have to be the root user to see those zim files, so let's make them readable by everyone by running:
+
+```bash
+sudo chmod -R a+rx /mnt/zims
+```
 
 Ok, we've got everything ready to serve up Wikipedia now, let's wire it all together in the next step.
