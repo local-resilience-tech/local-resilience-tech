@@ -31,7 +31,7 @@ We don't just want to mount our flash drive once, we want it to automatically mo
 
 ### Creating the mount point
 
-You need to create a folder for the flash drive to be mounted at, lets do that with:
+You need to create a folder for the flash drive to be mounted at, let's do that with:
 
 ```bash
 sudo mkdir /mnt/zims
