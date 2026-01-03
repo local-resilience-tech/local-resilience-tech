@@ -22,7 +22,23 @@ abra app new kiwix
 
 ## Configuring the app
 
-Nothing to configure just yet.
+We do have something to configure here, so let's run:
+
+```bash
+abra app config traefik.YOUR_SERVER_DOMAIN
+```
+
+There's a line in the config that will look like this:
+
+```env
+ZIM_FILES_PATH=/path/to/your/zim/files
+```
+
+We need to change that to the path to the flash drive we set in the [last section](../mounting_flash_drive):
+
+```env
+ZIM_FILES_PATH=/mnt/zims
+```
 
 ## Deploying the app
 
@@ -37,3 +53,9 @@ Then you can check that it has worked by directing a web browser at `https://kiw
 ## Pushing our changes to git
 
 Just like with [traefik](.../traefik), if we're happy that our changes worked we can push them to git.
+
+## Enjoying local Wikipedia
+
+You already tried it above, but once again that kiwix server should be available at [https://kiwix.YOUR_SERVER_DOMAIN](https://kiwix.YOUR_SERVER_DOMAIN). That page should present an index of all the websites you downloaded as zim files, and let you browse them.
+
+You now how a local resource library in your building. In the next section, we'll be setting up the **LoRes Node** software to allow your node to join others in your area, and collaborate in serving up apps such as kiwix.
