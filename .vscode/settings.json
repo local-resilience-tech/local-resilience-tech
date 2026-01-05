@@ -103,6 +103,8 @@
     "fstab",
     "UUID",
     "That'll",
-    "systemd"
+    "systemd",
+    "subdomain",
+    "subdomains"
   ]
 }
