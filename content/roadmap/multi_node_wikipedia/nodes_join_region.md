@@ -7,7 +7,7 @@ slug: nodes_join_region
 type: roadmap
 summary: Nodes can join a region without relying on their being a centralised master node
 params:
-  status: testing
+  status: in-progress
 ---
 
 {{< user_story >}}
@@ -20,14 +20,20 @@ It's important that nodes are able to connect to a region in a decentralised way
 
 As a first pass, there's no consensus or authentication needed for this. You say that you're in a region and you're in it.
 
-That's not going to work in the longer term, as bad actors will just join a region. For a more detailed approach, we're waiting for the next release of the P2Panda library, scheduled sometime in October, as it will implement group access control as outlined in [this blog post](https://p2panda.org/2025/07/28/access-control.html).
+That's not going to work in the longer term, as bad actors will just join a region. For a more detailed approach, we're waiting for the next release of the P2Panda library, scheduled sometime ~~in October~~ soon, as it will implement group access control as outlined in [this blog post](https://p2panda.org/2025/07/28/access-control.html).
 
-## To reach testing stage we need
+## What success looks like
 
-- Nodes can "create" a new region
-- Nodes can specify a region, and another node, and join that region
+### To reach testing stage we need
 
-## To be production ready we need
+- [ ] Nodes can "create" a new region
+- [ ] Nodes can specify a region, and another node, and join that region
 
-- Nodes can request to join a region
-- Some sort of consensus approach to allowing a node is needed (a certain % of existing nodes needs to agree perhaps)
+### To be production ready we need
+
+- [ ] Nodes can request to join a region
+- [ ] Some sort of consensus approach to allowing a node is needed (a certain % of existing nodes needs to agree perhaps)
+
+### To demonstrate success we need
+
+- [ ] A production example of a region containing 3 nodes
