@@ -5,6 +5,7 @@ draft: false
 weight: 8
 type: roadmap
 summary: A node provides a list of it's installed apps
+status: in-progress
 ---
 
 {{< user_story >}}
@@ -19,7 +20,8 @@ This step is a necessary precursor to [Regional traffic routing](../regional_tra
 
 ## What success looks like
 
-- [ ] LoRes Node attempts to read all the docker stacks installed
+- [x] LoRes Node attempts to read all the docker stacks installed
 - [ ] If LoRes Node can't connect to the docker socket to list stacks, it'll explain a friendly error to node stewards, and show an empty page to web users.
-- [ ] Only apps that are flagged as Co-op cloud apps are listed
-- [ ] Each app has a link that can be followed to see it
+- [x] Only apps that are flagged as Co-op cloud apps are listed
+- [x] Each app has a link that can be followed to see it
+- [ ] Co-op cloud recipe connects LoRes app to the docker socket so that the above all works in production
