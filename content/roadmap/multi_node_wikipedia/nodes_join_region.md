@@ -5,7 +5,7 @@ draft: false
 weight: 5
 slug: nodes_join_region
 type: roadmap
-summary: Nodes can join a region without relying on their being a centralised master node
+summary: Nodes can join a region without relying on a centralised master node
 params:
   status: in-progress
 ---
