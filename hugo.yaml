@@ -45,42 +45,42 @@ menus:
       parent: "Raspberry Pi"
       url: "/docs/node_stewards/initial_setup/raspberry_pi/logging_in"
       weight: 3
-    - name: "Docker swarm"
-      parent: "Raspberry Pi"
-      url: "/docs/node_stewards/initial_setup/raspberry_pi/docker_swarm"
-      weight: 4
     - name: "Ethernet"
       parent: "Raspberry Pi"
       url: "/docs/node_stewards/initial_setup/raspberry_pi/ethernet"
-      weight: 5
+      weight: 4
     - name: "Access from internet"
       parent: "Raspberry Pi"
       url: "/docs/node_stewards/initial_setup/raspberry_pi/access_from_internet"
-      weight: 6
+      weight: 5
     - name: "Co-op Cloud"
       parent: "Initial setup"
       url: "/docs/node_stewards/initial_setup/coop_cloud"
       weight: 2
+    - name: "Docker swarm"
+      parent: "Co-op Cloud"
+      url: "/docs/node_stewards/initial_setup/coop_cloud/docker_swarm"
+      weight: 1
     - name: "Adding server config"
       parent: "Co-op Cloud"
       url: "/docs/node_stewards/initial_setup/coop_cloud/server"
-      weight: 1
+      weight: 2
     - name: "Web proxy"
       parent: "Co-op Cloud"
       url: "/docs/node_stewards/initial_setup/coop_cloud/traefik"
-      weight: 2
+      weight: 3
     - name: "Preparing flash drive"
       parent: "Co-op Cloud"
       url: "/docs/node_stewards/initial_setup/coop_cloud/preparing_flash_drive"
-      weight: 3
+      weight: 4
     - name: "Mounting flash drive"
       parent: "Co-op Cloud"
       url: "/docs/node_stewards/initial_setup/coop_cloud/mounting_flash_drive"
-      weight: 4
+      weight: 5
     - name: "Wikipedia"
       parent: "Co-op Cloud"
       url: "/docs/node_stewards/initial_setup/coop_cloud/kiwix"
-      weight: 5
+      weight: 6
     - name: "LoRes Node"
       parent: "Initial setup"
       url: "/docs/node_stewards/initial_setup/lores_node"
