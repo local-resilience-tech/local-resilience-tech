@@ -3,7 +3,11 @@ title: Preparing a flash drive full of "zim" files
 date: 2025-09-03T09:00:00+10:00
 draft: false
 type: docs
-weight: 4
+menus:
+  docs:
+    weight: 4
+    name: Preparing drive
+    parent: Co-op Cloud
 ---
 
 {{<hero>}}

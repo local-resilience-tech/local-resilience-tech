@@ -3,7 +3,11 @@ title: Accessing the flash drive on with the Pi
 date: 2025-09-03T09:00:00+10:00
 draft: false
 type: docs
-weight: 5
+menus:
+  docs:
+    weight: 4
+    name: Mounting drive
+    parent: Co-op Cloud
 ---
 
 {{<hero>}}

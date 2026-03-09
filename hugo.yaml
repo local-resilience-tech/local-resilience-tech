@@ -21,44 +21,6 @@ menus:
     - name: "Contact us"
       pageRef: "/contact"
       weight: 3
-  # docs:
-
-  #   - name: "Access from internet"
-  #     parent: "Raspberry Pi"
-  #     url: "/docs/node_stewards/initial_setup/raspberry_pi/access_from_internet"
-  #     weight: 5
-  #   - name: "Co-op Cloud"
-  #     parent: "Initial setup"
-  #     url: "/docs/node_stewards/initial_setup/coop_cloud"
-  #     weight: 2
-  #   - name: "Docker swarm"
-  #     parent: "Co-op Cloud"
-  #     url: "/docs/node_stewards/initial_setup/coop_cloud/docker_swarm"
-  #     weight: 1
-  #   - name: "Adding server config"
-  #     parent: "Co-op Cloud"
-  #     url: "/docs/node_stewards/initial_setup/coop_cloud/server"
-  #     weight: 2
-  #   - name: "Web proxy"
-  #     parent: "Co-op Cloud"
-  #     url: "/docs/node_stewards/initial_setup/coop_cloud/traefik"
-  #     weight: 3
-  #   - name: "Preparing flash drive"
-  #     parent: "Co-op Cloud"
-  #     url: "/docs/node_stewards/initial_setup/coop_cloud/preparing_flash_drive"
-  #     weight: 4
-  #   - name: "Mounting flash drive"
-  #     parent: "Co-op Cloud"
-  #     url: "/docs/node_stewards/initial_setup/coop_cloud/mounting_flash_drive"
-  #     weight: 5
-  #   - name: "Wikipedia"
-  #     parent: "Co-op Cloud"
-  #     url: "/docs/node_stewards/initial_setup/coop_cloud/kiwix"
-  #     weight: 6
-  #   - name: "LoRes Node"
-  #     parent: "Initial setup"
-  #     url: "/docs/node_stewards/initial_setup/lores_node"
-  #     weight: 3
 module:
   hugoVersion:
     extended: false

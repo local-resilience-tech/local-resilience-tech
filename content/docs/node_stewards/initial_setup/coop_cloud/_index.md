@@ -3,7 +3,11 @@ title: "Part 2: Wikipedia managed with Co-op cloud"
 date: 2025-09-03T09:00:00+10:00
 draft: false
 type: docs
-weight: 2
+menus:
+  docs:
+    weight: 2
+    name: Co-op Cloud
+    parent: Initial setup
 ---
 
 {{<hero>}}
