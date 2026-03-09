@@ -7,7 +7,7 @@ slug: nodes_join_region
 type: roadmap
 summary: Nodes can join a region without relying on a centralised master node
 params:
-  status: in-progress
+  status: testing
 ---
 
 {{< user_story >}}
@@ -26,13 +26,13 @@ That's not going to work in the longer term, as bad actors will just join a regi
 
 ### To reach testing stage we need
 
-- [ ] Nodes can "create" a new region
-- [ ] Nodes can specify a region, and another node, and join that region
+- [x] Nodes can "create" a new region
+- [x] Nodes can specify a region, and another node, and join that region
 
 ### To be production ready we need
 
-- [ ] Nodes can request to join a region
-- [ ] Some sort of consensus approach to allowing a node is needed (a certain % of existing nodes needs to agree perhaps)
+- [x] Nodes can request to join a region
+- [x] Some sort of consensus approach to allowing a node is needed (a certain % of existing nodes needs to agree perhaps), or perhaps a single key allowing the join
 
 ### To demonstrate success we need
 
