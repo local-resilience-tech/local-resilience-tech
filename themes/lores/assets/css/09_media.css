@@ -1,0 +1,29 @@
+.media {
+  border: 1px solid red;
+  padding: 1rem;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  text-decoration: none;
+}
+
+.media.video img.thumbnail {
+  max-width: 240px;
+  height: auto;
+}
+
+.on-light-blue .media {
+  background-color: var(--blue7);
+  border-color: var(--blue9);
+  color: var(--grey2);
+}
+
+.on-light-blue .media:hover {
+  background-color: var(--blue8);
+  border-color: var(--orange4);
+}
+
+.media .details h4 {
+  margin-top: 0;
+}

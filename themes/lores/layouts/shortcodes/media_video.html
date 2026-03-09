@@ -1,0 +1,6 @@
+<a class="media video" href="{{ .Get "url" }}">
+  {{ if .Get "image" }}
+    <img class="thumbnail" src="{{ .Get "image" }}" alt="{{ .Get "alt" }}">
+  {{ end }}
+  <div class="details">{{ .Inner | markdownify }}</div>
+</a>

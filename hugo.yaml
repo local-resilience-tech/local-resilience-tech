@@ -18,9 +18,12 @@ menus:
     - name: "Docs"
       pageRef: "/docs"
       weight: 2
+    - name: "Media"
+      pageRef: "/media"
+      weight: 3
     - name: "Contact us"
       pageRef: "/contact"
-      weight: 3
+      weight: 4
 module:
   hugoVersion:
     extended: false
