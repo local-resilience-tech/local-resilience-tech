@@ -1,9 +1,12 @@
-+++
-title = 'Documentation'
-date = 2025-09-02T10:00:00+10:00
-draft = false
-weight = 1
-+++
+---
+title: "Documentation"
+date: 2025-09-02T10:00:00+10:00
+draft: false
+menus:
+  docs:
+    weight: 1
+    name: Docs
+---
 
 {{< hero >}}
 Help build a resilient local mesh for your neighbourhood.

@@ -2,8 +2,12 @@
 title: Initial Node Setup
 date: 2025-09-03T09:00:00+10:00
 draft: false
-weight: 1
 type: docs
+menus:
+  docs:
+    weight: 1
+    name: Initial setup
+    parent: Node Stewards
 ---
 
 {{< user_story >}}

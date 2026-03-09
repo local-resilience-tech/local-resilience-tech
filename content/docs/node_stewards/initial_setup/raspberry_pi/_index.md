@@ -3,7 +3,11 @@ title: "Part 1: A Raspberry Pi internet server"
 date: 2025-09-03T09:00:00+10:00
 draft: false
 type: docs
-weight: 1
+menus:
+  docs:
+    weight: 1
+    name: Raspberry Pi
+    parent: Initial setup
 ---
 
 {{<hero>}}

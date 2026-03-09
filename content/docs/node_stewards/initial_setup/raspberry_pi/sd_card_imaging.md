@@ -3,7 +3,11 @@ title: Custom SD card imaging
 date: 2025-09-03T09:00:00+10:00
 draft: false
 type: docs
-weight: 2
+menus:
+  docs:
+    weight: 2
+    name: SD card imaging
+    parent: Raspberry Pi
 ---
 
 {{< hero >}}

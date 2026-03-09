@@ -3,7 +3,11 @@ title: Connecting via ethernet cable (Optional)
 date: 2025-09-03T09:00:00+10:00
 draft: false
 type: docs
-weight: 4
+menus:
+  docs:
+    weight: 4
+    name: Ethernet
+    parent: Raspberry Pi
 ---
 
 {{<hero>}}
