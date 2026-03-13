@@ -2,10 +2,10 @@
 title: The Traefik web proxy
 date: 2025-09-03T09:00:00+10:00
 draft: false
+weight: 3
 type: docs
 menus:
   docs:
-    weight: 3
     name: Web proxy
     parent: Co-op Cloud
 ---

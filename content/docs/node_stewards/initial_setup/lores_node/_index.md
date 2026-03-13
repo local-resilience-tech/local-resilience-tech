@@ -2,10 +2,10 @@
 title: "Part 3: LoRes Node, connecting us to other local servers"
 date: 2025-09-03T09:00:00+10:00
 draft: false
+weight: 3
 type: docs
 menus:
   docs:
-    weight: 3
     name: LoRes Node
     parent: Initial setup
 ---

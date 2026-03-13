@@ -2,10 +2,10 @@
 title: Accessing our Pi from the internet
 date: 2025-09-03T09:00:00+10:00
 draft: false
+weight: 5
 type: docs
 menus:
   docs:
-    weight: 5
     name: Access from internet
     parent: Raspberry Pi
 ---

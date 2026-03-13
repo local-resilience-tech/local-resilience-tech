@@ -2,10 +2,10 @@
 title: The Kiwix wikipedia server
 date: 2025-09-03T09:00:00+10:00
 draft: false
+weight: 6
 type: docs
 menus:
   docs:
-    weight: 6
     name: Wikipedia
     parent: Co-op Cloud
 ---

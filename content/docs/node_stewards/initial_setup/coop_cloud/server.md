@@ -2,10 +2,10 @@
 title: Abra server config, stored in git
 date: 2025-09-03T09:00:00+10:00
 draft: false
+weight: 2
 type: docs
 menus:
   docs:
-    weight: 2
     name: Server config
     parent: Co-op Cloud
 ---
