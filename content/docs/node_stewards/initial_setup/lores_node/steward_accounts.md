@@ -3,9 +3,9 @@ title: Node steward accounts
 date: 2026-03-08T09:00:00+10:00
 draft: false
 type: docs
+weight: 2
 menus:
   docs:
-    weight: 2
     name: Steward accounts
     parent: LoRes Node
 ---

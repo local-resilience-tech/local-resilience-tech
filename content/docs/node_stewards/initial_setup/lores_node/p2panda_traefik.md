@@ -3,9 +3,9 @@ title: Opening P2Panda ports with Traefik
 date: 2026-03-08T09:00:00+10:00
 draft: false
 type: docs
+weight: 1
 menus:
   docs:
-    weight: 1
     name: P2Panda traefik
     parent: LoRes Node
 ---

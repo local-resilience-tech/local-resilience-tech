@@ -24,6 +24,8 @@
   "spellchecker.documentTypes": ["markdown"],
   "spellchecker.ignoreWordsList": [
     "LoRes",
+    "lores-node",
+    "lores",
     "wikipedia",
     "wifi",
     "todo",
