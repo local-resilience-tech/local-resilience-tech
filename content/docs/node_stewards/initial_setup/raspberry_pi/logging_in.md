@@ -2,10 +2,10 @@
 title: Logging in and initial setup
 date: 2025-09-03T09:00:00+10:00
 draft: false
+weight: 3
 type: docs
 menus:
   docs:
-    weight: 3
     name: Logging in
     parent: Raspberry Pi
 ---

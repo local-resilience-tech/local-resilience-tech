@@ -2,9 +2,9 @@
 title: Node Stewards
 date: 2025-09-03T09:00:00+10:00
 draft: false
+weight: 1
 menus:
   docs:
-    weight: 1
     name: Node Stewards
 ---
 
