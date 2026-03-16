@@ -41,10 +41,3 @@ Then you can check that it has worked by directing a web browser at `https://lor
 ## Pushing our changes to git
 
 If we're happy that our changes worked we can push them to git.
-
-{{<todo>}}
-
-### Traefik P2Panda config
-
-Be sure to explain how to enable P2Panda in the traefik config.
-{{</todo>}}

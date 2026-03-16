@@ -5,7 +5,7 @@ draft: false
 type: docs
 menus:
   docs:
-    weight: 1
+    weight: 2
     name: Steward accounts
     parent: LoRes Node
 ---
