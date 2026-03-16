@@ -38,7 +38,6 @@
         {{- end }}
       {{- else }}
         {{- with $context.Parent }}
-          P
           {{- partial "inline/pager/next.html" (dict "context" . "includeChildren" false) }}
         {{- end }}
       {{- end }}
