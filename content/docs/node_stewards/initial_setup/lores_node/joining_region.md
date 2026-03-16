@@ -29,3 +29,9 @@ So assuming that we've got a region id, can click the "Setup region" link in the
 Filling this out is essentially just information provided as part of the join request. It's not secure, so stick to public information about your request, or if you'd like a more provide conversation about it, indicate that you'll reach out via another channel.
 
 Once you submit this request, you will be subscribed to information about the region, but your application will be pending.
+
+## Getting approval
+
+Right now, approval is centralised. Whichever node created the region needs to approve your request. That's not what we envisage in the future, as something more suited to decentralised systems and commons governance would imply not putting a single node in charge of who joins. We recommend that groups still use democratic group processes to determine who joins, and just use the approving node to carry out the group's wishes.
+
+However, in order to get your join request approved, your message is going to need to be able to reach the region creator node, and their response is going to need to reach you. This relies on successfully passing messages between peer nodes in the region, a process that's called **Gossiping**, and is covered on the next page.
