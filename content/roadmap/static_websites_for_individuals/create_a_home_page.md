@@ -1,8 +1,8 @@
 ---
-title: Setup a reverse proxy
+title: Create a HTML home page
 date: 2025-09-17T09:00:00+10:00
 draft: false
-weight: 2
+weight: 1
 type: roadmap
 summary:  Create a starting point for your static website.
 params:

@@ -5,7 +5,10 @@ draft: false
 weight: 2
 type: roadmap
 summary: Serving simple static websites provides our first example of P2P user configuration across the region.
+params:
+  status: 
 ---
+
 A project to have a static personal site hosted on a **Node**. It also introduces the idea of digital gardens / personal sites and shows very basic HTML & CSS (And highlights the importance of accessible web design) for those that haven't learnt before. This is a stepping stone project for a deeper understanding of the web and sites should be accessible both over the internet and across the **Region** through p2panda or alternative networks.
 
 Simple static sites take very little resources to host and multiple sites could be integrated into a **Node** or **Node cluster**, each **Node Steward** could have their own static page!
