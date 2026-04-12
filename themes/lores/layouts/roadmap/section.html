@@ -32,6 +32,14 @@
           {{ end }}
         </div>
       </div>
+
+      <div class="roadmap-footer">
+        <div class="parent-page-link">
+          {{ with .Parent }}
+            <a href="{{ .RelPermalink }}"><span class="back-arrow">←</span> back to {{ .Title }}</a>
+          {{ end }}
+        </div>
+      </div>
     </div>
   </div>
 {{ end }}
