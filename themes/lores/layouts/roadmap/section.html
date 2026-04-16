@@ -1,6 +1,12 @@
 {{ define "main" }}
   <div class="on-light-blue">
     <div class="roadmap-page grid-paper">
+      <div class="parent-page-link">
+          {{ with .Parent }}
+            <a href="{{ .RelPermalink }}"><span class="back-arrow">←</span> back to {{ .Title }}</a>
+          {{ end }}
+        </div>
+
       <div class="section-header">
         <h1>{{ .Title }}</h1>
         <div class="content">{{ .Content }}</div>
