@@ -92,7 +92,7 @@ article aside > *:last-child {
   margin-bottom: 0;
 }
 
-article section.hero {
+section.hero {
   font-size: 150%;
   max-width: var(--main-content-width);
   font-style: italic;
