@@ -84,3 +84,9 @@
 figure figcaption {
   color: var(--blue1);
 }
+
+.on-light-blue table {
+  --table-header-bg: var(--blue8);
+  --table-row-bg: var(--blue6);
+  --table-row-stripe-bg: var(--blue7);
+}

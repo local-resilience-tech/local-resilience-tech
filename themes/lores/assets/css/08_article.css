@@ -151,3 +151,26 @@ article section.image-section p:first-child {
     padding-top: 0;
   }
 }
+
+table {
+  margin-top: 1em;
+  border-spacing: 2px;
+}
+
+table th {
+  padding: 0.5rem 1rem;
+  background-color: var(--table-header-bg);
+}
+
+table td {
+  padding: 0.35rem 1rem;
+  margin: 0;
+}
+
+table tbody tr td {
+  background-color: var(--table-row-bg);
+}
+
+table tbody tr:nth-child(even) td {
+  background-color: var(--table-row-stripe-bg);
+}
