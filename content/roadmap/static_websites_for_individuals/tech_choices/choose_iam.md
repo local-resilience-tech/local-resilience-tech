@@ -34,8 +34,8 @@ Selection is carried out in the context of our [general section principles](../)
 
 ## Contenders
 
-| Application                                 | Backend | Frontend                 |
-| ------------------------------------------- | ------- | ------------------------ |
-| [Rauthy](https://github.com/sebadob/rauthy) | Rust    | Typescript & Svelte      |
-| [Kanidm](https://kanidm.com/)               | Rust    | Rust & server-side HTML  |
-| [Authentik](https://goauthentik.io/)        | Python  | Typescript & strangeness |
+|              | [Rauthy](https://github.com/sebadob/rauthy) | [Kanidm](https://kanidm.com/) | [Authentik](https://goauthentik.io/) |
+| ------------ | ------------------------------------------- | ----------------------------- | ------------------------------------ |
+| **Backend**  | Rust 🦀                                     | Rust 🦀                       | Python 🐍                            |
+| **Frontend** | Typescript & Svelte                         | Rust & server-side HTML       | Typescript & strangeness             |
+| **CC Score** | 0                                           | N/A                           | 0                                    |
