@@ -11,10 +11,10 @@ menus:
 ---
 
 {{<hero>}}
-We have a [Raspberry Pi](../raspberry_pi), serving wikipedia the internet with [Co-op Cloud](../coop_cloud), but we need a way to link this up with our neighbourhood so that we can start to build a local resilient mesh that supports our community.
+We have a [Raspberry Pi](../raspberry_pi), serving wikipedia on the internet with [Co-op Cloud](../coop_cloud), but we need a way to link this up with our neighbourhood so that we can start to build a local resilient mesh that supports our community.
 {{</hero>}}
 
-With do this by installing the [lores-node](https://recipes.coopcloud.tech/lores-node) software, which is a web app designed to allow Node Stewards to administer the node, and to provide some transparency to members of the public.
+We do this by installing the [lores-node](https://recipes.coopcloud.tech/lores-node) software, which is a web app designed to allow Node Stewards to administer the node, and to provide some transparency to members of the public.
 
 Just like with [traefik](../coop_cloud/traefik) and [kiwix](../coop_cloud/kiwix), this is installed using Co-op Cloud, but using the `abra` tool to install a new app on our serve.
 
