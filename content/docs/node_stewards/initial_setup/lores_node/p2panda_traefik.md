@@ -11,7 +11,7 @@ menus:
 ---
 
 {{<hero>}}
-Supporting P2Panda apps like lores-node requires a change to the default Co-Op Cloud Traefik config.
+Supporting P2Panda apps like lores-node requires a change to the default Co-op Cloud Traefik config.
 {{</hero>}}
 
 You might recall that when we setup [Accessing our Pi from the internet](../../raspberry_pi/access_from_internet), we learned about how TCP and UDP both use **ports**, and we setup port forwarding on our router for the ports we need for web traffic, and also for UDP ports `2022` and `2023` for P2Panda.
