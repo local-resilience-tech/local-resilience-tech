@@ -110,6 +110,7 @@
     "subdomains",
     "OpenID",
     "Backend",
-    "Frontend"
+    "Frontend",
+    "Reticulum"
   ]
 }

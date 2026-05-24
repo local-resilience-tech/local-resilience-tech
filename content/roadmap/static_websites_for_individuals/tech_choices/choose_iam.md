@@ -34,8 +34,17 @@ Selection is carried out in the context of our [general section principles](../)
 
 ## Contenders
 
-|              | [Rauthy](https://github.com/sebadob/rauthy) | [Kanidm](https://kanidm.com/) | [Authentik](https://goauthentik.io/) |
-| ------------ | ------------------------------------------- | ----------------------------- | ------------------------------------ |
-| **Backend**  | Rust 🦀                                     | Rust 🦀                       | Python 🐍                            |
-| **Frontend** | Typescript & Svelte                         | Rust & server-side HTML       | Typescript & strangeness             |
-| **CC Score** | 0                                           | N/A                           | 0                                    |
+|                  | Rauthy                                    | Kanidm                                    | Authentik                                        |
+| ---------------- | ----------------------------------------- | ----------------------------------------- | ------------------------------------------------ |
+| **Git**          | [link](https://github.com/sebadob/rauthy) | [link](https://kanidm.com/)               | [link](https://github.com/goauthentik/authentik) |
+| **Website**      | [link](https://sebadob.github.io/rauthy/) | [link](https://github.com/kanidm/kanidm/) | [link](https://goauthentik.io/)                  |
+| **Backend**      | Rust 🦀                                   | Rust 🦀                                   | Python 🐍                                        |
+| **Frontend**     | Typescript & Svelte                       | Rust & server-side HTML                   | Typescript & strangeness                         |
+| **CC Score**     | 0                                         | N/A                                       | 0                                                |
+| **Low resource** | ✅✅                                      | ✅                                        | ❓                                               |
+
+## Neighbourhood-first
+
+Of all the apps on an LoRes Node, ensuring that IDM syncs across all nodes is one of the most important. Here we examine what options exist for performing an eventually consistent sync over low bandwidth connections (eg Reticulum, LoRa, etc) between the IDM product on each node, ideally using P2Panda.
+
+### Rauthy
