@@ -25,6 +25,11 @@ Most home networks already support mDNS by default, which means that if a comput
 
 This could mean that app URLs are of the form `beetroot.local/app1`. This is fine, as long as our internal traffic routing provides the apps with the path they need, the base path there should be minimally intrusive. However, Co-op Cloud doesn't really support this approach, and expects a subdomain per app. This might mean that instead we can't rely on mDNS and need to run a local DNS server.
 
+## Resources
+
+- In [Using mDNS aliases within your home network](https://andrewdupont.net/2022/01/27/using-mdns-aliases-within-your-home-network/), Andrew Dupont shows how mDNS domains containing a period, like `app1.beetroot.local` are theoretically valid, although unrelated to `beetroot.local`, and can be registered for each app, however this **won't work on windows**.
+  - The same article also briefly mentions the approach of running a DNS server, but notes that this creates a failure point for your entire network.
+
 ## What success looks like
 
 - [ ] With a node running on a local network, there should be a url that routes to wikipedia that resolves locally
