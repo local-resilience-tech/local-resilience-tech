@@ -111,6 +111,7 @@
     "OpenID",
     "Backend",
     "Frontend",
-    "Reticulum"
+    "Reticulum",
+    "MacOS"
   ]
 }
