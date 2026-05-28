@@ -35,7 +35,9 @@ These instructions assume version 2.0.0 of the Imager. If you installed an older
 
 ## Using the Imager
 
-The imager has various setup steps, see the instructions below for each step.
+You can launch the Raspberry Pi Imager application in several ways, as [described in this documentation](https://www.raspberrypi.com/documentation/computers/getting-started.html#imager-install)
+
+Setting up the imager has several steps, see the instructions below for each step.
 
 ### Device
 
