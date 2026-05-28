@@ -88,6 +88,10 @@ Localisation asks you to fill out your:
 
 So back on the [Login details](../login_details) page we discussed a username and password, here's where you pop them in.
 
+#### SSH authentication
+
+If the customisation steps includes this step, enable SSH and select the 'Use password authentication' option
+
 #### Wi-Fi
 
 Put in the SSID and password for your Wi-Fi network. On many platforms the Raspberry Pi Imager is able to detect this automatically and pop it in for you.
