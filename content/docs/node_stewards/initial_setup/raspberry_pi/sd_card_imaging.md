@@ -90,7 +90,11 @@ So back on the [Login details](../login_details) page we discussed a username an
 
 #### SSH authentication
 
+{{< image-section side="right" image="/images/node_stewards/rpi-imager-ssh-auth-step.png" width="400" alt="A picture of the Raspberry Pi Imager program, on the SSH authentication step.">}}
+
 If the customisation steps includes this step, enable SSH and select the 'Use password authentication' option
+
+{{< /image-section >}}
 
 #### Wi-Fi
 
