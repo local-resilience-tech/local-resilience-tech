@@ -39,6 +39,8 @@ PING lores.local (192.168.196.101) 56(84) bytes of data.
 
 That message shows that it was able to get an IP address from that hostname (in this case it was `192.168.196.101` but yours will probably be different).
 
+If that doesn't work, please see the [troubleshooting section](../troubleshooting/)
+
 {{<aside>}}
 
 ### How does this work?
