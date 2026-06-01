@@ -35,7 +35,9 @@ These instructions assume version 2.0.0 of the Imager. If you installed an older
 
 ## Using the Imager
 
-The imager has various setup steps, see the instructions below for each step.
+You can launch the Raspberry Pi Imager application in several ways, as [described in this documentation](https://www.raspberrypi.com/documentation/computers/getting-started.html#imager-install)
+
+Setting up the imager has several steps, see the instructions below for each step.
 
 ### Device
 
@@ -90,11 +92,15 @@ So back on the [Login details](../login_details) page we discussed a username an
 
 Put in the SSID and password for your Wi-Fi network. On many platforms the Raspberry Pi Imager is able to detect this automatically and pop it in for you.
 
-In [Login details](../login_details) we also setup a SSH key-pair, and so we're going to use that. Select "Use public key authentication". For public key, browse to the public key file that you created. On Linux it is generally found at `/home/USERNAME/.ssh/id_ed22519.pub`. Remember that it's the **pub** file that you want here. Either select the file in the browse box, or copy the files content and paste it in.
+#### Remote access / SSH authentication
 
-#### Remote access
+{{< image-section side="right" image="/images/node_stewards/rpi-imager-ssh-auth-step-pair.png" width="400" alt="A picture of the Raspberry Pi Imager program, on the SSH authentication step.">}}
 
-We're definitely going to log in using SSH, so toggle "Enable SSH" to on.
+Enable SSH, and select "Use public key authentication". For public key, browse to the public key file that you created when you set up an SSH key-pair during the [Login details](../login_details) step.
+
+On Linux it is generally found at `/home/USERNAME/.ssh/id_ed22519.pub`. Remember that it's the **pub** file that you want here. Either select the file in the browse box, or copy the files content and paste it in.
+
+{{< /image-section >}}
 
 ### Write image
 
