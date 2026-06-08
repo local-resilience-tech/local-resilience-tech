@@ -1,9 +1,22 @@
 {{ define "main" }}
-  <h1>{{ .Title }}</h1>
-  {{ .Content }}
+  <div class="blog-list-page on-burnt-orange">
+    <div class="contents">
+      <h1>Blog</h1>
+      {{ .Content }}
 
-  {{ range .Pages }}
-    <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
-    {{ .Summary }}
-  {{ end }}
+      <div class="post-list">
+        {{ range .Pages }}
+          <a href="{{ .RelPermalink }}" class="post-link">
+            <div class="post-header">
+              <h2>{{ .LinkTitle }}</h2>
+              {{- if not .PublishDate.IsZero -}}
+                <div class="post-date">{{- .PublishDate.Format "Jan 2, 2006" -}}</div>
+              {{- end -}}
+            </div>
+            {{ .Summary }}
+          </a>
+        {{ end }}
+      </div>
+    </div>
+  </div>
 {{ end }}

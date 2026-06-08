@@ -3,6 +3,7 @@ title: Your web apps, talking peer-to-peer
 date: 2026-06-07T09:00:00+10:00
 draft: false
 type: blog
+summary: We've just release an example chat app that demonstrates our new API for any web app to use the P2Panda node installed on our LoRes servers to talk to other instances of the app on other servers.
 ---
 
 {{<hero>}}

@@ -5,7 +5,7 @@
       <div class="article-header">
         <h1>{{ .Title }}</h1>
         {{- if not .PublishDate.IsZero -}}
-          {{- .PublishDate.Format "Jan 2, 2006" -}}
+          <div class="post-date">{{- .PublishDate.Format "Jan 2, 2006" -}}</div>
         {{- end -}}
       </div>
 
