@@ -115,6 +115,7 @@
     "MacOS",
     "WebSocket",
     "WebSockets",
-    "gRPC"
+    "gRPC",
+    "explainer"
   ]
 }
