@@ -112,6 +112,13 @@
     "Backend",
     "Frontend",
     "Reticulum",
-    "MacOS"
+    "MacOS",
+    "WebSocket",
+    "WebSockets",
+    "gRPC",
+    "explainer",
+    "Rauthy",
+    "Kanidm",
+    "Authentik"
   ]
 }

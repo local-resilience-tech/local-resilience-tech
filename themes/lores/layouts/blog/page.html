@@ -1,0 +1,16 @@
+{{ define "main" }}
+  <div class="centered-post on-burnt-orange">
+    <div class="left-sidebar"><a href="/blog"><span aria-hidden="true">&lt;</span> all blog articles</a></div>
+    <article class="blog-page">
+      <div class="article-header">
+        <h1>{{ .Title }}</h1>
+        {{- if not .PublishDate.IsZero -}}
+          <div class="post-date">{{- .PublishDate.Format "Jan 2, 2006" -}}</div>
+        {{- end -}}
+      </div>
+
+      {{ .Content }} {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
+    </article>
+    <div class="right-sidebar"></div>
+  </div>
+{{ end }}
