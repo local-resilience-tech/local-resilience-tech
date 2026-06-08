@@ -4,7 +4,8 @@ article.home {
   padding: var(--page-gutter);
 }
 
-article.docs-page {
+article.docs-page,
+article.blog-page {
   padding: var(--page-gutter);
   min-height: 80vh;
 }
@@ -64,6 +65,10 @@ article code {
 
 article p code {
   padding: 0 0.4rem;
+}
+
+article p a > code {
+  padding: 0;
 }
 
 article pre code {

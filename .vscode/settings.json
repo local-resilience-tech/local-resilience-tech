@@ -112,6 +112,9 @@
     "Backend",
     "Frontend",
     "Reticulum",
-    "MacOS"
+    "MacOS",
+    "WebSocket",
+    "WebSockets",
+    "gRPC"
   ]
 }

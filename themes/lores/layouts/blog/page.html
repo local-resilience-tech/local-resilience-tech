@@ -1,0 +1,14 @@
+{{ define "main" }}
+  <div class="with-side-nav">
+    {{ partial "side_nav.html" (dict "menuID" "blog" "page" .) }}
+    <div class="content">
+      <article class="blog-page on-burnt-orange">
+        <h1>{{ .Title }}</h1>
+
+        {{ .Content }} {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
+
+        {{ partial "pager.html" . }}
+      </article>
+    </div>
+  </div>
+{{ end }}

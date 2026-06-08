@@ -1,0 +1,47 @@
+.on-burnt-orange {
+  color: #eee;
+  background: linear-gradient(to bottom, var(--burnt-orange7) 0%, var(--burnt-orange6) 100px, var(--burnt-orange6) 100%);
+}
+
+.on-burnt-orange h1 {
+  color: var(--orange3);
+}
+
+.on-burnt-orange h2 {
+  color: var(--orange4);
+}
+
+.on-burnt-orange h3 {
+  color: var(--orange5);
+}
+
+.on-burnt-orange a {
+  color: var(--blue2);
+}
+
+.on-burnt-orange p a {
+  font-weight: 500;
+}
+
+.on-burnt-orange strong {
+  color: var(--orange3);
+}
+
+.on-burnt-orange p code {
+  background-color: var(--burnt-orange7);
+  color: var(--orange1);
+}
+
+.on-burnt-orange p a > code {
+  background-color: transparent;
+  color: var(--blue2);
+  text-decoration: underline;
+}
+
+.on-burnt-orange table {
+  --table-header-bg: var(--burnt-orange8);
+  --table-row-bg: var(--burnt-orange7);
+  --table-row-stripe-bg: var(--burnt-orange8);
+
+  max-width: 800px;
+}
