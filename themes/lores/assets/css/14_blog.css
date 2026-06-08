@@ -70,8 +70,19 @@
   margin-bottom: 2em;
 }
 
-.blog-list-page h1 {
+.blog-list-page .header {
   margin-bottom: 1em;
+}
+
+.rss-link {
+  display: flex;
+  gap: 0.2em;
+}
+
+.rss-icon {
+  width: 1.5em;
+  height: 1.5em;
+  fill: var(--blue2);
 }
 
 .post-list a.post-link {
