@@ -101,3 +101,14 @@ Docker users are probably familiar with process names, found by running `docker 
 
 The command above lists all services on your server, then filters by lores-node. The lores-node co-op cloud app actually runs two services, so the second `grep` filters again to find the main app service.
 {{</aside>}}
+
+## And now you're up and running
+
+🎉 You now have a working chat app that lets you communicate between nodes. This is an important step towards local community servers that communicate with each other.
+
+If it sparks your interest, here are some potential next steps:
+
+- You could use the example chat app as a base to **build some other kind of Neighbourhood-first App**. The messages between servers don't have to be chat message. They could be application events, like _"task added to list"_ or _"friend request received"_.
+- You could **help out with our roadmap**. As we move towards [Static websites for individuals](/roadmap/static_websites_for_individuals/) we're going to use this LoRes P2Panda API to send messages like _"website X installed on server Y"_
+  - In particular, you could help out with the first big challenge in this space, which is how do we get an [Identity and Access Management App](/roadmap/static_websites_for_individuals/tech_choices/choose_iam/) like Rauthy, Kanidm or Authentik using our P2Panda API for synchronising
+- You could try getting this working over a real post-internet connection, like LoRa radios. We have ideas on how to do this, please [reach out](/contact).
