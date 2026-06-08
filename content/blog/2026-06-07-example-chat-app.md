@@ -5,6 +5,16 @@ draft: false
 type: blog
 ---
 
+{{<hero>}}
+This week we're releasing an example chat app, that demonstrates who a web app, installed with Co-op Cloud on one server, can provide a synchronised experience with users of the same app on another server.
+{{</hero>}}
+
+{{< figure src="/images/blog/2026-06-07-example-chat-app/chat-example.png" alt="A screenshot from a web chat application showing three user messages. Green bear says: I'm a user connected to this node. Orange hawk says: I'm a different user, connected to this same node. Red wolf says: I'm a user connected to another node entirely, and my messages are reaching you over a P2P connection." caption="The LoRes Chat Example app working over P2P">}}
+
+It doesn't look like magic, there are a lot of chat apps out there, but his application provides all the examples that you need to build a range of apps for a **LoRes Mesh** that synchronise data across different servers in your regional network.
+
+## First, some context
+
 If you've been following along with [Neighbourhood-first Software](/media), you'll know that it's all about using peer-to-peer (**P2P**) technologies to communicate between web servers located across your local area.
 
 As we work through the [roadmap](/roadmap) for the **LoRes** project so far the only P2P communication between local nodes has been performed by the [LoRes Node Manager](https://github.com/local-resilience-tech/lores-node) software itself - using P2P messages for nodes to coordinate how they connect to each other in a regional network.
