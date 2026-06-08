@@ -1,8 +1,9 @@
 ---
 title: Your web apps, talking peer-to-peer
-date: 2026-06-07T09:00:00+10:00
+date: 2026-06-08T09:00:00+10:00
 draft: false
 type: blog
+slug: example-chat-app
 summary: We've just release an example chat app that demonstrates our new API for any web app to use the P2Panda node installed on our LoRes servers to talk to other instances of the app on other servers.
 ---
 
@@ -10,7 +11,7 @@ summary: We've just release an example chat app that demonstrates our new API fo
 This week we're releasing an example chat app, that demonstrates who a web app, installed with [Co-op Cloud](https://coopcloud.tech/) on one server, can provide a synchronised experience with users of the same app on another server.
 {{</hero>}}
 
-{{< figure src="/images/blog/2026-06-07-example-chat-app/chat-example.png" alt="A screenshot from a web chat application showing three user messages. Green bear says: I'm a user connected to this node. Orange hawk says: I'm a different user, connected to this same node. Red wolf says: I'm a user connected to another node entirely, and my messages are reaching you over a P2P connection." caption="The LoRes Chat Example app working over P2P">}}
+{{< figure src="/images/blog/2026-06-08-example-chat-app/chat-example.png" alt="A screenshot from a web chat application showing three user messages. Green bear says: I'm a user connected to this node. Orange hawk says: I'm a different user, connected to this same node. Red wolf says: I'm a user connected to another node entirely, and my messages are reaching you over a P2P connection." caption="The LoRes Chat Example app working over P2P">}}
 
 It doesn't look like magic, there are a lot of chat apps out there, but his application provides all the examples that you need to build a range of apps for a **LoRes Mesh** that synchronise data across different servers in your regional network.
 
@@ -112,4 +113,4 @@ If it sparks your interest, here are some potential next steps:
 - You could use the example chat app as a base to **build some other kind of Neighbourhood-first App**. The messages between servers don't have to be chat message. They could be application events, like _"task added to list"_ or _"friend request received"_.
 - You could **help out with our roadmap**. As we move towards [Static websites for individuals](/roadmap/static_websites_for_individuals/) we're going to use this LoRes P2Panda API to send messages like _"website X installed on server Y"_
   - In particular, you could help out with the first big challenge in this space, which is how do we get an [Identity and Access Management App](/roadmap/static_websites_for_individuals/tech_choices/choose_iam/) like Rauthy, Kanidm or Authentik using our P2Panda API for synchronising
-- You could try getting this working over a real post-internet connection, like LoRa radios. We have ideas on how to do this, please [reach out](/contact).
+- You could try getting this working over a real post-internet connection, like **LoRa** radios and/or by using **Reticulum**. We have ideas on how to do this, please [reach out](/contact).
