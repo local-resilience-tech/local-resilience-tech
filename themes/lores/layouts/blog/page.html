@@ -1,14 +1,16 @@
 {{ define "main" }}
-  <div class="with-side-nav">
-    {{ partial "side_nav.html" (dict "menuID" "blog" "page" .) }}
-    <div class="content">
-      <article class="blog-page on-burnt-orange">
+  <div class="centered-post on-burnt-orange">
+    <div class="left-sidebar"><a href="/blog"><span aria-hidden="true">&lt;</span> all blog articles</a></div>
+    <article class="blog-page">
+      <div class="article-header">
         <h1>{{ .Title }}</h1>
+        {{- if not .PublishDate.IsZero -}}
+          {{- .PublishDate.Format "Jan 2, 2006" -}}
+        {{- end -}}
+      </div>
 
-        {{ .Content }} {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
-
-        {{ partial "pager.html" . }}
-      </article>
-    </div>
+      {{ .Content }} {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
+    </article>
+    <div class="right-sidebar"></div>
   </div>
 {{ end }}
