@@ -25,7 +25,7 @@ The goal though, is for application data to be communicated this way, so that we
 
 ## Just one P2Panda Node
 
-LoRes uses P2Panda](https://p2panda.org/) for our P2P communication. P2Panda is a toolbox for building P2P applications that handles some of the tricky bits of managing groups of peers sharing data, storing messages and managing permissions and encryption.
+LoRes uses [P2Panda](https://p2panda.org/) for our P2P communication. P2Panda is a toolbox for building P2P applications that handles some of the tricky bits of managing groups of peers sharing data, storing messages and managing permissions and encryption.
 
 Some apps have P2Panda built in, such as [Reflection](https://github.com/p2panda/reflection) (a P2P text editor for Gnome). If we did that for every web app on a server, we'd end up duplicating a lot of effort, and likely creating a lot of noise and complexity in our attempt to network these servers together.
 
