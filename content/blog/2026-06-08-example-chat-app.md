@@ -51,7 +51,7 @@ This client allows us to publish or subscribe to message. To [publish a message]
 
 ## Trying it out
 
-How do we know if all this works? We need a simple example app that everyone can install and learn from, and as we saw at the top of the article, we have one in the [LoRes Chat Example](https://github.com/local-resilience-tech/lores-chat-example).
+How do we know if all this works? We need a simple example app that everyone can install and learn from, and as we saw at the top of the article, we have one in the [LoRes Chat Example](https://git.coopcloud.tech/coop-cloud/lores-chat-example).
 
 This is a simple web app, with a back-end written in Rust and using the `lores-p2panda-client` library. The front-end is a little one-page React app, with a text box to send messages, and a list of received messages.
 
