@@ -7,6 +7,9 @@
         {{- if not .PublishDate.IsZero -}}
           <div class="post-date">{{- .PublishDate.Format "Jan 2, 2006" -}}</div>
         {{- end -}}
+        {{- with .Params.author -}}
+          <div class="post-author">by {{ . }}</div>
+        {{- end -}}
       </div>
 
       {{ .Content }} {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
