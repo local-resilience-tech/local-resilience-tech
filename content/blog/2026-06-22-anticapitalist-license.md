@@ -5,7 +5,7 @@ draft: false
 type: blog
 slug: anticapitalist-license
 author: Jade
-summary: xxx
+summary: The freedom to run the program as you wish, for any purpose is not compatible with a more nuanced view of humans being free from opporession. The LoRes Mesh project is changing to a software license that limits some uses, with the aim of better aligning our work with movements towards more liberatory futures.
 ---
 
 {{<hero>}}
