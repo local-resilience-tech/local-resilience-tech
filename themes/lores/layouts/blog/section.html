@@ -31,7 +31,9 @@
                 <div class="post-date">{{- .PublishDate.Format "Jan 2, 2006" -}}</div>
               {{- end -}}
             </div>
-            {{ .Summary }}
+            <div class="post-summary">
+              {{ .Summary }}
+            </div>
           </a>
         {{ end }}
       </div>
