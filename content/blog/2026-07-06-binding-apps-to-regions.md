@@ -1,6 +1,6 @@
 ---
 title: Binding apps to Regions in a LoRes Mesh
-date: 2026-06-06T09:00:00+10:00
+date: 2026-07-06T09:00:00+10:00
 draft: false
 type: blog
 slug: binding-apps-to-regions
