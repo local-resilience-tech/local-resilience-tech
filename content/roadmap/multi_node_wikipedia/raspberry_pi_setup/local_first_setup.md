@@ -49,3 +49,29 @@ Create `/etc/mdns.allow` containing:
 *.local.
 *.local
 ```
+
+### Switching to mDNS A records
+
+The above approach has two problems. Firstly, mDNS CNAME records aren't really a thing, they're an Avahi extension, not supported by all mDNS resolvers.
+
+Secondly, not all platforms support the approach of nesting "subdomains" in mDNS.
+
+The solution is to use A records, and to format them like `traefik-radish.local` (or perhaps `radish-traefik.local`).
+
+To test this, run a command like the following on the pi
+
+```bash
+avahi-publish-address -R traefik-radish.local 192.168.196.232
+```
+
+Where the local IP of the pi is used, or find that dynamically using:
+
+```bash
+avahi-publish-address -R traefik-radish.local $(hostname -I | awk '{print $1}')
+```
+
+#### Productionising the A-record approach
+
+There's no well-maintained tool that publishes multiple A records (not CNAMEs) via Avahi dynamically. The ecosystem has mostly converged on CNAMEs for this use case, which is why cross-platform support is patchy.
+
+Either I need to run multiple avahi-publish-address processes, or write a small program to call the Avahi D-Bus API to publish multiple A records in one process.
