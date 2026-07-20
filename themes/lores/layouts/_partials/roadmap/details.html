@@ -2,3 +2,12 @@
   <div class="status-indicator has-status status-{{ . | lower }}"><span>{{ . }}</span></div>
 {{ end }}
 
+{{ with .Params.assigned }}
+  {{ $assigned := . }}
+  {{ if not (reflect.IsSlice .) }}{{ $assigned = slice . }}{{ end }}
+  {{ range $assigned }}
+    {{ $entry := . }}
+    {{ if not (reflect.IsMap .) }}{{ $entry = dict "username" . }}{{ end }}
+    {{ partial "contributor.html" $entry }}
+  {{ end }}
+{{ end }}

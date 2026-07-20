@@ -7,7 +7,9 @@ type: roadmap
 summary: Setting up a node starts on the LAN and can be tested locally
 params:
   status: in-progress
-  assigned: jade
+  assigned:
+    - username: jade
+      role: Development
 ---
 
 {{< user_story >}}

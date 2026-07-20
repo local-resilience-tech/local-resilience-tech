@@ -1,0 +1,16 @@
+.contributor-preview {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+
+.contributor-preview img.avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.contributor-preview .details .name {
+  font-weight: bold;
+}

@@ -1,0 +1,16 @@
+{{ $username := .username }}
+{{ $role := .role }}
+{{ $contributor := site.GetPage (printf "contributors/%s" $username) }}
+<div class="contributor-preview">
+  {{ $avatar := "/images/default-avatar-60.png" }}
+  {{ if $contributor }}
+    {{ with $contributor.Params.avatar }}{{ $avatar = . }}{{ end }}
+  {{ end }}
+
+  <img src="{{ $avatar }}" alt="{{ if $contributor }}{{ $contributor.Title }}{{ else }}{{ $username }}{{ end }}" aria-hidden class="avatar">
+
+  <div class="details">
+    <div class="name">{{ if $contributor }}{{ $contributor.Title }}{{ else }}{{ $username }}{{ end }}</div>
+    {{ with $role }}<div class="contributor-role">{{ . }}</div>{{ end }}
+  </div>
+</div>
