@@ -6,7 +6,10 @@ weight: 1
 type: roadmap
 summary: The Raspberry Pi will automatically start a WiFi access point if it can't succesfully join one
 params:
-  status:
+  status: in-progress
+  assigned:
+    - username: mattcen
+      role: Development
 ---
 
 {{< user_story >}}
