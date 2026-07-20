@@ -6,7 +6,7 @@ weight: 1
 type: roadmap
 summary: Node stewards can setup a Raspberry Pi to host apps
 params:
-  status: testing
+  status: in-progress
 ---
 
 {{< user_story >}}
@@ -14,6 +14,13 @@ _As a_ **Node Steward**
 _I want to be able to_ **follow clear instructions that help me set up a Raspberry Pi for Co-op Cloud apps**
 _So that we can_ **start to practice hosting apps on the Pi**
 {{< /user_story >}}
+
+{{< aside >}}
+
+## Re-opened
+
+While this was regarded as done, we are now re-visiting it to make setup easier, as people have been struggling with it.
+{{</ aside >}}
 
 Easy node setup is somewhat relative. Easy to who? Our current audience for this is "somewhat technical". A lot of our early adopters have technical experience, at least in general operation of Linux. We don't want to produce a black box that can't be studied by experts if things go wrong. However, we do want to make the path towards gaining expertise feel accessible and rewarding for a large number of people.
 

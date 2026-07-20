@@ -22,4 +22,4 @@ This requires a landing page that works over mDNS.
 
 ## Key Risk
 
-Can we use HTTPS for a domain like `lores.local`. If not, will common browsers accepts an HTTP connection instead.
+Can we use HTTPS for a domain like `lores.local`. If not, will common browsers accept an HTTP connection instead.
