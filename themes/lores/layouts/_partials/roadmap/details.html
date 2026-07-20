@@ -1,0 +1,4 @@
+{{ with .Params.status }}
+  <div class="status-indicator has-status status-{{ . | lower }}"><span>{{ . }}</span></div>
+{{ end }}
+

@@ -1,18 +1,25 @@
 {{ define "main" }}
 <div class="with-side-nav">
-  {{ partial "roadmap_side_nav.html" . }}
+  {{ partial "roadmap/side_nav.html" . }}
 
   <div class="content">
-    <article class="roadmap-item-page on-light-blue {{ if .Params.status }}has-status status-{{ .Params.status }}{{ end }}">
-      <div class="article-header">
-        <h1>{{ .Title }}</h1>
+    <article class="roadmap-item-page roadmap-page on-light-blue {{ if .Params.status }}has-status status-{{ .Params.status }}{{ end }}">
+      <h1 class="title collapsed-only">{{ .Title }}</h1>
 
-        {{ with .Params.status }}
-          <div class="status-indicator status-{{ . | lower }}"><span>{{ . }}</span></div>
-        {{ end }}
+      <div class="content-and-details">
+        <div class="details-container">
+          {{ partial "roadmap/details.html" . }}
+
+        </div>
+
+        <div class="content-container">
+          <h1 class="title expanded-only" aria-hiden>{{ .Title }}</h1>
+
+          {{ .Content }}
+        </div>
       </div>
 
-      {{ .Content }} {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
+      {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
 
       <div class="parent-page-link">
           {{ with .Parent }}
