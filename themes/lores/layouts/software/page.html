@@ -4,10 +4,21 @@
     <article class="blog-page">
       <div class="article-header">
         <h1>{{ .Title }}</h1>
-        {{ partial "software/repo.html" .Params.repo }}
+        {{ partial "software/repo.html" .Params.repoURL }}
       </div>
 
-      {{ .Content }} {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
+      {{ .Content }}
+
+      <h1>README</h1>
+      {{ with .Params.readmeURL }}
+        {{ with resources.GetRemote . }}
+          {{ .Content | replaceRE `^#[^#][^\n]*\n?` "" | markdownify }}
+        {{ else }}
+          <!-- failed to fetch README -->
+        {{ end }}
+      {{ end }}
+
+      {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
     </article>
     <div class="right-sidebar"></div>
   </div>
