@@ -1,0 +1,14 @@
+{{ define "main" }}
+  <div class="centered-post on-light-blue">
+    <div class="left-sidebar"><a href="/software"><span aria-hidden="true">&lt;</span> all software</a></div>
+    <article class="blog-page">
+      <div class="article-header">
+        <h1>{{ .Title }}</h1>
+        {{ partial "software/repo.html" .Params.repo }}
+      </div>
+
+      {{ .Content }} {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
+    </article>
+    <div class="right-sidebar"></div>
+  </div>
+{{ end }}

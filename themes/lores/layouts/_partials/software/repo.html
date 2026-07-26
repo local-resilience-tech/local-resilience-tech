@@ -1,0 +1,5 @@
+{{- with . -}}
+  {{- $u := urls.Parse . -}}
+  {{- $hostSlug := replace $u.Host "." "_" -}}
+  <a class="repo" href="{{ . }}"><img src="/images/logo-{{ $hostSlug }}.svg" alt="{{ $u.Host }}" class="repo-logo"><span class="text">{{ $u.Path | strings.TrimPrefix "/" }}</span></a>
+{{- end -}}

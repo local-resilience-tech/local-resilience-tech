@@ -1,0 +1,24 @@
+{{ define "main" }}
+  <div class="blog-list-page on-light-blue">
+    <div class="contents">
+      <div class="header">
+        <h1>{{ .Title }}</h1>
+      </div>
+
+      {{ .Content }}
+
+      <div class="post-list">
+        {{ range .Pages }}
+          <a href="{{ .RelPermalink }}" class="post-link">
+            <div class="post-header">
+              <h2>{{ .LinkTitle }}</h2>
+            </div>
+            <div class="post-summary">
+              {{ .Summary }}
+            </div>
+          </a>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+{{ end }}

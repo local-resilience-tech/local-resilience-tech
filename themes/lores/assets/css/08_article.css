@@ -179,3 +179,19 @@ table tbody tr td {
 table tbody tr:nth-child(even) td {
   background-color: var(--table-row-stripe-bg);
 }
+
+.repo {
+  font-size: 1.2rem;
+  color: var(--grey3);
+  margin-top: 0.5rem;
+  display: flex;
+  flext-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.repo img.repo-logo {
+  width: 1em;
+  height: 1em;
+  filter: invert(1);
+}
