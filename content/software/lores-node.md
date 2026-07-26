@@ -7,4 +7,6 @@ summary: Web application for Node Stewards to manage their LoRes Node. Typically
 params:
   repoURL: https://github.com/local-resilience-tech/lores-node/
   readmeURL: https://raw.githubusercontent.com/local-resilience-tech/lores-node/refs/heads/main/README.md
+  coopCloudRecipeURL: https://recipes.coopcloud.tech/lores-node
+  coopCloudRecipeRepoURL: https://git.coopcloud.tech/coop-cloud/lores-node
 ---

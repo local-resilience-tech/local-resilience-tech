@@ -183,15 +183,17 @@ table tbody tr:nth-child(even) td {
 .repo {
   font-size: 1.2rem;
   color: var(--grey3);
-  margin-top: 0.5rem;
   display: flex;
-  flext-direction: row;
+  flex-direction: row;
   align-items: center;
-  gap: 0.5rem;
+  gap: 1rem;
 }
 
 .repo img.repo-logo {
-  width: 1em;
-  height: 1em;
-  filter: invert(1);
+  width: 30px;
+  height: 30px;
+}
+
+.alternate-header {
+  border: 2px solid var(--orange3);
 }

@@ -1,5 +1,12 @@
-{{- with . -}}
+{{- $url := . -}}
+{{- $label := "" -}}
+{{- if reflect.IsMap . -}}
+  {{- $url = .url -}}
+  {{- $label = .label -}}
+{{- end -}}
+{{- with $url -}}
   {{- $u := urls.Parse . -}}
   {{- $hostSlug := replace $u.Host "." "_" -}}
-  <a class="repo" href="{{ . }}"><img src="/images/logo-{{ $hostSlug }}.svg" alt="{{ $u.Host }}" class="repo-logo"><span class="text">{{ $u.Path | strings.TrimPrefix "/" }}</span></a>
+  {{- $text := cond (ne $label "") $label ($u.Path | strings.TrimPrefix "/") -}}
+  <a class="repo" href="{{ . }}"><img src="/images/logo-{{ $hostSlug }}.svg" alt="{{ $u.Host }}" class="repo-logo"><span class="text">{{ $text }}</span></a>
 {{- end -}}

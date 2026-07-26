@@ -1,22 +1,32 @@
 {{ define "main" }}
-  <div class="centered-post on-light-blue">
+  <div class="centered-post on-light-blue software-page software-item-page">
     <div class="left-sidebar"><a href="/software"><span aria-hidden="true">&lt;</span> all software</a></div>
     <article class="blog-page">
       <div class="article-header">
         <h1>{{ .Title }}</h1>
         {{ partial "software/repo.html" .Params.repoURL }}
+
       </div>
+
+      <aside class="alternate-header">
+        <h2>Co-op Cloud</h2>
+        {{ partial "software/repo.html" (dict "url" .Params.coopCloudRecipeURL "label" "Recipe") }}
+        {{ partial "software/repo.html" (dict "url" .Params.coopCloudRecipeRepoURL "label" "Recipe Repo") }}
+      </aside>
 
       {{ .Content }}
 
-      <h1>README</h1>
-      {{ with .Params.readmeURL }}
-        {{ with resources.GetRemote . }}
-          {{ .Content | replaceRE `^#[^#][^\n]*\n?` "" | markdownify }}
-        {{ else }}
-          <!-- failed to fetch README -->
+      <div class="imported-readme">
+        <h1>README</h1>
+        {{ with .Params.readmeURL }}
+          {{ with resources.GetRemote . }}
+            {{ .Content | replaceRE `^#[^#][^\n]*\n?` "" | markdownify }}
+          {{ else }}
+            <!-- failed to fetch README -->
+          {{ end }}
         {{ end }}
-      {{ end }}
+      </div>
+
 
       {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
     </article>
