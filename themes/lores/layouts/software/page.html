@@ -4,8 +4,11 @@
     <article class="blog-page">
       <div class="article-header">
         <h1>{{ .Title }}</h1>
-        {{ partial "software/repo.html" .Params.repoURL }}
 
+        <div class="links-list">
+          {{ partial "software/repo.html" .Params.repoURL }}
+          {{ partial "software/licence.html" .Params.licence }}
+        </div>
       </div>
 
       <aside class="alternate-header">
@@ -13,6 +16,8 @@
         {{ partial "software/repo.html" (dict "url" .Params.coopCloudRecipeURL "label" "Recipe") }}
         {{ partial "software/repo.html" (dict "url" .Params.coopCloudRecipeRepoURL "label" "Recipe Repo") }}
       </aside>
+
+
 
       {{ .Content }}
 

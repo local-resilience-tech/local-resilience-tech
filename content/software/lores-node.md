@@ -9,4 +9,8 @@ params:
   readmeURL: https://raw.githubusercontent.com/local-resilience-tech/lores-node/refs/heads/main/README.md
   coopCloudRecipeURL: https://recipes.coopcloud.tech/lores-node
   coopCloudRecipeRepoURL: https://git.coopcloud.tech/coop-cloud/lores-node
+  licence:
+    name: Anti-Capitalist Licence
+    url: https://anticapitalist.software/
+    version: 1.4
 ---

@@ -180,9 +180,21 @@ table tbody tr:nth-child(even) td {
   background-color: var(--table-row-stripe-bg);
 }
 
-.repo {
+.article-header .links-list {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
   font-size: 1.2rem;
   color: var(--grey3);
+}
+
+.links-list .links-list-label {
+  width: 6rem;
+  display: inline-block;
+}
+
+.repo {
   display: flex;
   flex-direction: row;
   align-items: center;

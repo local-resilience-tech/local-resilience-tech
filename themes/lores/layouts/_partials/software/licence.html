@@ -1,0 +1,10 @@
+{{- with . -}}
+  <div class="licence">
+    <span class="licence-label links-list-label">Licence:</span>
+    {{- if .url -}}
+      <a class="licence-name" href="{{ .url }}">{{ .name }}{{ with .version }} {{ . }}{{ end }}</a>
+    {{- else -}}
+      <span class="licence-name">{{ .name }}{{ with .version }} {{ . }}{{ end }}</span>
+    {{- end -}}
+  </div>
+{{- end -}}
