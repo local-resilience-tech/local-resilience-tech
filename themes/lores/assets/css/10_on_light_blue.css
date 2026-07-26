@@ -62,6 +62,10 @@
   color: var(--grey2);
 }
 
+.on-light-blue aside.variant-outline {
+  background-color: transparent;
+}
+
 .on-light-blue nav.between-pages {
   border-color: var(--burnt-orange4);
 }

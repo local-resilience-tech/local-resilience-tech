@@ -206,6 +206,6 @@ table tbody tr:nth-child(even) td {
   height: 30px;
 }
 
-.alternate-header {
-  border: 2px solid var(--orange3);
+aside .links-list {
+  margin-top: 0.5rem;
 }

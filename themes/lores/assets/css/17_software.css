@@ -6,3 +6,15 @@
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
+
+a.chat-room {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+
+a.chat-room img.chat-room-thumbnail {
+  width: 30px;
+  height: 30px;
+}

@@ -13,11 +13,23 @@
 
       <aside class="alternate-header">
         <h2>Co-op Cloud</h2>
-        {{ partial "software/repo.html" (dict "url" .Params.coopCloudRecipeURL "label" "Recipe") }}
-        {{ partial "software/repo.html" (dict "url" .Params.coopCloudRecipeRepoURL "label" "Recipe Repo") }}
+        <div class="links-list">
+          {{ partial "software/repo.html" (dict "url" .Params.coopCloudRecipeURL "label" "Recipe") }}
+          {{ partial "software/repo.html" (dict "url" .Params.coopCloudRecipeRepoURL "label" "Recipe Repo") }}
+        </div>
       </aside>
 
 
+
+      {{ with .Params.contributing }}
+        <aside class="contributing variant-outline">
+          <h2>Contributing</h2>
+          <div class="links-list">
+            {{ partial "software/chat-room.html" .chatRoom }}
+            {{ partial "software/repo.html" (dict "url" .issuesURL "label" "Submit an issue") }}
+          </div>
+        </aside>
+      {{ end }}
 
       {{ .Content }}
 

@@ -14,4 +14,10 @@ params:
     name: Anti-Capitalist Licence
     url: https://anticapitalist.software/
     version: 1.4
+  contributing:
+    chatRoom:
+      URL: https://matrix.to/#/#lores-app-dev:merri-bek.chat
+      name: LR | App Development
+      thumbnail: chat-room/apps.png
+    issuesURL: https://github.com/local-resilience-tech/lores-chat-example/issues
 ---

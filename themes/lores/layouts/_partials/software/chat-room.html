@@ -1,0 +1,8 @@
+{{- with . -}}
+  <a class="chat-room" href="{{ .URL }}">
+    {{- with .thumbnail -}}
+      <img src="/images/{{ . }}" alt="" class="chat-room-thumbnail">
+    {{- end -}}
+    <span class="chat-room-name">Chat room: {{ .name }}</span>
+  </a>
+{{- end -}}
