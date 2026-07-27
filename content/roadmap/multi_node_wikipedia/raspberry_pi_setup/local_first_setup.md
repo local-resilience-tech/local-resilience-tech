@@ -26,6 +26,34 @@ Can we use HTTPS for a domain like `lores.local`. If not, will common browsers a
 
 ## Resources and notes
 
+### mDNS A Records
+
+I've got this working. I built a tool called [coop-cloud-mdns-publisher](https://github.com/local-resilience-tech/coop-cloud-mdns-publisher) that automatically publishes mDNS records for Co-op Cloud services.
+
+I have the following work to do in ccmdns:
+
+- [ ] For apps with hypens in their names: When I setup the app `lores-node-radish.local-env`, it seems to think it's app name is `lores-node-radish`, and so ccmdns creates a mDNS record called `lores-node-radish-radish.local`
+
+## App publishing
+
+I can publish the app in abra, providing I use the `-D` / `--no-domain-checks` flag. Otherwise, it'll try and check the domain on the internet and fail.
+
+I've found the following niggles that I'd like to fix in abra, to make things easier:
+
+- [ ] Automatic no domain lookup on `.local` addresses
+- [ ] When creating a new app for a `.local` address, auto-suggest `appname-hostname.local` instead of `appname.hostname.local`
+
+## App Traffic routing
+
+The Co-op Cloud traefik setup insists on HTTPS (sensibly). I need to investigate using self-signed certificates for .local apps, or using (gasp) HTTP.
+
+- Traefik dashboard wont display on insecure HTTP (probably for the best)
+- Traefik wont direct traffic to lores-node-radish.local on insecure HTTP (sad face)
+
+{{<archive>}}
+
+## Archived notes
+
 - Default Raspberry Pi ubuntu config does not publish avahi record. The fix is to enable `publish-workstation` and restart the avahi daemon as per [this article](https://askubuntu.com/questions/1458161/avahi-browse-cannot-find-all-local-computers-although-mdns-is-working)
 - This go program is amazing, and does what it says on the tin. [go-avahi-cname](https://github.com/grishy/go-avahi-cname)
 
@@ -75,3 +103,5 @@ avahi-publish-address -R traefik-radish.local $(hostname -I | awk '{print $1}')
 There's no well-maintained tool that publishes multiple A records (not CNAMEs) via Avahi dynamically. The ecosystem has mostly converged on CNAMEs for this use case, which is why cross-platform support is patchy.
 
 Either I need to run multiple avahi-publish-address processes, or write a small program to call the Avahi D-Bus API to publish multiple A records in one process.
+
+{{</archive>}}

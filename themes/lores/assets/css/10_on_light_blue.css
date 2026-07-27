@@ -66,6 +66,27 @@
   background-color: transparent;
 }
 
+.on-light-blue .archive {
+  background-color: var(--blue6);
+  border-color: var(--blue9);
+  color: var(--grey2);
+  opacity: 0.9;
+}
+
+.on-light-blue .archive h1 {
+  color: var(--burnt-orange2);
+}
+
+.on-light-blue .archive h2 {
+  color: var(--burnt-orange3);
+}
+
+.on-light-blue .archive h3,
+.on-light-blue .archive h4,
+.on-light-blue .archive h5 {
+  color: var(--burnt-orange4);
+}
+
 .on-light-blue nav.between-pages {
   border-color: var(--burnt-orange4);
 }

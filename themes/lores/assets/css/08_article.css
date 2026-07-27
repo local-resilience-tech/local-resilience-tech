@@ -97,6 +97,15 @@ article aside > *:last-child {
   margin-bottom: 0;
 }
 
+article .archive {
+  border: 2px solid black;
+  padding: 1rem;
+  border-radius: 3px;
+  max-width: calc(var(--main-content-width) * 0.9);
+  margin-top: 1rem;
+  opacity: 0.7;
+}
+
 section.hero {
   font-size: 150%;
   max-width: var(--main-content-width);
