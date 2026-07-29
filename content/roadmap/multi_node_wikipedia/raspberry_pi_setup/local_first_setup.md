@@ -32,7 +32,7 @@ I've got this working. I built a tool called [coop-cloud-mdns-publisher](https:/
 
 I have the following work to do in ccmdns:
 
-- [ ] For apps with hypens in their names: When I setup the app `lores-node-radish.local-env`, it seems to think it's app name is `lores-node-radish`, and so ccmdns creates a mDNS record called `lores-node-radish-radish.local`
+- [x] For apps with hypens in their names: When I setup the app `lores-node-radish.local-env`, it seems to think it's app name is `lores-node-radish`, and so ccmdns creates a mDNS record called `lores-node-radish-radish.local`. _I've fixed this for now by using recipe name instead_
 
 ## App publishing
 
