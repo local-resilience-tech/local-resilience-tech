@@ -218,3 +218,25 @@ table tbody tr:nth-child(even) td {
 aside .links-list {
   margin-top: 0.5rem;
 }
+
+article .under-construction {
+  --color1: var(--orange3);
+  --color2: #bbb;
+  --stripe-thickness: 15px;
+
+  padding: 10px;
+  border-radius: 5px;
+
+  color: black;
+  font-weight: bold;
+  font-size: 120%;
+
+  background: repeating-linear-gradient(45deg, var(--color1), var(--color1) var(--stripe-thickness), var(--color2) var(--stripe-thickness), var(--color2) calc(2 * var(--stripe-thickness)));
+}
+
+article .under-construction a,
+article .under-construction a:visited,
+article .under-construction a:hover {
+  color: #0000aa;
+  text-decoration: underline;
+}

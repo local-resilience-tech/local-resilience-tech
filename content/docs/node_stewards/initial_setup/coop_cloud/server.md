@@ -50,7 +50,7 @@ Where are these files? They are stored on your dev computer at `~/.abra`.
 
 If you have there, you'll see that there is now a directory created for the server named something like `~/.abra/servers/makerspace.nodes.merri-bek.tech`. You can check this with `ls ~/.abra/servers`.
 
-As we start adding apps to this server, configuration files will start appearing in this directory. In other words, this directory is the definition of how our server is setup. If we loose this directory, perhaps because our dev computer breaks, then we'd have to re-create our server from scratch (which would be quite tricky as it gets more complicated).
+As we start adding apps to this server, configuration files will start appearing in this directory. In other words, this directory is the definition of how our server is setup. If we lose this directory, perhaps because our dev computer breaks, then we'd have to re-create our server from scratch (which would be quite tricky as it gets more complicated).
 
 ## Storing config in git
 
