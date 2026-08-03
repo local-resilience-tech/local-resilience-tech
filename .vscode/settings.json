@@ -118,6 +118,7 @@
     "WebSockets",
     "gRPC",
     "explainer",
+    "auth",
     "Rauthy",
     "Kanidm",
     "Authentik",
