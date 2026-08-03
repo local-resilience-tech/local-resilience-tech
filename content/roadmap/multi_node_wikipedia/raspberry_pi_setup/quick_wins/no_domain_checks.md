@@ -8,6 +8,8 @@ summary: Ensure that we don't need to disable domain checks in abra for .local d
 keywords:
   - open-to-contribution
   - good-first-issue
+  - code
+  - language:go
 params:
   status:
   languages: go

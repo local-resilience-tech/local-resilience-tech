@@ -10,7 +10,7 @@ menus:
 ---
 
 {{<hero>}}
-This is a grass-roots, community project. Anyone is welcome to make contributions, and it's more important for us to create an inclusive and welcoming experience for contributors than to work efficiently.
+This is a grass-roots, community project. Anyone is welcome to make contributions, and it's more important for us to create an inclusive and welcoming experience for contributors than to work as efficiently as possible.
 {{</hero>}}
 
 ## How we treat each other
@@ -19,4 +19,4 @@ We're building a better future together, and _**how**_ we do that matters. For t
 
 ## Issues looking for contributors
 
-{{< issue_list has_keywords="open-to-contribution" exclude_status="complete" >}}
+{{< issue-list has_keywords="open-to-contribution" exclude_status="complete" >}}

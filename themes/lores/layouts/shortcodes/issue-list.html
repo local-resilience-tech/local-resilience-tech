@@ -1,0 +1,37 @@
+{{- $pages := site.RegularPages -}}
+{{- $hasKeywords := .Get "has_keywords" -}}
+{{- $excludeStatus := .Get "exclude_status" -}}
+{{- $hasKeywordList := slice -}}
+{{- if $hasKeywords -}}{{- $hasKeywordList = split $hasKeywords "," -}}{{- end -}}
+{{- if $hasKeywordList -}}
+  {{- $pages = where $pages "Params.keywords" "intersect" $hasKeywordList -}}
+{{- end -}}
+{{- if $excludeStatus -}}
+  {{- $excludeList := split $excludeStatus "," -}}
+  {{- range $excludeList -}}
+    {{- $pages = where $pages "Params.status" "ne" (trim . " ") -}}
+  {{- end -}}
+{{- end -}}
+
+<ul class="issue-list">
+  {{- range $pages }}
+  <li>
+    <a href="{{ .RelPermalink }}">
+      <h2>{{ .Title }}</h2>
+      {{- with .Params.summary }}<p>{{ . }}</p>{{ end }}
+
+      {{- with .Params.keywords -}}
+        {{- $displayKeywords := . -}}
+        {{- if reflect.IsSlice $displayKeywords -}}
+          {{- $displayKeywords = complement $hasKeywordList $displayKeywords -}}
+        {{- end -}}
+        {{- with $displayKeywords }}
+          <ul class="keyword-list">
+            {{- range . }}<li>{{ . }}</li>{{ end }}
+          </ul>
+        {{ end -}}
+      {{- end }}
+    </a>
+  </li>
+  {{- end }}
+</ul>
