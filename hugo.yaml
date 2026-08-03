@@ -15,21 +15,24 @@ menus:
     - name: "Roadmap"
       pageRef: "/roadmap"
       weight: 1
+    - name: "Contributing"
+      pageRef: "/contributing"
+      weight: 2
     - name: "Software"
       pageRef: "/software"
-      weight: 2
+      weight: 3
     - name: "Docs"
       pageRef: "/docs"
-      weight: 3
+      weight: 4
     - name: "Blog"
       pageRef: "/blog"
-      weight: 4
+      weight: 5
     - name: "Media"
       pageRef: "/media"
-      weight: 5
+      weight: 6
     - name: "Contact us"
       pageRef: "/contact"
-      weight: 6
+      weight: 7
 module:
   hugoVersion:
     extended: false

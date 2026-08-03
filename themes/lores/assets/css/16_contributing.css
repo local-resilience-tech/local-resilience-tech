@@ -1,0 +1,32 @@
+ul.issue-list {
+  list-style: none;
+  padding: 0;
+  margin: 1em 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+ul.issue-list li {
+}
+
+ul.issue-list li a {
+  display: block;
+  background-color: var(--blue7);
+  border: 2px solid var(--blue9);
+  border-radius: 8px;
+  color: var(--grey2);
+  padding: 1em;
+  text-decoration: none;
+}
+
+ul.issue-list li a:hover {
+  background-color: var(--blue6);
+  border-color: var(--blue8);
+  color: var(--grey1);
+}
+
+ul.issue-list li a h2 {
+  margin: 0;
+  font-size: 1.2em;
+}

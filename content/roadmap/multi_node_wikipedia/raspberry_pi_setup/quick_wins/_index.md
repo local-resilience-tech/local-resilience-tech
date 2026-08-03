@@ -6,7 +6,7 @@ weight: 2
 type: roadmap
 summary: Faster progression to the first visible results of node setup
 params:
-  status: testing
+  status: in-progress
 ---
 
 {{< user_story >}}
