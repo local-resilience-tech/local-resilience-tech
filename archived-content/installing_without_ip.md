@@ -7,7 +7,7 @@ type: docs
 menus:
   docs:
     name: No IP address
-    parent: Troubleshooting
+    parent: Archive
 ---
 
 {{<hero>}}

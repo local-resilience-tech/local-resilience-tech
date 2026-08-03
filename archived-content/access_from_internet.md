@@ -7,7 +7,7 @@ type: docs
 menus:
   docs:
     name: Access from internet
-    parent: Raspberry Pi
+    parent: Archive
 ---
 
 {{<hero>}}

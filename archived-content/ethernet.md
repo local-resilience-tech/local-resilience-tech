@@ -7,7 +7,7 @@ type: docs
 menus:
   docs:
     name: Ethernet
-    parent: Raspberry Pi
+    parent: Archive
 ---
 
 {{<hero>}}

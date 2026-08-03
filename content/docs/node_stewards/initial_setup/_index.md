@@ -2,7 +2,7 @@
 title: Initial Node Setup
 date: 2025-09-03T09:00:00+10:00
 draft: false
-weight: 1
+weight: 2
 type: docs
 menus:
   docs:
@@ -39,10 +39,8 @@ This is an opinionated tutorial, so while most of these requirements have altern
 - A [Raspberry Pi 5](https://www.raspberrypi.com/products/raspberry-pi-5/) with case and power supply.
 - A MicroSD card, at least 64GB. Empty is best, no need to buy one advertised as specifically for the Pi.
 - A MicroSD card reader, sometimes found built into laptops or cheaply available as a USB accessory
-- A 256GB USB flash drive ([details](./coop_cloud/preparing_flash_drive)) that supports USB type A
 - A local wifi network, presumably with password to access it
 - Internet access available on your wifi, at least during this setup phase
-- Optional: An ethernet cable, probably a short one
 
 We're also going to assume for the moment that your dev computer is running Linux. In practice this probably isn't strictly necessary, but it makes our instructions a bit simpler.
 
@@ -63,9 +61,7 @@ More advanced users can probably translate these instructions for Mac OSX, or fo
 
 Setting up this node will touch on a range of skills, which are also useful outside of this project. You'll learn about:
 
-- [Git](https://git-scm.com/) - a distributed way of of sharing source code and recording each change to it
 - [Ubuntu Linux](https://ubuntu.com/server) - a common and beginner-friendly flavour of Linux
 - [Co-op Cloud](https://coopcloud.tech/) - a software stack for hosting web apps built by a federation of tech co-ops
-- [Kiwix](https://kiwix.org/en/) - an offline reading app that supports wikipedia and other sites
 
 Sound good? Let's get started.

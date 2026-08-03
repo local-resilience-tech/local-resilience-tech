@@ -6,7 +6,7 @@ weight: 5
 type: docs
 menus:
   docs:
-    name: Firewall 🆕
+    name: Firewall
     parent: Raspberry Pi
 ---
 

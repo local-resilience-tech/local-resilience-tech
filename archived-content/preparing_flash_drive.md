@@ -7,7 +7,7 @@ type: docs
 menus:
   docs:
     name: Preparing drive
-    parent: Co-op Cloud
+    parent: Archive
 ---
 
 {{<hero>}}

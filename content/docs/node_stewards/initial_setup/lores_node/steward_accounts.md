@@ -18,7 +18,7 @@ However, in this initial setup, that's probably just you. Let's go through the p
 
 ## Storing the admin credentials
 
-Presuming that you've just [installed lores-node with Co-op Cloud](..), you should now be able to visit it's url in your browser, something like `https://lores-node.YOUR_SERVER_DOMAIN`, and you'll see the following:
+Presuming that you've just [installed lores-node with Co-op Cloud](..), you should now be able to visit it's url in your browser at `https://YOUR_HOSTNAME.local`, and you'll see the following:
 
 {{< figure src="/images/node_stewards/lores_node/setup-admin-password.png" alt="A screenshot with the text: Setup your admin password. The admin password is only used to create the users you use to steward this node. It can be reset at any time. The password is auto-generated and only displayed to you this once. If you're ready to store it in a safe place (an encrypted password manager, for example), click the button below to continue.">}}
 
@@ -26,7 +26,7 @@ When you're ready to get started, go ahead and hit "Generate admin password", an
 
 ## Creating your Node Steward account
 
-To manage accounts for **Node Steward**, you log into the admin interface at `https://lores-node.YOUR_SERVER_DOMAIN/admin`. This just requires the admin password you already saved.
+To manage accounts for **Node Steward**, you log into the admin interface at `https://YOUR_HOSTNAME.local`. This just requires the admin password you already saved.
 
 On that screen, hit the plus (`+`) button and give your new node steward a display name. That doesn't have to be unique, there's a unique ID generated for each steward, but just a name that makes sense amongst your fellow Node Stewards.
 
@@ -40,7 +40,7 @@ In this case, we're creating a Node Steward account for ourselves, so it's proba
 
 ## Setting your Node Steward password
 
-To set your password, go back to the main page at `https://lores-node.YOUR_SERVER_DOMAIN` and hit "log in".
+To set your password, go back to the main page at `https://YOUR_HOSTNAME.local` and hit "log in".
 
 On the log in page, you'll notice that it says "If you are a new node steward, you will have been given a one-use token to set a password.", and `to set a password` is a link to `/auth/node_steward/set_password`. Go to that page and pop in your node steward ID, your one-use token, and your new password.
 

@@ -7,7 +7,7 @@ type: docs
 menus:
   docs:
     name: Wikipedia
-    parent: Co-op Cloud
+    parent: Archive
 ---
 
 {{<hero>}}

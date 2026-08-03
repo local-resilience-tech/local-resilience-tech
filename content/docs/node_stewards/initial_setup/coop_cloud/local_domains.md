@@ -6,8 +6,8 @@ weight: 1
 type: docs
 menus:
   docs:
-    name: Local domains v2
-    parent: Co-op Cloud v2
+    name: Local domains
+    parent: Co-op Cloud
 ---
 
 {{<hero>}}
