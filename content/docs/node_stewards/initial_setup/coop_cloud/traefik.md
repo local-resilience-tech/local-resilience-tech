@@ -68,8 +68,8 @@ In the [last step](../server) we created a pair of certificate files for our ser
 Run the following from your dev computer:
 
 ```bash
-abra app secret insert traefik-radish.local ssl_cert v1 pi_local.crt -f
-abra app secret insert traefik-radish.local ssl_key v1 pi_local.key -f
+abra app secret insert traefik-YOUR_HOSTNAME.local ssl_cert v1 pi_local.crt -f
+abra app secret insert traefik-YOUR_HOSTNAME.local ssl_key v1 pi_local.key -f
 ```
 
 ## Deploying the app
