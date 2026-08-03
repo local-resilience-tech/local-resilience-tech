@@ -5,7 +5,8 @@ article.home {
 }
 
 article.docs-page,
-article.blog-page {
+article.blog-page,
+article.page {
   padding: var(--page-gutter);
   min-height: 80vh;
 }
