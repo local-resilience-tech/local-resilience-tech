@@ -12,7 +12,6 @@ keywords:
   - language:go
 params:
   status:
-  languages: go
 ---
 
 {{< user_story >}}
