@@ -1,6 +1,10 @@
 {{ define "main" }}
   <div class="with-side-nav">
-    {{ partial "side_nav.html" (dict "menuID" "docs" "page" .) }}
+    {{- with .Menus }}
+      {{- range $menuID, $_ := . }}
+        {{ partial "side_nav.html" (dict "menuID" $menuID "page" $) }}
+      {{- end }}
+    {{- end }}
     <div class="content">
       <article class="docs-page on-light-blue">
         <h1>{{ .Title }}</h1>

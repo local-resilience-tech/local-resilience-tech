@@ -4,6 +4,9 @@ date: 2025-10-03T09:00:00+10:00
 draft: false
 weight: 1
 type: page
+menus:
+  contributing:
+    name: Contributing
 ---
 
 {{<hero>}}

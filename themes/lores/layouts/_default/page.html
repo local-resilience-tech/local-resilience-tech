@@ -1,9 +1,16 @@
 {{ define "main" }}
-  <div class="solo on-light-blue">
-    <article class="solo-page">
-      <h1>{{ .Title }}</h1>
+  <div class="with-side-nav">
+    {{- with .Menus }}
+      {{- range $menuID, $_ := . }}
+        {{ partial "side_nav.html" (dict "menuID" $menuID "page" $) }}
+      {{- end }}
+    {{- end }}
+    <div class="content">
+      <article class="docs-page on-light-blue">
+        <h1>{{ .Title }}</h1>
 
-      {{ .Content }} {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
-    </article>
+        {{ .Content }} {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
+      </article>
+    </div>
   </div>
 {{ end }}

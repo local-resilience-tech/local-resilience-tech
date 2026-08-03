@@ -18,21 +18,18 @@ menus:
     - name: "Contributing"
       pageRef: "/contributing"
       weight: 2
-    - name: "Software"
-      pageRef: "/software"
-      weight: 3
     - name: "Docs"
       pageRef: "/docs"
-      weight: 4
+      weight: 3
     - name: "Blog"
       pageRef: "/blog"
-      weight: 5
+      weight: 4
     - name: "Media"
       pageRef: "/media"
-      weight: 6
+      weight: 5
     - name: "Contact us"
       pageRef: "/contact"
-      weight: 7
+      weight: 6
 module:
   hugoVersion:
     extended: false
