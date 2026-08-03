@@ -77,6 +77,10 @@ article pre code {
   overflow-x: auto;
 }
 
+article em code {
+  font-style: normal;
+}
+
 article pre {
   border-radius: 3px;
 }

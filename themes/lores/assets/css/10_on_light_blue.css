@@ -45,7 +45,7 @@
 }
 
 .on-light-blue code {
-  background-color: var(--blue9);
+  background-color: var(--blue7);
 }
 
 .on-light-blue pre code {
@@ -60,6 +60,10 @@
   background-color: var(--blue7);
   border-color: var(--blue9);
   color: var(--grey2);
+}
+
+.on-light-blue aside code {
+  background-color: var(--blue9);
 }
 
 .on-light-blue aside.variant-outline {
