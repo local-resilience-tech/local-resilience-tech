@@ -103,3 +103,10 @@ Further updates should happen automatically, because the `unattended-upgrades` p
 ## Our Pi is ready for action
 
 Now we have a Pi ready to setup as a **LoRes Node**. In the next section we'll cover how to start using Co-op Cloud, a system for installing open source web software.
+
+## Checklist
+
+You should have completed:
+
+- [x] Verified you can ssh into your pi
+- [x] Installed package updates

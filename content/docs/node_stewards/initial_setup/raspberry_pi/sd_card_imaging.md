@@ -115,3 +115,9 @@ The SD Card is now being prepared. You make way to make a coffee or something, t
 {{< /image-section >}}
 
 When it's done, remove the SD card and close Raspberry Pi Imager.
+
+## Checklist
+
+You should have completed:
+
+- [x] SD card ready to put in the Raspberry Pi

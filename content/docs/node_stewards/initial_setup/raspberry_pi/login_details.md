@@ -65,3 +65,10 @@ You'll be prompted for your passphrase to do this.
 ## Wrapping up
 
 We're going to use both the password and the key-pair we just created in setting up our Raspberry Pi. The key-pair can also be used for other things, you usually only need one of those for your dev computer to prove that you are _you_. Let's proceed to setup our Pi and use those credentials.
+
+## Checklist
+
+You should have completed:
+
+- [x] Generated SSH key-pair stored on your computer
+- [x] Added key-pair to ssh-agent

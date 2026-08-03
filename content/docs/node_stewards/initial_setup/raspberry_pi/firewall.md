@@ -73,3 +73,9 @@ sudo ufw enable
 ```
 
 And that's it. Once it's it's enabled, you can always check your status with `sudo ufw status`.
+
+## Checklist
+
+You should have completed:
+
+- [x] Enabled ufw on your Raspberry Pi
