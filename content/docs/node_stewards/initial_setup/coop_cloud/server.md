@@ -36,7 +36,7 @@ And you should see this server in your list of servers.
 
 For this server, we're going to need SSL certificates so that it can encrypt traffic. Since we're using a server at a `.local` address, we can't use the regular, internet-based ways of doing this. We need to create our own.
 
-This uses the `openssql` tool. If your dev computer is Linux, you probably already have it installed. On other operating systems you might need to find it to install.
+This uses the `openssl` tool. If your dev computer is Linux, you probably already have it installed. On other operating systems you might need to find it to install.
 
 Here's the command. It's a pretty big one. Before you paste it into your terminal, you need to go through and replace every instance of `YOUR_HOSTNAME` with the actual hostname of your pi (eg: `lores`). You run this on your **dev computer**.
 
