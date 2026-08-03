@@ -1,5 +1,5 @@
 {{ define "main" }}
-  <div class="with-side-nav">
+  <div class="with-side-nav floating-side-nav on-light-blue">
     {{- with .Menus }}
       {{- range $menuID, $_ := . }}
         {{ partial "side_nav.html" (dict "menuID" $menuID "page" $) }}
@@ -7,7 +7,7 @@
     {{- end }}
 
     <div class="content">
-      <article class="docs-page on-light-blue">
+      <article class="docs-page">
         <h1>{{ .Title }}</h1>
 
         {{ .Content }} {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}

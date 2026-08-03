@@ -1,5 +1,5 @@
 {{ define "main" }}
-  <div class="on-light-blue with-side-nav">
+  <div class="on-light-blue with-side-nav floating-side-nav">
     {{- with .Menus }}
       {{- range $menuID, $_ := . }}
         {{ partial "side_nav.html" (dict "menuID" $menuID "page" $) }}
