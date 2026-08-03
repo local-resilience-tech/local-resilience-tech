@@ -6,7 +6,7 @@ weight: 1
 type: roadmap
 summary: Node stewards can setup a Raspberry Pi to host apps
 params:
-  status: in-progress
+  status: testing
 ---
 
 {{< user_story >}}

@@ -6,7 +6,7 @@ weight: 1
 type: roadmap
 summary: Setting up a node starts on the LAN and can be tested locally
 params:
-  status: in-progress
+  status: testing
   assigned:
     - username: jade
       role: Development
