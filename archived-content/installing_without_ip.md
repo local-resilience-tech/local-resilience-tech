@@ -34,7 +34,7 @@ Then we get back an IP address, looking something like `192.168.196.1`. Make a n
 
 ### Editing the host file
 
-You want to perform this step on your **dev machine**. You are telling that machine where to find your pi.
+You want to perform this step on your **dev computer**. You are telling that machine where to find your pi.
 
 You can edit this file from a terminal, using:
 
@@ -50,7 +50,7 @@ You'll see that every line in your hosts file starts with an IP address, and the
 
 ## Still on windows?
 
-If your dev machine is using windows, you still have a host file, it's just in a different place. Read [How to Edit the hosts File on Windows 10 or 11](https://www.howtogeek.com/784196/how-to-edit-the-hosts-file-on-windows-10-or-11/) for details.
+If your dev computer is using windows, you still have a host file, it's just in a different place. Read [How to Edit the hosts File on Windows 10 or 11](https://www.howtogeek.com/784196/how-to-edit-the-hosts-file-on-windows-10-or-11/) for details.
 {{</aside>}}
 
 ### Writing your dummy hostname to the hosts file

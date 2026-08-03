@@ -2,7 +2,7 @@
 title: Abra server config
 date: 2025-09-03T09:00:00+10:00
 draft: false
-weight: 2
+weight: 4
 type: docs
 menus:
   docs:
@@ -36,9 +36,9 @@ And you should see this server in your list of servers.
 
 For this server, we're going to need SSL certificates so that it can encrypt traffic. Since we're using a server at a `.local` address, we can't use the regular, internet-based ways of doing this. We need to create our own.
 
-This uses the `openssql` tool. If your dev machine is Linux, you probably already have it installed. On other operating systems you might need to find it to install.
+This uses the `openssql` tool. If your dev computer is Linux, you probably already have it installed. On other operating systems you might need to find it to install.
 
-Here's the command. It's a pretty big one. Before you paste it into your terminal, you need to go through and replace every instance of `YOUR_HOSTNAME` with the actual hostname of your pi (eg: `lores`). You run this on your **dev machine**.
+Here's the command. It's a pretty big one. Before you paste it into your terminal, you need to go through and replace every instance of `YOUR_HOSTNAME` with the actual hostname of your pi (eg: `lores`). You run this on your **dev computer**.
 
 ```bash
 openssl req -x509 -out pi_local.crt -keyout pi_local.key \
@@ -50,3 +50,10 @@ openssl req -x509 -out pi_local.crt -keyout pi_local.key \
 When you run this, it should generate two files: `pi_local.crt` and `pi_local.key`.
 
 If you've got those files, we're ready to move onto the next step and install something on our server.
+
+## Checklist
+
+You should have completed:
+
+- [x] We have created the server config in abra on our dev computer
+- [x] We have created a pair of self-signed certificate files on our dev computer

@@ -101,7 +101,7 @@ To direct traffic, we're going to have to make sure our router forwards traffic 
 
 How this is done varies on each home router. In general though, your router will have an admin interface - in most cases it's a web interface that you find at the IP address of the router. The username and password are usually written on the bottom of the router. If it's _admin/admin_ now could be your moment to change it.
 
-While logged in to the router's admin page, you'll need to find where to set port forwards. It's hard to give instructions with such big differences between routers, but you might find [this article](https://www.wikihow.com/Set-Up-Port-Forwarding-on-a-Router) helpful. Remember you can also ask questions on [our Node Stewards chatroom](https://matrix.to/#/#lores-node-stewards:merri-bek.chat).
+While logged in to the router's admin page, you'll need to find where to set port forwards. It's hard to give instructions with such big differences between routers, but you might find [this article](https://www.wikihow.com/Set-Up-Port-Forwarding-on-a-Router) helpful. Remember you can also ask questions on [our Node Stewards chatroom](https://matrix.to/#/#lores-node-stewarding:merri-bek.chat).
 
 You need to setup port forwards, directed at the local IP address of your Raspberry Pi, for the following port numbers:
 

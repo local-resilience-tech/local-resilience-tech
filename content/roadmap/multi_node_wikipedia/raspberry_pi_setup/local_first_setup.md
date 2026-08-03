@@ -89,7 +89,7 @@ abra app deploy traefik-radish.local -D
 - Default Raspberry Pi Ubuntu config does not publish Avahi record. The fix is to enable `publish-workstation` and restart the Avahi daemon as per [this article](https://askubuntu.com/questions/1458161/avahi-browse-cannot-find-all-local-computers-although-mdns-is-working)
 - This go program is amazing, and does what it says on the tin. [go-avahi-cname](https://github.com/grishy/go-avahi-cname)
 
-So the `go-avahi-cname` app uses CNAME mDNS records (as you might expect). When I run that, I can detect the subdomain from my dev machine with a command like `avahi-resolve-host-name traefik.radish.local`.
+So the `go-avahi-cname` app uses CNAME mDNS records (as you might expect). When I run that, I can detect the subdomain from my dev computer with a command like `avahi-resolve-host-name traefik.radish.local`.
 
 However, if I try and ping, I get the following results on different platforms.
 

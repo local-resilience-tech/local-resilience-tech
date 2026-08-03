@@ -2,7 +2,7 @@
 title: Local domains for apps
 date: 2025-09-03T09:00:00+10:00
 draft: false
-weight: 1
+weight: 3
 type: docs
 menus:
   docs:
@@ -63,3 +63,9 @@ sudo apt install ccmdns_0.3.0-1_arm64.deb
 ```
 
 Once it's installed, it stays running, and for every Co-op cloud app you install, it will automatically start publishing a new domain on your local network of the form `APPNAME-HOSTNAME.local`.
+
+## Checklist
+
+You should have completed:
+
+- [x] ccmdns is installed and running on our Raspberry Pi

@@ -2,7 +2,7 @@
 title: Docker swarm setup
 date: 2025-09-03T09:00:00+10:00
 draft: false
-weight: 1
+weight: 2
 type: docs
 menus:
   docs:
@@ -115,3 +115,12 @@ docker network create -d overlay proxy
 ```
 
 Unless there's an error, you're good to go.
+
+## Checklist
+
+You should have completed:
+
+- [x] Docker is installed and running on our Raspberry Pi
+- [x] We can access docker without sudo
+- [x] A docker swarm has been started
+- [x] The network overlay has been created

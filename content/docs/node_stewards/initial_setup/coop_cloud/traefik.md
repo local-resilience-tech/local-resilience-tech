@@ -2,7 +2,7 @@
 title: The Traefik web proxy
 date: 2025-09-03T09:00:00+10:00
 draft: false
-weight: 3
+weight: 5
 type: docs
 menus:
   docs:
@@ -65,7 +65,7 @@ Programmers also often use this feature to temporarily disable a section of the 
 
 In the [last step](../server) we created a pair of certificate files for our server. This is where we add them.
 
-Run the following from your dev machine:
+Run the following from your dev computer:
 
 ```bash
 abra app secret insert traefik-radish.local ssl_cert v1 pi_local.crt -f
@@ -97,3 +97,12 @@ With the advanced section expanded, hit the button that says _**"Proceed to trae
 And with that, you should be in. If it worked, ou should now be looking at the Traefik dashboard. It's a good tool for seeing how things work. We might disable it later for security reasons, but for now let's keep it there to explore.
 
 {{< figure src="/images/node_stewards/initial_setup/traefik/dashboard.png" alt="A screenshot of the web dashboard for Traefik proxy, showing entry-points on port 80 and 443.">}}
+
+## Checklist
+
+You should have completed:
+
+- [x] We have created the traefik abra app definition
+- [x] We have changed the traefik app config to enable self-signed certificates
+- [x] We have added the self-signed certificates to abra secrets
+- [x] We have deployed traefik to our Raspberry Pi and can access it in the browser

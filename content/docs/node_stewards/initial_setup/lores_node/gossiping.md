@@ -3,7 +3,7 @@ title: Gossiping with peer Nodes
 date: 2026-03-08T09:00:00+10:00
 draft: false
 type: docs
-weight: 4
+weight: 5
 menus:
   docs:
     name: Gossiping
@@ -35,3 +35,10 @@ We solve this problem by specifying bootstrap nodes. Nodes are identified by an 
 In the sidebar, select P2Panda node, and you'll have the ability to add another node's ID as a bootstrap node. You can also see your node ID on this page, so you can pass it to someone else if they need to do the same.
 
 {{< figure src="/images/node_stewards/lores_node/add-bootstrap-node.png" alt="A screenshot with the heading: This P2Panda Node. Also, a button titled Add bootstrap node has been used to open a form taking a Bootstrap Node ID.">}}
+
+## Checklist
+
+You should have completed:
+
+- [x] Added the ID of another node in our region as a bootrap node
+- [x] Had our join request for the region approved

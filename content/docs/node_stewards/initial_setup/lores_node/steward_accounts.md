@@ -3,7 +3,7 @@ title: Node steward accounts
 date: 2026-03-08T09:00:00+10:00
 draft: false
 type: docs
-weight: 2
+weight: 3
 menus:
   docs:
     name: Steward accounts
@@ -47,3 +47,10 @@ On the log in page, you'll notice that it says "If you are a new node steward, y
 Of course you're no doubt using a password manager for this, generating a strong password, and storing it with the ID. You wont need the one-use token again.
 
 After that, you can go ahead and log in as normal.
+
+## Checklist
+
+You should have completed:
+
+- [x] Set our admin password for lores-node
+- [x] Created a node-steward account for ourselves, and logged in

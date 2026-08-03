@@ -3,7 +3,7 @@ title: Opening P2Panda ports with Traefik
 date: 2026-03-08T09:00:00+10:00
 draft: false
 type: docs
-weight: 1
+weight: 2
 menus:
   docs:
     name: P2Panda traefik
@@ -37,3 +37,9 @@ abra app deploy -f traefik-YOUR_HOSTNAME.local --no-domain-checks
 ```
 
 The `-f` stands for force, and you'll need this if it's already deployed and you've made config changes.
+
+## Checklist
+
+You should have completed:
+
+- [x] Changed our traefik config to enable p2panda, and re-deployed it
