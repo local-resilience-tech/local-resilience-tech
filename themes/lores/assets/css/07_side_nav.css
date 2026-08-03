@@ -60,16 +60,16 @@ nav.side-nav a.active {
 
 /* FLOATING SIDE NAV */
 
-.with-side-nav.floating-side-nav nav.side-nav {
-  margin: var(--page-gutter);
-  border-radius: 16px;
-}
-
 /* Three-column grid: nav | content | mirror spacer — centers content when wide enough */
 @media screen and (min-width: 900px) {
   main .floating-side-nav {
     display: grid;
     grid-template-columns: minmax(240px, auto) minmax(0, var(--main-content-width)) minmax(240px, auto);
+  }
+
+  .floating-side-nav nav.side-nav {
+    margin: var(--page-gutter);
+    border-radius: 16px;
   }
 
   .floating-side-nav nav {
