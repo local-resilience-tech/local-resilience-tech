@@ -7,7 +7,10 @@ slug: better_map_experience
 type: roadmap
 summary: Nodes can be seen on the map regardless of where they are
 params:
-  status:
+  status: in-progress
+  assigned:
+    - username: exo
+      role: Development
 ---
 
 {{< user_story >}}
