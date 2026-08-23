@@ -8,7 +8,7 @@ summary: Node's monitor a heartbeat message from each other, and report to stewa
 params:
   status: in-progress
   assigned:
-    - username: Greg
+    - username: gerg
       role: Development
 ---
 
