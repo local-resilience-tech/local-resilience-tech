@@ -42,6 +42,8 @@ It also makes it really clear what data each peer should send to each other. The
 
 This approach of sharing event logs between peers was made particularly popular by [Secure Scuttlebutt](https://www.scuttlebutt.nz/). Scuttlebutt was then the influence of many other P2P projects, including [P2Panda](https://p2panda.org/) which we use.
 
+{{< figure src="/images/blog/2026-08-28-lores-app-node/hermes.png" alt="A stylised hermit-crab">}}
+
 It should be said that event sourced approaches are not the _only_ way to do P2P. They work well for eventually consistent application data, but less well for synchronising a big collection of file storage.
 
 ## So can we Event Source with lores-p2panda-client?
