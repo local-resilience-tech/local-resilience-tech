@@ -1,5 +1,5 @@
 ---
-title: A building block for building Neighbourhood-First apps
+title: A building block for Neighbourhood-First apps
 date: 2026-08-28T09:00:00+10:00
 draft: false
 type: blog
