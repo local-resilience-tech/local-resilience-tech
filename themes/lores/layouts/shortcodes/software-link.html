@@ -1,0 +1,16 @@
+{{- $slug := .Get "slug" | default (.Get 0) -}}
+{{- $page := site.GetPage (printf "/contributing/software/%s" $slug) -}}
+{{- with $page }}
+  <div class="post-list">
+    <a href="{{ .RelPermalink }}" class="post-link">
+      <div class="post-header">
+        <h2>{{ .LinkTitle }}</h2>
+      </div>
+      <div class="post-summary">
+        {{ .Summary }}
+      </div>
+    </a>
+  </div>
+{{- else }}
+  {{- errorf "software-link: could not find software content with slug %q" $slug }}
+{{- end }}
