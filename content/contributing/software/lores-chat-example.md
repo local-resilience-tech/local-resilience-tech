@@ -8,8 +8,9 @@ summary: An example LoRes App, demonstrating live chat between users using the w
 params:
   repoURL: https://github.com/local-resilience-tech/lores-chat-example/
   readmeURL: https://raw.githubusercontent.com/local-resilience-tech/lores-chat-example/refs/heads/main/README.md
-  coopCloudRecipeURL: https://recipes.coopcloud.tech/lores-chat-example
-  coopCloudRecipeRepoURL: https://git.coopcloud.tech/coop-cloud/lores-chat-example
+  coopCloud:
+    recipeURL: https://recipes.coopcloud.tech/lores-chat-example
+    recipeRepoURL: https://git.coopcloud.tech/coop-cloud/lores-chat-example
   licence:
     name: Anti-Capitalist Licence
     url: https://anticapitalist.software/
