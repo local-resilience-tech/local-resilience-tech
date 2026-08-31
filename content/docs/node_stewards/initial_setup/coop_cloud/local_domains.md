@@ -59,7 +59,7 @@ You download it by running the following commands on your Raspberry Pi.
 
 ```bash
 wget https://github.com/local-resilience-tech/coop-cloud-mdns-publisher/releases/download/v0.3.0/ccmdns_0.3.0-1_arm64.deb
-sudo apt install ccmdns_0.3.0-1_arm64.deb
+sudo apt install ./ccmdns_0.3.0-1_arm64.deb
 ```
 
 Once it's installed, it stays running, and for every Co-op cloud app you install, it will automatically start publishing a new domain on your local network of the form `APPNAME-HOSTNAME.local`.
