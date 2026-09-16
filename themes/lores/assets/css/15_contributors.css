@@ -14,3 +14,34 @@
 .contributor-preview .details .name {
   font-weight: bold;
 }
+
+.contributor-avatars {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.contributor-avatars img.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid white;
+  margin-left: -0.75rem;
+}
+
+.contributor-avatars img.avatar:first-child {
+  margin-left: 0;
+}
+
+.title-and-avatars {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.title-and-avatars h2 {
+  margin: 0;
+}

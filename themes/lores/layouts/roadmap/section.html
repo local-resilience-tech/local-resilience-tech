@@ -1,63 +1,61 @@
 {{ define "main" }}
-  <div class="on-light-blue">
-    <div class="roadmap-section-page roadmap-page grid-paper">
-      <div class="parent-page-link">
-          {{ with .Parent }}
-            <a href="{{ .RelPermalink }}"><span class="back-arrow">←</span> back to {{ .Title }}</a>
-          {{ end }}
+<div class="on-light-blue">
+  <div class="roadmap-section-page roadmap-page grid-paper">
+    <div class="parent-page-link">
+      {{ with .Parent }}
+      <a href="{{ .RelPermalink }}"><span class="back-arrow">←</span> back to {{ .Title }}</a>
+      {{ end }}
+    </div>
+
+    <div class="section-header">
+      <article class="content">
+        <h1 class="title">{{ .Title }}</h1>
+
+        <div class="content-and-details">
+          <div class="details-container">{{ partial "roadmap/details.html" . }}</div>
+
+          <div class="content-container">{{ .Content }}</div>
         </div>
+      </article>
+    </div>
 
-      <div class="section-header">
-        <article class="content">
-          <h1 class="title">{{ .Title }}</h1>
-
-          <div class="content-and-details">
-            <div class="details-container">
-              {{ partial "roadmap/details.html" . }}
-
-            </div>
-
-            <div class="content-container">
-              {{ .Content }}
-            </div>
-      </div>
-        </article>
-      </div>
-
-      <div class="roadmap-items">
-        <div class="roadmap-rows">
-          {{ range .Pages }}
-            <div class="roadmap-item-row {{ if .IsSection }}is-section{{ else }}not-section{{ end }} {{ if .Params.status }}has-status status-{{ .Params.status }}{{ end }}">
-              <div class="roadmap-item-container">
-                <a class="roadmap-item" href="{{ .RelPermalink }}">
-                  {{ with .Params.status }}
-                    <div class="status-indicator status-{{ . | lower }}">{{ . }}</div>
+    <div class="roadmap-items">
+      <div class="roadmap-rows">
+        {{ range .Pages }}
+        <div class="roadmap-item-row {{ if .IsSection }}is-section{{ else }}not-section{{ end }} {{ if .Params.status }}has-status status-{{ .Params.status }}{{ end }}">
+          <div class="roadmap-item-container">
+            <a class="roadmap-item" href="{{ .RelPermalink }}">
+              {{ with .Params.status }}
+              <div class="status-indicator status-{{ . | lower }}">{{ . }}</div>
+              {{ end }}
+              <div class="details">
+                <div class="title-and-avatars">
+                  <h2>{{ .Title }}</h2>
+                  {{ if eq .Params.status "in-progress" }}
+                    {{ with .Params.assigned }}{{ partial "contributor_avatars.html" . }}{{ end }}
                   {{ end }}
-                  <div class="details">
-                    <h2>{{ .Title }}</h2>
-                    <p>{{ .Summary }}</p>
-                  </div>
-                  <div class="sub-pages">
-                    {{ with .Pages }}
-                      {{ range . }}
-                        <span class="sub-page status-{{ .Params.status }} {{ if .Params.status }}has-status{{ end }}" aria-hidden="true"></span>
-                      {{ end }}
-                    {{ end }}
-                  </div>
-                </a>
+                </div>
+                <p>{{ .Summary }}</p>
               </div>
-            </div>
-          {{ end }}
+              <div class="sub-pages">
+                {{ with .Pages }} {{ range . }}
+                <span class="sub-page status-{{ .Params.status }} {{ if .Params.status }}has-status{{ end }}" aria-hidden="true"></span>
+                {{ end }} {{ end }}
+              </div>
+            </a>
+          </div>
         </div>
+        {{ end }}
       </div>
+    </div>
 
-      <div class="roadmap-footer">
-        <div class="parent-page-link">
-          {{ with .Parent }}
-            <a href="{{ .RelPermalink }}"><span class="back-arrow">←</span> back to {{ .Title }}</a>
-          {{ end }}
-        </div>
+    <div class="roadmap-footer">
+      <div class="parent-page-link">
+        {{ with .Parent }}
+        <a href="{{ .RelPermalink }}"><span class="back-arrow">←</span> back to {{ .Title }}</a>
+        {{ end }}
       </div>
     </div>
   </div>
+</div>
 {{ end }}

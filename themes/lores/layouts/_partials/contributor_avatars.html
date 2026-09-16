@@ -1,0 +1,18 @@
+{{ $assigned := . }}
+{{ if not (reflect.IsSlice .) }}{{ $assigned = slice . }}{{ end }}
+
+{{ with $assigned }}
+  <div class="contributor-avatars">
+    {{ range . }}
+      {{ $entry := . }}
+      {{ if not (reflect.IsMap .) }}{{ $entry = dict "username" . }}{{ end }}
+      {{ $username := $entry.username }}
+      {{ $contributor := site.GetPage (printf "contributors/%s" $username) }}
+      {{ $avatar := "/images/default-avatar-60.png" }}
+      {{ if $contributor }}
+        {{ with $contributor.Params.avatar }}{{ $avatar = . }}{{ end }}
+      {{ end }}
+      <img src="{{ $avatar }}" alt="{{ if $contributor }}{{ $contributor.Title }}{{ else }}{{ $username }}{{ end }}" aria-hidden class="avatar">
+    {{ end }}
+  </div>
+{{ end }}
