@@ -1,10 +1,15 @@
 ---
-title: Remote Kiwix Info
+title: P2P Kiwix
 date: 2025-09-17T09:00:00+10:00
 draft: false
-weight: 9
+weight: 1
 type: roadmap
-summary: The kiwix app displays which nodes have each zim
+summary: Kiwix talks over P2Panda so that each node knows what archives are available and where
+params:
+  status: in-progress
+  assigned:
+    - username: jade
+      role: Development
 ---
 
 {{< user_story >}}
@@ -19,10 +24,9 @@ For our LoRes version, we want to also display zims that are not actually on thi
 
 ## Feature ideas
 
-- [ ] Zim files that aren't present display in the list, but with dashed borders and less bold colours
-- [ ] These remote zim files also show which nodes are hosting them
-- [ ] There's a filter option to show "locally available only" zim files
-- [ ] If the internet is up, you can actually link directly through to the remote zim file on the other server
+- [x] Zim files that aren't present display in the list, but with dashed borders and less bold colours
+- [x] These remote zim files also show which nodes are hosting them
+- [x] If the internet is up, you can actually link directly through to the remote zim file on the other server
 
 ## Implementation
 

@@ -6,7 +6,7 @@ weight: 3
 type: roadmap
 summary: Several volunteers have gotten through the process unassisted
 params:
-  status: testing
+  status: done
 ---
 
 {{< user_story >}}

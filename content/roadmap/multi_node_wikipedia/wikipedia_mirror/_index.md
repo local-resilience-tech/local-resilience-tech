@@ -6,7 +6,7 @@ weight: 2
 type: roadmap
 summary: Node stewards can install wikipedia onto a Raspberry Pi and serve it at a public URL
 params:
-  status: testing
+  status: in-progress
 ---
 
 {{< user_story >}}
