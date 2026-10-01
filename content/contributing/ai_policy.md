@@ -10,6 +10,8 @@ menus:
     weight: 2
 ---
 
+`v1.0.0, Oct 2026`
+
 {{<hero>}}
 **LoRes Mesh** is a project to build resilient local communities in the fact of the Climate Crisis.
 
@@ -69,3 +71,9 @@ Providing the above is met, this project **does** accept contributions which con
   1.  Run on renewable electricity
   1.  Is an open-weight model
   1.  Is operated either by the individual developer, an educational institution, a non-profit, or a worker co-operative (or similar structure that shares profits, agency and decision making amongst all it's workers/members).
+
+### What about harms this policy doesn't address?
+
+To read more about our reasoning, see [our blog post introducing this policy](/blog/a-solarpunk-ai-policy/) which covers some of the rationale, and discusses some of the areas we have not addressed.
+
+This AI policy is not designed to be suitable for all organisations, it specifically targets areas relevant to this project.
