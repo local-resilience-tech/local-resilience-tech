@@ -7,6 +7,7 @@ menus:
   contributing:
     name: Software
     parent: Contributing
+    weight: 1
 ---
 
 The following codebases are part of the **LoRes** project.
