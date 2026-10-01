@@ -16,7 +16,7 @@ In this project, we've decided to focus on a few specific harms of AI, and focus
 
 ## Introducing the LoRes AI Policy, version 1.0
 
-LoRes has a particular theory of change that says that if we take technology, and bring it into grass-roots hands, in our local communities, which change our relationship to it. We want libraries and community centers and local food co-ops, not datacenters and clouds and billionaires.
+LoRes has a particular theory of change that says that if we take technology, and bring it into grass-roots hands, in our local communities, which change our relationship to it. We want libraries and community centres and local food co-ops, not data centres and clouds and billionaires.
 
 This same theory of change has informed our first stab at an "AI Policy" for contributions to this project.
 
@@ -37,7 +37,7 @@ As such, we have decided to push back only on big AI **ecological sustainability
 
 ### Is it a good ideato allow even local, rewewably powered AI?
 
-A world where we simply replace the AI data-centre boom with local GPUs in every building, running hot to apply LLM agents to all human problems, is still not a good world. It would in fact be less efficient than the data centers.
+A world where we simply replace the AI data-centre boom with local GPUs in every building, running hot to apply LLM agents to all human problems, is still not a good world. It would in fact be less efficient than the data centres.
 
 However, the same can be said of the LoRes project's goal of moving cloud web hosting (currently at least 2% of the world's carbon emissions) to local servers in community facilities. Our theory of change is that by moving the compute physically into community hands, we can have better and more democratic conversations about what use is truly important.
 
