@@ -26,7 +26,7 @@ The goal though, is for application data to be communicated this way, so that we
 
 ## Just one P2Panda Node
 
-LoRes uses P2Panda](https://p2panda.org/) for our P2P communication. P2Panda is a toolbox for building P2P applications that handles some of the tricky bits of managing groups of peers sharing data, storing messages and managing permissions and encryption.
+LoRes uses [P2Panda](https://p2panda.org/) for our P2P communication. P2Panda is a toolbox for building P2P applications that handles some of the tricky bits of managing groups of peers sharing data, storing messages and managing permissions and encryption.
 
 Some apps have P2Panda built in, such as [Reflection](https://github.com/p2panda/reflection) (a P2P text editor for Gnome). If we did that for every web app on a server, we'd end up duplicating a lot of effort, and likely creating a lot of noise and complexity in our attempt to network these servers together.
 
@@ -52,7 +52,7 @@ This client allows us to publish or subscribe to message. To [publish a message]
 
 ## Trying it out
 
-How do we know if all this works? We need a simple example app that everyone can install and learn from, and as we saw at the top of the article, we have one in the [LoRes Chat Example](https://github.com/local-resilience-tech/lores-chat-example).
+How do we know if all this works? We need a simple example app that everyone can install and learn from, and as we saw at the top of the article, we have one in the [LoRes Chat Example](https://git.coopcloud.tech/coop-cloud/lores-chat-example).
 
 This is a simple web app, with a back-end written in Rust and using the `lores-p2panda-client` library. The front-end is a little one-page React app, with a text box to send messages, and a list of received messages.
 
