@@ -16,7 +16,7 @@ In this project, we've decided to focus on a few specific harms of AI, and focus
 
 ## Introducing the LoRes AI Policy, version 1.0
 
-LoRes has a particular theory of change that says that if we take technology, and bring it into grass-roots hands, in our local communities, which change our relationship to it. We want libraries and community centres and local food co-ops, not data centres and clouds and billionaires.
+LoRes has a particular theory of change that says that if we take technology, and bring it into grass-roots hands in our local communities, then our relationship to it will change. We want libraries and community centres and local food co-ops, not data centres and clouds and billionaires.
 
 This same theory of change has informed our first stab at an "AI Policy" for contributions to this project.
 
@@ -35,7 +35,7 @@ Our group has emerged out of many local people with varied political views but a
 
 As such, we have decided to push back only on big AI **ecological sustainability** and **hyper-capitalist power concentration**, and leave room for local makers and hackers to experiment with models they physically run on renewables.
 
-### Is it a good ideato allow even local, rewewably powered AI?
+### Is it a good idea to allow even local, renewably powered AI?
 
 A world where we simply replace the AI data-centre boom with local GPUs in every building, running hot to apply LLM agents to all human problems, is still not a good world. It would in fact be less efficient than the data centres.
 
@@ -57,6 +57,6 @@ The use of creative works without permission to produce these models is a comple
 
 Given these historical harms, using existing models (without paying for them) in some situations is a difficult choice to make. This policy is influenced by the idea that when the AI bubble pops, these models might be amongst the only useful residue left to society in return for all this waste. The same can be said for many pieces of physical infrastructure around the world produced through injustice and polution.
 
-A just future might see factories, dams and roads re-purposed and re-thought with people and planet in mind. But it is unlikely, at this stage in the polycrisis, to result in all the material produced by capitalism and colonialism torn down so we can start again. In some cases we may choose to do so, in other cases we may choose to find ways to remember the historical harms while using the products.
+A just future might see factories, dams and roads re-purposed and re-thought with people and planet in mind. But it is unlikely, at this stage in the polycrisis, to be a good idea for all the material produced by capitalism and colonialism torn down so we can start again. In some cases we may choose to do so, in other cases we may choose to find ways to remember the historical harms while using the products.
 
 This project aims to join that conversation. We don't claim to have the answers, but at this stage we are choosing to allow re-use of these already-created models, which necessarily means navigating their extractive legacy.
