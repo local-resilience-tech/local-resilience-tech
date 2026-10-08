@@ -6,7 +6,7 @@ weight: 1
 type: roadmap
 summary: Node's monitor a heartbeat message from each other, and report to stewards which nodes are up on the P2P network
 params:
-  status: in-progress
+  status: done
   assigned:
     - username: gerg
       role: Development

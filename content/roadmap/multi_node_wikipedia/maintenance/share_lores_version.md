@@ -5,6 +5,11 @@ draft: false
 weight: 2
 type: roadmap
 summary: We have awareness of the lores-node version for every node in the region
+params:
+  status: done
+  assigned:
+    - username: gerg
+      role: Development
 ---
 
 {{< user_story >}}
