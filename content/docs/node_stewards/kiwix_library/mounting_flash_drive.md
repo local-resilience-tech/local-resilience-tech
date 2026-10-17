@@ -1,13 +1,13 @@
 ---
-title: Accessing the flash drive on with the Pi
+title: Accessing the flash drive with the Pi
 date: 2025-09-03T09:00:00+10:00
 draft: false
-weight: 5
+weight: 2
 type: docs
 menus:
   docs:
     name: Mounting drive
-    parent: Archive
+    parent: 2. Kiwix Library
 ---
 
 {{<hero>}}
