@@ -7,7 +7,7 @@ type: docs
 menus:
   docs:
     name: LoRes Node
-    parent: Initial setup
+    parent: 1. Initial Setup
 ---
 
 {{<hero>}}

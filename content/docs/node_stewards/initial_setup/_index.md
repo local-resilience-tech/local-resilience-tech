@@ -6,7 +6,7 @@ weight: 1
 type: docs
 menus:
   docs:
-    name: Initial setup
+    name: 1. Initial Setup
     parent: Node Stewards
 ---
 

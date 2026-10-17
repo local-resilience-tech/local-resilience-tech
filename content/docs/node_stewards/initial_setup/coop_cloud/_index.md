@@ -7,7 +7,7 @@ type: docs
 menus:
   docs:
     name: Co-op Cloud
-    parent: Initial setup
+    parent: 1. Initial Setup
 ---
 
 {{<hero>}}

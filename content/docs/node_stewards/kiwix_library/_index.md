@@ -6,7 +6,7 @@ weight: 2
 type: docs
 menus:
   docs:
-    name: Kiwix Library
+    name: 2. Kiwix Library
     parent: Node Stewards
 ---
 
@@ -25,3 +25,11 @@ Now that you have a running **LoRes Node**, it's time to add your first applicat
 Is this useful? We think so. **LoRes Mesh** is all about providing local resilience in the face of the worsening climate crisis. Even if you live somewhere where the internet has always been reliable, storms, heat waves, fires and floods are going to be more and more likely in the coming years and this does mean you could lose internet access or power.
 
 With that in mind, our goal is to get a working low-power computer on your local network serving up a copy of wikipedia, which you can browse to on your local network even if the internet is down.
+
+## What you'll need
+
+In addition to the Lores Node you setup in section 1, you'll need the following:
+
+- A USB flash drive. Any size will work for getting set up, but for context, a full copy of Wikipedia in English needs about 120GB, so a big drive is handy.
+
+Alright, let's dive in.
