@@ -2,7 +2,7 @@
 title: Maintaining a Node
 date: 2026-09-09T09:00:00+10:00
 draft: false
-weight: 2
+weight: 3
 type: docs
 menus:
   docs:
