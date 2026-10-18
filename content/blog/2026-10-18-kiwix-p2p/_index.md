@@ -5,7 +5,7 @@ draft: false
 type: blog
 slug: kiwix-p2p
 author: Jade
-summary: Xx
+summary: Kiwix is an open source project that provides offline copies of some of the world's most important websites. Our lightweight wrapper connects it to a LoRes Mesh, so that users can see which website archives are stored at other nodes, and go fetch them in an emergency.
 ---
 
 ## Kiwix
