@@ -3,7 +3,7 @@ title: LoRes Dev Server
 date: 2026-08-30T08:00:00+10:00
 draft: false
 type: software
-weight: 2
+weight: 5
 summary: In-memory development gRPC server for the lores-p2panda API.
 params:
   repoURL: https://github.com/local-resilience-tech/lores-node/

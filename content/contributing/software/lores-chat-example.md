@@ -3,7 +3,7 @@ title: LoRes Chat Example
 date: 2026-07-25T08:00:00+10:00
 draft: false
 type: software
-weight: 2
+weight: 4
 summary: An example LoRes App, demonstrating live chat between users using the web software on different nodes, by sending messages to the local Lores Node which are then transmitted over the P2Panda connection.
 params:
   repoURL: https://github.com/local-resilience-tech/lores-chat-example/

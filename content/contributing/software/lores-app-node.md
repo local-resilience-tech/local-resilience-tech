@@ -3,7 +3,7 @@ title: LoRes App Node
 date: 2026-08-28T08:00:00+10:00
 draft: false
 type: software
-weight: 2
+weight: 4
 summary: A library powering the ability to build an event-sourced app, with a resilient connection to a local LoRes Node.
 params:
   repoURL: https://github.com/local-resilience-tech/lores-node/

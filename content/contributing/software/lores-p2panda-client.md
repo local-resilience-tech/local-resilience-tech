@@ -3,7 +3,7 @@ title: LoRes P2Panda Client
 date: 2026-07-25T08:00:00+10:00
 draft: false
 type: software
-weight: 2
+weight: 3
 summary: Rust client library for the lores-p2panda-server gRPC API. Can be used in a lores app to send and receive messages over the regional p2panda network.
 params:
   repoURL: https://github.com/local-resilience-tech/lores-node/
