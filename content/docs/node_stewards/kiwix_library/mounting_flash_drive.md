@@ -1,13 +1,13 @@
 ---
-title: Accessing the flash drive on with the Pi
+title: Accessing the flash drive with the Pi
 date: 2025-09-03T09:00:00+10:00
 draft: false
-weight: 5
+weight: 2
 type: docs
 menus:
   docs:
     name: Mounting drive
-    parent: Archive
+    parent: 2. Kiwix Library
 ---
 
 {{<hero>}}
@@ -78,3 +78,9 @@ sudo chmod -R a+rx /mnt/zims
 ```
 
 Ok, we've got everything ready to serve up Wikipedia now, let's wire it all together in the next step.
+
+## Checklist
+
+You should have completed:
+
+- [x] Flash drive is accessible on the Pi
