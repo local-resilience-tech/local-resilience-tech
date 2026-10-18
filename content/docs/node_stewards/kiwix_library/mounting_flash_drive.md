@@ -78,3 +78,9 @@ sudo chmod -R a+rx /mnt/zims
 ```
 
 Ok, we've got everything ready to serve up Wikipedia now, let's wire it all together in the next step.
+
+## Checklist
+
+You should have completed:
+
+- [x] Flash drive is accessible on the Pi

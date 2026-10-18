@@ -62,3 +62,10 @@ Once you find a file you want, you can click the "Download" button. A pop-up wil
 Once you've done that, copy these zim files onto your flash drive. Don't bother creating any directories or anything, just put the individual zim files directly onto the drive.
 
 You can choose however many zims you want, but ensure that there is at least one of them on the drive before moving on to the next step.
+
+## Checklist
+
+You should have completed:
+
+- [x] Flash drive formatted with the ext4 filesystem
+- [x] Zim files on the flash drive
