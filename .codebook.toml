@@ -1,2 +1,6 @@
 dictionaries = ["en_gb"]
-words = ["lores"]
+words = [
+    "integrations",
+    "lores",
+    "scalers",
+]
