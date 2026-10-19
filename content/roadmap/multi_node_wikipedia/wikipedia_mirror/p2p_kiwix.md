@@ -6,7 +6,7 @@ weight: 1
 type: roadmap
 summary: Kiwix talks over P2Panda so that each node knows what archives are available and where
 params:
-  status: in-progress
+  status: done
   assigned:
     - username: jade
       role: Development

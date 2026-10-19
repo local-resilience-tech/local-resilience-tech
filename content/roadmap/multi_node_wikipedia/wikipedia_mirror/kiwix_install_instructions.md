@@ -6,5 +6,8 @@ weight: 2
 type: roadmap
 summary: Clear instructions help node stewards install lores-kiwix
 params:
-  status:
+  status: done
+  assigned:
+    - username: jade
+      role: Development
 ---
