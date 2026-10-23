@@ -9,7 +9,7 @@ summary: Nodes can be seen on the map regardless of where they are
 params:
   status: in-progress
   assigned:
-    - username: exo
+    - username: HelloBryte
       role: Development
 ---
 
